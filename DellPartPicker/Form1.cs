@@ -42,5 +42,12 @@ namespace DellPartPicker
                 parser.parse(searchBox.Text, Field.Location, dataGridView1, loader);
             }
         }
+
+        private void pictureSettings_Click(object sender, EventArgs e)
+        {
+            OptionsMenu form = new OptionsMenu(this);
+            this.Hide();
+            form.Show();
+        }
     }
 }
