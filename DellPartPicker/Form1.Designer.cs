@@ -34,7 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.search = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.title = new System.Windows.Forms.Label();
             this.error = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.Searchlbl = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@
             // IDsearch
             // 
             this.IDsearch.AutoSize = true;
-            this.IDsearch.Location = new System.Drawing.Point(223, 331);
+            this.IDsearch.Location = new System.Drawing.Point(91, 275);
             this.IDsearch.Name = "IDsearch";
             this.IDsearch.Size = new System.Drawing.Size(86, 17);
             this.IDsearch.TabIndex = 0;
@@ -56,7 +56,7 @@
             // nameSearch
             // 
             this.nameSearch.AutoSize = true;
-            this.nameSearch.Location = new System.Drawing.Point(223, 354);
+            this.nameSearch.Location = new System.Drawing.Point(91, 297);
             this.nameSearch.Name = "nameSearch";
             this.nameSearch.Size = new System.Drawing.Size(105, 17);
             this.nameSearch.TabIndex = 1;
@@ -67,7 +67,7 @@
             // locSearch
             // 
             this.locSearch.AutoSize = true;
-            this.locSearch.Location = new System.Drawing.Point(223, 377);
+            this.locSearch.Location = new System.Drawing.Point(91, 320);
             this.locSearch.Name = "locSearch";
             this.locSearch.Size = new System.Drawing.Size(118, 17);
             this.locSearch.TabIndex = 2;
@@ -78,16 +78,16 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 82);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 122);
+            this.pictureBox1.Size = new System.Drawing.Size(151, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // search
             // 
-            this.search.Location = new System.Drawing.Point(142, 377);
+            this.search.Location = new System.Drawing.Point(10, 275);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(75, 23);
             this.search.TabIndex = 4;
@@ -98,24 +98,28 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(276, 22);
+            this.dataGridView1.Location = new System.Drawing.Point(270, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(469, 243);
             this.dataGridView1.TabIndex = 5;
             // 
-            // label1
+            // title
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Dell PartPicker";
+            this.title.AutoSize = true;
+            this.title.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.title.Font = new System.Drawing.Font("Open Sans Condensed", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.title.Location = new System.Drawing.Point(4, 22);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(247, 43);
+            this.title.TabIndex = 6;
+            this.title.Text = "Dell Part Picker UI";
             // 
             // error
             // 
             this.error.AutoSize = true;
-            this.error.Location = new System.Drawing.Point(67, 358);
+            this.error.ForeColor = System.Drawing.Color.Maroon;
+            this.error.Location = new System.Drawing.Point(7, 301);
             this.error.Name = "error";
             this.error.Size = new System.Drawing.Size(76, 13);
             this.error.TabIndex = 7;
@@ -123,7 +127,7 @@
             // 
             // searchBox
             // 
-            this.searchBox.Location = new System.Drawing.Point(117, 328);
+            this.searchBox.Location = new System.Drawing.Point(59, 249);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(100, 20);
             this.searchBox.TabIndex = 8;
@@ -131,7 +135,7 @@
             // Searchlbl
             // 
             this.Searchlbl.AutoSize = true;
-            this.Searchlbl.Location = new System.Drawing.Point(67, 331);
+            this.Searchlbl.Location = new System.Drawing.Point(9, 252);
             this.Searchlbl.Name = "Searchlbl";
             this.Searchlbl.Size = new System.Drawing.Size(44, 13);
             this.Searchlbl.TabIndex = 9;
@@ -141,11 +145,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Searchlbl);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.error);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.title);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.search);
             this.Controls.Add(this.pictureBox1);
@@ -169,7 +174,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button search;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label title;
         private System.Windows.Forms.Label error;
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.Label Searchlbl;

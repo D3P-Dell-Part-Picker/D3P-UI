@@ -23,7 +23,7 @@ namespace DellPartPicker
 
         private void search_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.Rows.Clear();
 
             if(searchBox.Text == null || searchBox.Text == "")
             {

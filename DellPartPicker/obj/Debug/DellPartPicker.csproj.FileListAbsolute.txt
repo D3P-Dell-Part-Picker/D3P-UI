@@ -7,3 +7,4 @@ C:\Users\Aiden M\source\repos\DellPartPicker\DellPartPicker\obj\Debug\DellPartPi
 C:\Users\Aiden M\source\repos\DellPartPicker\DellPartPicker\obj\Debug\DellPartPicker.csproj.GenerateResource.cache
 C:\Users\Aiden M\source\repos\DellPartPicker\DellPartPicker\obj\Debug\DellPartPicker.exe
 C:\Users\Aiden M\source\repos\DellPartPicker\DellPartPicker\obj\Debug\DellPartPicker.pdb
+C:\Users\Aiden M\source\repos\DellPartPicker\DellPartPicker\obj\Debug\DellPartPicker.OptionsMenu.resources
