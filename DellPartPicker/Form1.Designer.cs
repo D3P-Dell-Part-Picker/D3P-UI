@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
+        
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -103,7 +103,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(368, 22);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(420, 360);
+            this.dataGridView1.Size = new System.Drawing.Size(552, 360);
             this.dataGridView1.TabIndex = 5;
             // 
             // title
@@ -130,6 +130,7 @@
             // 
             // searchBox
             // 
+            this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBox.Location = new System.Drawing.Point(63, 290);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(166, 20);
@@ -147,7 +148,7 @@
             // pictureSettings
             // 
             this.pictureSettings.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings.Image")));
-            this.pictureSettings.Location = new System.Drawing.Point(740, 388);
+            this.pictureSettings.Location = new System.Drawing.Point(872, 388);
             this.pictureSettings.Name = "pictureSettings";
             this.pictureSettings.Size = new System.Drawing.Size(48, 50);
             this.pictureSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -160,7 +161,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(932, 450);
             this.Controls.Add(this.pictureSettings);
             this.Controls.Add(this.Searchlbl);
             this.Controls.Add(this.searchBox);
@@ -186,7 +187,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button search;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.PictureBox pictureSettings;
         public System.Windows.Forms.RadioButton IDsearch;
         public System.Windows.Forms.RadioButton nameSearch;
@@ -194,6 +194,7 @@
         public System.Windows.Forms.Label error;
         public System.Windows.Forms.Label Searchlbl;
         public System.Windows.Forms.Label title;
+        public System.Windows.Forms.TextBox searchBox;
     }
 }
 

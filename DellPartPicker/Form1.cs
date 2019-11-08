@@ -18,6 +18,18 @@ namespace DellPartPicker
         public Form1()
         {
             InitializeComponent();
+            
+            disableFunctions();
+            
+        }
+        private void disableFunctions()
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.AllowUserToResizeRows = false;
+            dataGridView1.ReadOnly = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             error.Hide();
         }
 

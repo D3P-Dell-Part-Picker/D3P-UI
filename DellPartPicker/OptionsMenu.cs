@@ -13,10 +13,19 @@ namespace DellPartPicker
     public partial class OptionsMenu : Form
     {
         Form1 form1;
+        Boolean isDark;
         public OptionsMenu(Form1 f)
         {
             form1 = f;
+            
             InitializeComponent();
+            if (form1.BackColor == Color.FromArgb(46, 48, 54))
+            {
+                isDark = true;
+                radioDrk.Checked = true;
+            }
+            toggleDark(isDark);
+
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -41,6 +50,17 @@ namespace DellPartPicker
         {
             if (radioDrk.Checked == true)
             {
+                toggleDark(true);
+            }
+            if (radioLt.Checked == true)
+            {
+                toggleDark(false);
+            }
+        }
+        private void toggleDark(Boolean b)
+        {
+            if (b)
+            {
                 this.BackColor = Color.FromArgb(46, 48, 54);
                 radioLt.ForeColor = Color.White;
                 radioDrk.ForeColor = Color.White;
@@ -51,10 +71,25 @@ namespace DellPartPicker
                 form1.locSearch.ForeColor = Color.White;
                 form1.nameSearch.ForeColor = Color.White;
                 form1.IDsearch.ForeColor = Color.White;
+                form1.searchBox.BackColor = Color.Gray;
+                form1.searchBox.ForeColor = Color.White;
+                form1.error.ForeColor = Color.Pink;
                 form1.title.ForeColor = Color.White;
                 form1.title.BackColor = Color.FromArgb(46, 48, 54);
+
+                radioDrk.Checked = true;
+                //TODO make this work for the table
+                /*
+                 * change the background color of the cells in the table
+                 */
+                 /*
+                DataGridViewCellStyle style = new DataGridViewCellStyle();
+                style.BackColor = Color.FromArgb(((GesTest.dsEssais.FMstatusAnomalieRow)row.DataBoundItem).iColor);
+                style.ForeColor = Color.Black;
+                row.Cells[color.Index].Style = style;
+                */
             }
-            if (radioLt.Checked == true)
+            else
             {
                 this.BackColor = Color.White;
                 radioLt.ForeColor = Color.Black;
@@ -66,8 +101,13 @@ namespace DellPartPicker
                 form1.locSearch.ForeColor = Color.Black;
                 form1.nameSearch.ForeColor = Color.Black;
                 form1.IDsearch.ForeColor = Color.Black;
+                form1.searchBox.BackColor = Color.White;
+                form1.searchBox.ForeColor = Color.Black;
+                form1.error.ForeColor = Color.Maroon;
                 form1.title.ForeColor = SystemColors.Highlight;
                 form1.title.BackColor = Color.White;
+
+                radioLt.Checked = true;
             }
         }
     }

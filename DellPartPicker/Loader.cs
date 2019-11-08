@@ -82,9 +82,10 @@ namespace DellPartPicker
                 //find elements containing input in field f
                 for (int i = 0; i < descList.Count; i++)
                 {
-                    if (descList[i].ToUpper().Contains(input.ToUpper())) { 
-                    }
+                    if (descList[i].ToUpper().Contains(input.ToUpper())) {
                         indexlist.Add(i);
+                    }
+                        
                 }
                 //create a list of all indexes
                 indexes = indexlist.ToArray();

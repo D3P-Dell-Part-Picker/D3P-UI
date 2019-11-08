@@ -18,3 +18,13 @@ C:\Users\Aiden M\source\repos\DellGUI-Final\DellPartPicker\obj\Debug\DellPartPic
 C:\Users\Aiden M\source\repos\DellGUI-Final\DellPartPicker\obj\Debug\DellPartPicker.csproj.GenerateResource.cache
 C:\Users\Aiden M\source\repos\DellGUI-Final\DellPartPicker\obj\Debug\DellPartPicker.exe
 C:\Users\Aiden M\source\repos\DellGUI-Final\DellPartPicker\obj\Debug\DellPartPicker.pdb
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\bin\Debug\DellPartPicker.exe.config
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\bin\Debug\DellPartPicker.exe
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\bin\Debug\DellPartPicker.pdb
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.csprojAssemblyReference.cache
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.Form1.resources
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.OptionsMenu.resources
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.Properties.Resources.resources
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.csproj.GenerateResource.cache
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.exe
+C:\Users\Aiden M\source\repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.pdb
