@@ -49,7 +49,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.enterHere = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addAll = new System.Windows.Forms.Button();
             this.dumpLbl = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.d3pTitle2 = new System.Windows.Forms.Label();
@@ -257,7 +257,7 @@
             this.listTab.Controls.Add(this.label1);
             this.listTab.Controls.Add(this.enterHere);
             this.listTab.Controls.Add(this.pictureBox1);
-            this.listTab.Controls.Add(this.button2);
+            this.listTab.Controls.Add(this.addAll);
             this.listTab.Controls.Add(this.dumpLbl);
             this.listTab.Controls.Add(this.pictureBox3);
             this.listTab.Controls.Add(this.d3pTitle2);
@@ -302,14 +302,15 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button2
+            // addAll
             // 
-            this.button2.Location = new System.Drawing.Point(767, 424);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Add All";
-            this.button2.UseVisualStyleBackColor = true;
+            this.addAll.Location = new System.Drawing.Point(767, 424);
+            this.addAll.Name = "addAll";
+            this.addAll.Size = new System.Drawing.Size(75, 23);
+            this.addAll.TabIndex = 19;
+            this.addAll.Text = "Add All";
+            this.addAll.UseVisualStyleBackColor = true;
+            this.addAll.Click += new System.EventHandler(this.button2_Click);
             // 
             // dumpLbl
             // 
@@ -378,6 +379,7 @@
             this.bttnRemove.TabIndex = 21;
             this.bttnRemove.Text = "Remove Selected";
             this.bttnRemove.UseVisualStyleBackColor = true;
+            this.bttnRemove.Click += new System.EventHandler(this.bttnRemove_Click);
             // 
             // bttnClear
             // 
@@ -387,6 +389,7 @@
             this.bttnClear.TabIndex = 20;
             this.bttnClear.Text = "Clear";
             this.bttnClear.UseVisualStyleBackColor = true;
+            this.bttnClear.Click += new System.EventHandler(this.bttnClear_Click);
             // 
             // pictureBox2
             // 
@@ -456,6 +459,7 @@
             this.addSelectedBttn.TabIndex = 11;
             this.addSelectedBttn.Text = "Add Selected";
             this.addSelectedBttn.UseVisualStyleBackColor = false;
+            this.addSelectedBttn.Click += new System.EventHandler(this.addSelectedBttn_Click);
             // 
             // Form1
             // 
@@ -516,7 +520,7 @@
         public System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.Label d3pTitle3;
         public System.Windows.Forms.PictureBox d3pLogo3;
-        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button addAll;
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Button bttnRemove;

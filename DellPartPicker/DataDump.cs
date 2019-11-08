@@ -69,7 +69,9 @@ namespace DellPartPicker
             }
             found = foundList.ToArray();
             dd.addArray(found, table);
-
+            
         }
+
+        
     }
 }

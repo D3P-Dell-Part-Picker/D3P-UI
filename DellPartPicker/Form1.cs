@@ -20,7 +20,17 @@ namespace DellPartPicker
             InitializeComponent();
             
             disableFunctions();
+
+            initCollective();
             
+        }
+
+        private void initCollective()
+        {
+            collectiveTable.ColumnCount = 3;
+            collectiveTable.Columns[0].Name = "Part Number";
+            collectiveTable.Columns[1].Name = "Description";
+            collectiveTable.Columns[2].Name = "Location";
         }
         private void disableFunctions()
         {
@@ -88,6 +98,34 @@ namespace DellPartPicker
 
         }
 
-       
+        private void bttnRemove_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow item in this.collectiveTable.SelectedRows)
+            {
+                collectiveTable.Rows.RemoveAt(item.Index);
+            }
+        }
+
+        private void bttnClear_Click(object sender, EventArgs e)
+        {
+            collectiveTable.Rows.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            collectiveTable.Rows.Add(addListTable.Rows);
+            collectiveTable.Rows.Clear();
+        }
+
+        private void addSelectedBttn_Click(object sender, EventArgs e)
+        {
+            
+            foreach (DataGridViewRow item in this.addSingletable.SelectedRows)
+            {
+                collectiveTable.Rows.Add(addSingletable.Rows[item.Index]);
+                addSingletable.Rows.RemoveAt(item.Index);
+            }
+
+        }
     }
 }
