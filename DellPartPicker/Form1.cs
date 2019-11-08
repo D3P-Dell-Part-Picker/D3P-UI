@@ -61,5 +61,7 @@ namespace DellPartPicker
             this.Hide();
             form.Show();
         }
+
+       
     }
 }

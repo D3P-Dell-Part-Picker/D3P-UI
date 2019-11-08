@@ -32,38 +32,56 @@
             this.IDsearch = new System.Windows.Forms.RadioButton();
             this.nameSearch = new System.Windows.Forms.RadioButton();
             this.locSearch = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.d3pLogo1 = new System.Windows.Forms.PictureBox();
             this.search = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.title = new System.Windows.Forms.Label();
+            this.d3pTitle1 = new System.Windows.Forms.Label();
             this.error = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.Searchlbl = new System.Windows.Forms.Label();
-            this.pictureSettings = new System.Windows.Forms.PictureBox();
+            this.pictureSettings1 = new System.Windows.Forms.PictureBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.listTextBox = new System.Windows.Forms.TextBox();
+            this.listSearchBttn = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.singleItemTab = new System.Windows.Forms.TabPage();
+            this.listTab = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.collective = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.d3pTitle2 = new System.Windows.Forms.Label();
+            this.d3pLogo2 = new System.Windows.Forms.PictureBox();
+            this.collectiveTab = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.d3pTitle3 = new System.Windows.Forms.Label();
+            this.d3pLogo3 = new System.Windows.Forms.PictureBox();
+            this.bttnClear = new System.Windows.Forms.Button();
+            this.bttnRemove = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSettings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.singleItemTab.SuspendLayout();
+            this.listTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo2)).BeginInit();
+            this.collectiveTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).BeginInit();
             this.SuspendLayout();
             // 
             // IDsearch
             // 
             this.IDsearch.AutoSize = true;
-            this.IDsearch.Location = new System.Drawing.Point(320, 342);
+            this.IDsearch.Location = new System.Drawing.Point(152, 403);
             this.IDsearch.Name = "IDsearch";
             this.IDsearch.Size = new System.Drawing.Size(86, 17);
             this.IDsearch.TabIndex = 0;
@@ -74,7 +92,7 @@
             // nameSearch
             // 
             this.nameSearch.AutoSize = true;
-            this.nameSearch.Location = new System.Drawing.Point(320, 396);
+            this.nameSearch.Location = new System.Drawing.Point(152, 426);
             this.nameSearch.Name = "nameSearch";
             this.nameSearch.Size = new System.Drawing.Size(105, 17);
             this.nameSearch.TabIndex = 1;
@@ -85,7 +103,7 @@
             // locSearch
             // 
             this.locSearch.AutoSize = true;
-            this.locSearch.Location = new System.Drawing.Point(320, 447);
+            this.locSearch.Location = new System.Drawing.Point(152, 449);
             this.locSearch.Name = "locSearch";
             this.locSearch.Size = new System.Drawing.Size(118, 17);
             this.locSearch.TabIndex = 2;
@@ -93,15 +111,15 @@
             this.locSearch.Text = "Search By Location";
             this.locSearch.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // d3pLogo1
             // 
-            this.pictureBox1.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 87);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 133);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.d3pLogo1.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
+            this.d3pLogo1.Location = new System.Drawing.Point(6, 59);
+            this.d3pLogo1.Name = "d3pLogo1";
+            this.d3pLogo1.Size = new System.Drawing.Size(177, 133);
+            this.d3pLogo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.d3pLogo1.TabIndex = 3;
+            this.d3pLogo1.TabStop = false;
             // 
             // search
             // 
@@ -116,28 +134,28 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(510, 19);
+            this.dataGridView1.Location = new System.Drawing.Point(506, 62);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(239, 346);
+            this.dataGridView1.Size = new System.Drawing.Size(369, 346);
             this.dataGridView1.TabIndex = 5;
             // 
-            // title
+            // d3pTitle1
             // 
-            this.title.AutoSize = true;
-            this.title.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.title.Font = new System.Drawing.Font("Open Sans Condensed", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.title.Location = new System.Drawing.Point(6, 19);
-            this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(247, 43);
-            this.title.TabIndex = 6;
-            this.title.Text = "Dell Part Picker UI";
+            this.d3pTitle1.AutoSize = true;
+            this.d3pTitle1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d3pTitle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d3pTitle1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.d3pTitle1.Location = new System.Drawing.Point(6, 19);
+            this.d3pTitle1.Name = "d3pTitle1";
+            this.d3pTitle1.Size = new System.Drawing.Size(295, 37);
+            this.d3pTitle1.TabIndex = 6;
+            this.d3pTitle1.Text = "Dell Part Picker UI";
             // 
             // error
             // 
             this.error.AutoSize = true;
             this.error.ForeColor = System.Drawing.Color.Maroon;
-            this.error.Location = new System.Drawing.Point(88, 380);
+            this.error.Location = new System.Drawing.Point(33, 403);
             this.error.Name = "error";
             this.error.Size = new System.Drawing.Size(76, 13);
             this.error.TabIndex = 7;
@@ -146,7 +164,7 @@
             // searchBox
             // 
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchBox.Location = new System.Drawing.Point(139, 341);
+            this.searchBox.Location = new System.Drawing.Point(124, 377);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(114, 20);
             this.searchBox.TabIndex = 8;
@@ -154,117 +172,127 @@
             // Searchlbl
             // 
             this.Searchlbl.AutoSize = true;
-            this.Searchlbl.Location = new System.Drawing.Point(88, 342);
+            this.Searchlbl.Location = new System.Drawing.Point(55, 377);
             this.Searchlbl.Name = "Searchlbl";
             this.Searchlbl.Size = new System.Drawing.Size(44, 13);
             this.Searchlbl.TabIndex = 9;
             this.Searchlbl.Text = "Search ";
             // 
-            // pictureSettings
+            // pictureSettings1
             // 
-            this.pictureSettings.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings.Image")));
-            this.pictureSettings.Location = new System.Drawing.Point(1172, 51);
-            this.pictureSettings.Name = "pictureSettings";
-            this.pictureSettings.Size = new System.Drawing.Size(10, 10);
-            this.pictureSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureSettings.TabIndex = 10;
-            this.pictureSettings.TabStop = false;
-            this.pictureSettings.Click += new System.EventHandler(this.pictureSettings_Click);
+            this.pictureSettings1.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings1.Image")));
+            this.pictureSettings1.Location = new System.Drawing.Point(875, 0);
+            this.pictureSettings1.Name = "pictureSettings1";
+            this.pictureSettings1.Size = new System.Drawing.Size(63, 56);
+            this.pictureSettings1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureSettings1.TabIndex = 10;
+            this.pictureSettings1.TabStop = false;
+            this.pictureSettings1.Click += new System.EventHandler(this.pictureSettings_Click);
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(590, 40);
+            this.dataGridView2.Location = new System.Drawing.Point(285, 42);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(257, 407);
+            this.dataGridView2.Size = new System.Drawing.Size(455, 407);
             this.dataGridView2.TabIndex = 11;
             // 
-            // textBox1
+            // listTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 288);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(266, 159);
-            this.textBox1.TabIndex = 12;
+            this.listTextBox.Location = new System.Drawing.Point(13, 250);
+            this.listTextBox.Multiline = true;
+            this.listTextBox.Name = "listTextBox";
+            this.listTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.listTextBox.Size = new System.Drawing.Size(266, 197);
+            this.listTextBox.TabIndex = 12;
             // 
-            // button1
+            // listSearchBttn
             // 
-            this.button1.Location = new System.Drawing.Point(13, 453);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 33);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.listSearchBttn.Location = new System.Drawing.Point(13, 453);
+            this.listSearchBttn.Name = "listSearchBttn";
+            this.listSearchBttn.Size = new System.Drawing.Size(101, 33);
+            this.listSearchBttn.TabIndex = 13;
+            this.listSearchBttn.Text = "Search";
+            this.listSearchBttn.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.singleItemTab);
+            this.tabControl1.Controls.Add(this.listTab);
+            this.tabControl1.Controls.Add(this.collectiveTab);
             this.tabControl1.Location = new System.Drawing.Point(0, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(946, 530);
             this.tabControl1.TabIndex = 14;
             // 
-            // tabPage1
+            // singleItemTab
             // 
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.pictureSettings);
-            this.tabPage1.Controls.Add(this.title);
-            this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Controls.Add(this.search);
-            this.tabPage1.Controls.Add(this.searchBox);
-            this.tabPage1.Controls.Add(this.Searchlbl);
-            this.tabPage1.Controls.Add(this.IDsearch);
-            this.tabPage1.Controls.Add(this.nameSearch);
-            this.tabPage1.Controls.Add(this.error);
-            this.tabPage1.Controls.Add(this.locSearch);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(938, 504);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.singleItemTab.Controls.Add(this.dataGridView1);
+            this.singleItemTab.Controls.Add(this.pictureSettings1);
+            this.singleItemTab.Controls.Add(this.d3pTitle1);
+            this.singleItemTab.Controls.Add(this.d3pLogo1);
+            this.singleItemTab.Controls.Add(this.search);
+            this.singleItemTab.Controls.Add(this.searchBox);
+            this.singleItemTab.Controls.Add(this.Searchlbl);
+            this.singleItemTab.Controls.Add(this.IDsearch);
+            this.singleItemTab.Controls.Add(this.nameSearch);
+            this.singleItemTab.Controls.Add(this.error);
+            this.singleItemTab.Controls.Add(this.locSearch);
+            this.singleItemTab.Location = new System.Drawing.Point(4, 22);
+            this.singleItemTab.Name = "singleItemTab";
+            this.singleItemTab.Padding = new System.Windows.Forms.Padding(3);
+            this.singleItemTab.Size = new System.Drawing.Size(938, 504);
+            this.singleItemTab.TabIndex = 0;
+            this.singleItemTab.Text = "Add Single Item";
+            this.singleItemTab.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // listTab
             // 
-            this.tabPage2.Controls.Add(this.pictureBox3);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.pictureBox2);
-            this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(938, 504);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.listTab.Controls.Add(this.pictureBox1);
+            this.listTab.Controls.Add(this.button2);
+            this.listTab.Controls.Add(this.collective);
+            this.listTab.Controls.Add(this.pictureBox3);
+            this.listTab.Controls.Add(this.d3pTitle2);
+            this.listTab.Controls.Add(this.d3pLogo2);
+            this.listTab.Controls.Add(this.dataGridView2);
+            this.listTab.Controls.Add(this.listSearchBttn);
+            this.listTab.Controls.Add(this.listTextBox);
+            this.listTab.Location = new System.Drawing.Point(4, 22);
+            this.listTab.Name = "listTab";
+            this.listTab.Padding = new System.Windows.Forms.Padding(3);
+            this.listTab.Size = new System.Drawing.Size(938, 504);
+            this.listTab.TabIndex = 1;
+            this.listTab.Text = "List Dump";
+            this.listTab.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Font = new System.Drawing.Font("Open Sans Condensed", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(5, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 43);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Dell Part Picker UI";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(863, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // button2
             // 
-            this.pictureBox2.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 70);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(224, 143);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
+            this.button2.Location = new System.Drawing.Point(767, 424);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Add All";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // collective
+            // 
+            this.collective.AutoSize = true;
+            this.collective.Location = new System.Drawing.Point(494, 20);
+            this.collective.Name = "collective";
+            this.collective.Size = new System.Drawing.Size(35, 13);
+            this.collective.TabIndex = 18;
+            this.collective.Text = "label2";
             // 
             // pictureBox3
             // 
@@ -276,6 +304,123 @@
             this.pictureBox3.TabIndex = 16;
             this.pictureBox3.TabStop = false;
             // 
+            // d3pTitle2
+            // 
+            this.d3pTitle2.AutoSize = true;
+            this.d3pTitle2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d3pTitle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d3pTitle2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.d3pTitle2.Location = new System.Drawing.Point(5, 2);
+            this.d3pTitle2.Name = "d3pTitle2";
+            this.d3pTitle2.Size = new System.Drawing.Size(295, 37);
+            this.d3pTitle2.TabIndex = 15;
+            this.d3pTitle2.Text = "Dell Part Picker UI";
+            // 
+            // d3pLogo2
+            // 
+            this.d3pLogo2.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
+            this.d3pLogo2.Location = new System.Drawing.Point(13, 42);
+            this.d3pLogo2.Name = "d3pLogo2";
+            this.d3pLogo2.Size = new System.Drawing.Size(224, 143);
+            this.d3pLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.d3pLogo2.TabIndex = 14;
+            this.d3pLogo2.TabStop = false;
+            // 
+            // collectiveTab
+            // 
+            this.collectiveTab.Controls.Add(this.bttnRemove);
+            this.collectiveTab.Controls.Add(this.bttnClear);
+            this.collectiveTab.Controls.Add(this.pictureBox2);
+            this.collectiveTab.Controls.Add(this.label3);
+            this.collectiveTab.Controls.Add(this.dataGridView4);
+            this.collectiveTab.Controls.Add(this.pictureBox4);
+            this.collectiveTab.Controls.Add(this.d3pTitle3);
+            this.collectiveTab.Controls.Add(this.d3pLogo3);
+            this.collectiveTab.Location = new System.Drawing.Point(4, 22);
+            this.collectiveTab.Name = "collectiveTab";
+            this.collectiveTab.Padding = new System.Windows.Forms.Padding(3);
+            this.collectiveTab.Size = new System.Drawing.Size(938, 504);
+            this.collectiveTab.TabIndex = 2;
+            this.collectiveTab.Text = "Collective";
+            this.collectiveTab.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(863, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 56);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(563, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Collective Parts List";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(390, 51);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(454, 407);
+            this.dataGridView4.TabIndex = 17;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1194, 6);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(10, 10);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
+            // 
+            // d3pTitle3
+            // 
+            this.d3pTitle3.AutoSize = true;
+            this.d3pTitle3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d3pTitle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d3pTitle3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.d3pTitle3.Location = new System.Drawing.Point(5, 2);
+            this.d3pTitle3.Name = "d3pTitle3";
+            this.d3pTitle3.Size = new System.Drawing.Size(295, 37);
+            this.d3pTitle3.TabIndex = 15;
+            this.d3pTitle3.Text = "Dell Part Picker UI";
+            // 
+            // d3pLogo3
+            // 
+            this.d3pLogo3.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
+            this.d3pLogo3.Location = new System.Drawing.Point(13, 70);
+            this.d3pLogo3.Name = "d3pLogo3";
+            this.d3pLogo3.Size = new System.Drawing.Size(224, 143);
+            this.d3pLogo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.d3pLogo3.TabIndex = 14;
+            this.d3pLogo3.TabStop = false;
+            // 
+            // bttnClear
+            // 
+            this.bttnClear.Location = new System.Drawing.Point(730, 472);
+            this.bttnClear.Name = "bttnClear";
+            this.bttnClear.Size = new System.Drawing.Size(75, 23);
+            this.bttnClear.TabIndex = 20;
+            this.bttnClear.Text = "Clear";
+            this.bttnClear.UseVisualStyleBackColor = true;
+            // 
+            // bttnRemove
+            // 
+            this.bttnRemove.Location = new System.Drawing.Point(454, 472);
+            this.bttnRemove.Name = "bttnRemove";
+            this.bttnRemove.Size = new System.Drawing.Size(112, 23);
+            this.bttnRemove.TabIndex = 21;
+            this.bttnRemove.Text = "Remove Selected";
+            this.bttnRemove.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,42 +430,61 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSettings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.singleItemTab.ResumeLayout(false);
+            this.singleItemTab.PerformLayout();
+            this.listTab.ResumeLayout(false);
+            this.listTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo2)).EndInit();
+            this.collectiveTab.ResumeLayout(false);
+            this.collectiveTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button search;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox pictureSettings;
+        public System.Windows.Forms.PictureBox d3pLogo1;
+        public System.Windows.Forms.Button search;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.PictureBox pictureSettings1;
         public System.Windows.Forms.RadioButton IDsearch;
         public System.Windows.Forms.RadioButton nameSearch;
         public System.Windows.Forms.RadioButton locSearch;
         public System.Windows.Forms.Label error;
         public System.Windows.Forms.Label Searchlbl;
-        public System.Windows.Forms.Label title;
+        public System.Windows.Forms.Label d3pTitle1;
         public System.Windows.Forms.TextBox searchBox;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        public System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.DataGridView dataGridView2;
+        public System.Windows.Forms.TextBox listTextBox;
+        public System.Windows.Forms.Button listSearchBttn;
+        public System.Windows.Forms.TabControl tabControl1;
+        public System.Windows.Forms.TabPage singleItemTab;
+        public System.Windows.Forms.TabPage listTab;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.Label d3pTitle2;
+        public System.Windows.Forms.PictureBox d3pLogo2;
+        public System.Windows.Forms.Label collective;
+        public System.Windows.Forms.TabPage collectiveTab;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.DataGridView dataGridView4;
+        public System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.Label d3pTitle3;
+        public System.Windows.Forms.PictureBox d3pLogo3;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button bttnRemove;
+        private System.Windows.Forms.Button bttnClear;
     }
 }
 

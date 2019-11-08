@@ -10,10 +10,16 @@ namespace DellPartPicker
     {
         Loader loader = new Loader();
         Parser parser = new Parser();
+
+        public DataDump()
+        {
+
+        }
+
     }
 
     class ParseList
     {
-
+        
     }
 }

@@ -48,7 +48,7 @@ namespace DellPartPicker
 
         private void buttonApply_Click(object sender, EventArgs e)
         {
-            if (radioDrk.Checked == true)
+             if (radioDrk.Checked == true)
             {
                 toggleDark(true);
             }
@@ -74,20 +74,43 @@ namespace DellPartPicker
                 form1.searchBox.BackColor = Color.Gray;
                 form1.searchBox.ForeColor = Color.White;
                 form1.error.ForeColor = Color.Pink;
-                form1.title.ForeColor = Color.White;
-                form1.title.BackColor = Color.FromArgb(46, 48, 54);
+
+                //title
+
+                form1.d3pTitle1.ForeColor = Color.White;
+                form1.d3pTitle1.BackColor = Color.FromArgb(46, 48, 54);
+                form1.d3pTitle2.ForeColor = Color.White;
+                form1.d3pTitle2.BackColor = Color.FromArgb(46, 48, 54);
+                form1.d3pTitle3.ForeColor = Color.White;
+                form1.d3pTitle3.BackColor = Color.FromArgb(46, 48, 54);
+
+                //checked
 
                 radioDrk.Checked = true;
+
+                //edit tab1
+
+                form1.listTab.BackColor = Color.FromArgb(46, 48, 54);
+                form1.collectiveTab.BackColor = Color.FromArgb(46, 48, 54);
+                form1.singleItemTab.BackColor = Color.FromArgb(46, 48, 54);
+
+                //edit textboxes
+
+                form1.listTextBox.BackColor = Color.Gray;
+                form1.listTextBox.ForeColor = Color.White;
+
+
+
                 //TODO make this work for the table
                 /*
                  * change the background color of the cells in the table
                  */
-                 /*
-                DataGridViewCellStyle style = new DataGridViewCellStyle();
-                style.BackColor = Color.FromArgb(((GesTest.dsEssais.FMstatusAnomalieRow)row.DataBoundItem).iColor);
-                style.ForeColor = Color.Black;
-                row.Cells[color.Index].Style = style;
-                */
+                /*
+               DataGridViewCellStyle style = new DataGridViewCellStyle();
+               style.BackColor = Color.FromArgb(((GesTest.dsEssais.FMstatusAnomalieRow)row.DataBoundItem).iColor);
+               style.ForeColor = Color.Black;
+               row.Cells[color.Index].Style = style;
+               */
             }
             else
             {
@@ -104,10 +127,16 @@ namespace DellPartPicker
                 form1.searchBox.BackColor = Color.White;
                 form1.searchBox.ForeColor = Color.Black;
                 form1.error.ForeColor = Color.Maroon;
-                form1.title.ForeColor = SystemColors.Highlight;
-                form1.title.BackColor = Color.White;
+                form1.d3pTitle1.ForeColor = SystemColors.Highlight;
+                form1.d3pTitle1.BackColor = Color.White;
 
                 radioLt.Checked = true;
+
+                //edit tabs
+
+                form1.listTab.BackColor = Color.White;
+                form1.collectiveTab.BackColor = Color.White;
+                form1.singleItemTab.BackColor = Color.White;
             }
         }
     }
