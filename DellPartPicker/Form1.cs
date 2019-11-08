@@ -25,9 +25,9 @@ namespace DellPartPicker
         private void disableFunctions()
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            dataGridView1.AllowUserToResizeColumns = false;
-            dataGridView1.AllowUserToResizeRows = false;
-            dataGridView1.ReadOnly = true;
+            addSingletable.AllowUserToResizeColumns = false;
+            addSingletable.AllowUserToResizeRows = false;
+            addSingletable.ReadOnly = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             error.Hide();
@@ -35,7 +35,7 @@ namespace DellPartPicker
 
         private void search_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
+            addSingletable.Rows.Clear();
 
             if(searchBox.Text == null || searchBox.Text == "")
             {
@@ -44,14 +44,14 @@ namespace DellPartPicker
             else if(IDsearch.Checked == true)
             {
                 
-                parser.parse(searchBox.Text, Field.PartNumber, dataGridView1, loader);
+                parser.parse(searchBox.Text, Field.PartNumber, addSingletable, loader);
             }else if(nameSearch.Checked == true)
             {
-                parser.parse(searchBox.Text, Field.Desc, dataGridView1, loader);
+                parser.parse(searchBox.Text, Field.Desc, addSingletable, loader);
             }
             else if (locSearch.Checked == true)
             {
-                parser.parse(searchBox.Text, Field.Location, dataGridView1, loader);
+                parser.parse(searchBox.Text, Field.Location, addSingletable, loader);
             }
         }
 
@@ -78,14 +78,16 @@ namespace DellPartPicker
 
         private void listSearchBttn_Click(object sender, EventArgs e)
         {
-            dataGridView2.Rows.Clear();
+            addListTable.Rows.Clear();
             String data = listTextBox.Text;
             String[] dataArray = data.Split(
                 new[] { Environment.NewLine }
                 ,StringSplitOptions.None);
             ParseList pl = new ParseList();
-            pl.searchList(dataArray, dataGridView2, loader);
+            pl.searchList(dataArray, addListTable, loader);
 
         }
+
+       
     }
 }

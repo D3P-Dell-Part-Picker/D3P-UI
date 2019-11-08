@@ -34,18 +34,19 @@
             this.locSearch = new System.Windows.Forms.RadioButton();
             this.d3pLogo1 = new System.Windows.Forms.PictureBox();
             this.search = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.addSingletable = new System.Windows.Forms.DataGridView();
             this.d3pTitle1 = new System.Windows.Forms.Label();
             this.error = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.Searchlbl = new System.Windows.Forms.Label();
             this.pictureSettings1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.addListTable = new System.Windows.Forms.DataGridView();
             this.listTextBox = new System.Windows.Forms.TextBox();
             this.listSearchBttn = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.singleItemTab = new System.Windows.Forms.TabPage();
             this.listTab = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.enterHere = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -58,15 +59,15 @@
             this.bttnClear = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.collectiveLbl = new System.Windows.Forms.Label();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.collectiveTable = new System.Windows.Forms.DataGridView();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.d3pTitle3 = new System.Windows.Forms.Label();
             this.d3pLogo3 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.addSelectedBttn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addListTable)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.singleItemTab.SuspendLayout();
             this.listTab.SuspendLayout();
@@ -75,7 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo2)).BeginInit();
             this.collectiveTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.collectiveTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).BeginInit();
             this.SuspendLayout();
@@ -133,13 +134,13 @@
             this.search.UseVisualStyleBackColor = true;
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
-            // dataGridView1
+            // addSingletable
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(506, 62);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(369, 346);
-            this.dataGridView1.TabIndex = 5;
+            this.addSingletable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.addSingletable.Location = new System.Drawing.Point(506, 62);
+            this.addSingletable.Name = "addSingletable";
+            this.addSingletable.Size = new System.Drawing.Size(369, 346);
+            this.addSingletable.TabIndex = 5;
             // 
             // d3pTitle1
             // 
@@ -191,13 +192,13 @@
             this.pictureSettings1.TabStop = false;
             this.pictureSettings1.Click += new System.EventHandler(this.pictureSettings_Click);
             // 
-            // dataGridView2
+            // addListTable
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(285, 42);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(455, 407);
-            this.dataGridView2.TabIndex = 11;
+            this.addListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.addListTable.Location = new System.Drawing.Point(285, 42);
+            this.addListTable.Name = "addListTable";
+            this.addListTable.Size = new System.Drawing.Size(455, 407);
+            this.addListTable.TabIndex = 11;
             // 
             // listTextBox
             // 
@@ -231,7 +232,8 @@
             // 
             // singleItemTab
             // 
-            this.singleItemTab.Controls.Add(this.dataGridView1);
+            this.singleItemTab.Controls.Add(this.addSelectedBttn);
+            this.singleItemTab.Controls.Add(this.addSingletable);
             this.singleItemTab.Controls.Add(this.pictureSettings1);
             this.singleItemTab.Controls.Add(this.d3pTitle1);
             this.singleItemTab.Controls.Add(this.d3pLogo1);
@@ -260,7 +262,7 @@
             this.listTab.Controls.Add(this.pictureBox3);
             this.listTab.Controls.Add(this.d3pTitle2);
             this.listTab.Controls.Add(this.d3pLogo2);
-            this.listTab.Controls.Add(this.dataGridView2);
+            this.listTab.Controls.Add(this.addListTable);
             this.listTab.Controls.Add(this.listSearchBttn);
             this.listTab.Controls.Add(this.listTextBox);
             this.listTab.Location = new System.Drawing.Point(4, 22);
@@ -270,6 +272,15 @@
             this.listTab.TabIndex = 1;
             this.listTab.Text = "List Dump";
             this.listTab.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(63, 225);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(195, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "put each part number on a seperate line";
             // 
             // enterHere
             // 
@@ -347,7 +358,7 @@
             this.collectiveTab.Controls.Add(this.bttnClear);
             this.collectiveTab.Controls.Add(this.pictureBox2);
             this.collectiveTab.Controls.Add(this.collectiveLbl);
-            this.collectiveTab.Controls.Add(this.dataGridView4);
+            this.collectiveTab.Controls.Add(this.collectiveTable);
             this.collectiveTab.Controls.Add(this.pictureBox4);
             this.collectiveTab.Controls.Add(this.d3pTitle3);
             this.collectiveTab.Controls.Add(this.d3pLogo3);
@@ -397,13 +408,13 @@
             this.collectiveLbl.TabIndex = 18;
             this.collectiveLbl.Text = "Collective Parts List";
             // 
-            // dataGridView4
+            // collectiveTable
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(390, 51);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(454, 407);
-            this.dataGridView4.TabIndex = 17;
+            this.collectiveTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.collectiveTable.Location = new System.Drawing.Point(390, 51);
+            this.collectiveTable.Name = "collectiveTable";
+            this.collectiveTable.Size = new System.Drawing.Size(454, 407);
+            this.collectiveTable.TabIndex = 17;
             // 
             // pictureBox4
             // 
@@ -437,14 +448,14 @@
             this.d3pLogo3.TabIndex = 14;
             this.d3pLogo3.TabStop = false;
             // 
-            // label1
+            // addSelectedBttn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 225);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 13);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "put each part number on a seperate line";
+            this.addSelectedBttn.Location = new System.Drawing.Point(664, 439);
+            this.addSelectedBttn.Name = "addSelectedBttn";
+            this.addSelectedBttn.Size = new System.Drawing.Size(75, 23);
+            this.addSelectedBttn.TabIndex = 11;
+            this.addSelectedBttn.Text = "Add Selected";
+            this.addSelectedBttn.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -456,9 +467,9 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addListTable)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.singleItemTab.ResumeLayout(false);
             this.singleItemTab.PerformLayout();
@@ -470,7 +481,7 @@
             this.collectiveTab.ResumeLayout(false);
             this.collectiveTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.collectiveTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).EndInit();
             this.ResumeLayout(false);
@@ -480,7 +491,7 @@
         #endregion
         public System.Windows.Forms.PictureBox d3pLogo1;
         public System.Windows.Forms.Button search;
-        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView addSingletable;
         public System.Windows.Forms.PictureBox pictureSettings1;
         public System.Windows.Forms.RadioButton IDsearch;
         public System.Windows.Forms.RadioButton nameSearch;
@@ -489,7 +500,7 @@
         public System.Windows.Forms.Label Searchlbl;
         public System.Windows.Forms.Label d3pTitle1;
         public System.Windows.Forms.TextBox searchBox;
-        public System.Windows.Forms.DataGridView dataGridView2;
+        public System.Windows.Forms.DataGridView addListTable;
         public System.Windows.Forms.TextBox listTextBox;
         public System.Windows.Forms.Button listSearchBttn;
         public System.Windows.Forms.TabControl tabControl1;
@@ -501,7 +512,7 @@
         public System.Windows.Forms.Label dumpLbl;
         public System.Windows.Forms.TabPage collectiveTab;
         public System.Windows.Forms.Label collectiveLbl;
-        public System.Windows.Forms.DataGridView dataGridView4;
+        public System.Windows.Forms.DataGridView collectiveTable;
         public System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.Label d3pTitle3;
         public System.Windows.Forms.PictureBox d3pLogo3;
@@ -512,6 +523,7 @@
         public System.Windows.Forms.Button bttnClear;
         public System.Windows.Forms.Label enterHere;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button addSelectedBttn;
     }
 }
 
