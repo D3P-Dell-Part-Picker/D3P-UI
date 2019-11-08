@@ -8,14 +8,21 @@ namespace DellPartPicker
 {
     public class Loader
     {
-        private List<String> partnumList;
-        private List<String> descList;
-        private List<String> locList;
+        public List<String> partnumList;
+        public List<String> descList;
+        public List<String> locList;
         private String[] partnum, desc, loc;
+
+
+
+
 
         public Loader()
         {
             partnumList = new List<String>();
+
+            
+
             descList = new List<String>();
             locList = new List<String>();
             downloadFile();
@@ -122,6 +129,8 @@ namespace DellPartPicker
 
             return data;
         }
+
+        
 
     }
 }
