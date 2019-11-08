@@ -526,8 +526,8 @@
         public System.Windows.Forms.Button bttnRemove;
         public System.Windows.Forms.Button bttnClear;
         public System.Windows.Forms.Label enterHere;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button addSelectedBttn;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button addSelectedBttn;
     }
 }
 

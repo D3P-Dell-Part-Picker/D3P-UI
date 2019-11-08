@@ -75,6 +75,8 @@ namespace DellPartPicker
                 form1.searchBox.ForeColor = Color.White;
                 form1.error.ForeColor = Color.Pink;
 
+                
+
                 //title
 
                 form1.d3pTitle1.ForeColor = Color.White;

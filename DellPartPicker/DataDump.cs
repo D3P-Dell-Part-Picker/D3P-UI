@@ -24,6 +24,11 @@ namespace DellPartPicker
 
             int index = loader.partnumList.IndexOf(find);
 
+            if(index == null)
+            {
+                return null;
+            }
+
             found[0] = loader.partnumList[index];
             found[1] = loader.descList[index];
             found[2] = loader.locList[index];

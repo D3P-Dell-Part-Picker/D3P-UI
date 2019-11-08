@@ -122,7 +122,7 @@ namespace DellPartPicker
             
             foreach (DataGridViewRow item in this.addSingletable.SelectedRows)
             {
-                collectiveTable.Rows.Add(addSingletable.Rows[item.Index]);
+                collectiveTable.Rows.Add(((DataGridViewRow) addSingletable.Rows[item.Index].Clone()));
                 addSingletable.Rows.RemoveAt(item.Index);
             }
 

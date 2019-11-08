@@ -38,3 +38,14 @@ C:\Users\Comeau\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debu
 C:\Users\Comeau\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.csproj.GenerateResource.cache
 C:\Users\Comeau\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.exe
 C:\Users\Comeau\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.pdb
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\bin\Debug\DellPartPicker.exe.config
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\bin\Debug\DellPartPicker.exe
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\bin\Debug\DellPartPicker.pdb
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.csprojAssemblyReference.cache
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.Form1.resources
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.OptionsMenu.resources
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.Properties.Resources.resources
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.csproj.GenerateResource.cache
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.csproj.CoreCompileInputs.cache
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.exe
+C:\Users\longn\Source\Repos\D3P-Dell-Part-Picker\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.pdb

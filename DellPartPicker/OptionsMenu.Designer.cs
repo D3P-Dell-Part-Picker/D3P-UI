@@ -38,11 +38,11 @@
             // optionsLbl
             // 
             this.optionsLbl.AutoSize = true;
-            this.optionsLbl.Font = new System.Drawing.Font("Open Sans Condensed", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsLbl.ForeColor = System.Drawing.SystemColors.Highlight;
             this.optionsLbl.Location = new System.Drawing.Point(12, 9);
             this.optionsLbl.Name = "optionsLbl";
-            this.optionsLbl.Size = new System.Drawing.Size(116, 43);
+            this.optionsLbl.Size = new System.Drawing.Size(135, 37);
             this.optionsLbl.TabIndex = 0;
             this.optionsLbl.Text = "Options";
             // 
