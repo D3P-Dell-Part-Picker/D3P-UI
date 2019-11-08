@@ -48,13 +48,13 @@
             this.listTab = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.collective = new System.Windows.Forms.Label();
+            this.dumpLbl = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.d3pTitle2 = new System.Windows.Forms.Label();
             this.d3pLogo2 = new System.Windows.Forms.PictureBox();
             this.collectiveTab = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.collectiveLbl = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.d3pTitle3 = new System.Windows.Forms.Label();
@@ -220,10 +220,10 @@
             this.tabControl1.Controls.Add(this.singleItemTab);
             this.tabControl1.Controls.Add(this.listTab);
             this.tabControl1.Controls.Add(this.collectiveTab);
-            this.tabControl1.Location = new System.Drawing.Point(0, 1);
+            this.tabControl1.Location = new System.Drawing.Point(-4, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(946, 530);
+            this.tabControl1.Size = new System.Drawing.Size(950, 533);
             this.tabControl1.TabIndex = 14;
             // 
             // singleItemTab
@@ -251,7 +251,7 @@
             // 
             this.listTab.Controls.Add(this.pictureBox1);
             this.listTab.Controls.Add(this.button2);
-            this.listTab.Controls.Add(this.collective);
+            this.listTab.Controls.Add(this.dumpLbl);
             this.listTab.Controls.Add(this.pictureBox3);
             this.listTab.Controls.Add(this.d3pTitle2);
             this.listTab.Controls.Add(this.d3pLogo2);
@@ -275,6 +275,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button2
             // 
@@ -285,14 +286,14 @@
             this.button2.Text = "Add All";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // collective
+            // dumpLbl
             // 
-            this.collective.AutoSize = true;
-            this.collective.Location = new System.Drawing.Point(494, 20);
-            this.collective.Name = "collective";
-            this.collective.Size = new System.Drawing.Size(35, 13);
-            this.collective.TabIndex = 18;
-            this.collective.Text = "label2";
+            this.dumpLbl.AutoSize = true;
+            this.dumpLbl.Location = new System.Drawing.Point(494, 20);
+            this.dumpLbl.Name = "dumpLbl";
+            this.dumpLbl.Size = new System.Drawing.Size(42, 13);
+            this.dumpLbl.TabIndex = 18;
+            this.dumpLbl.Text = "Results";
             // 
             // pictureBox3
             // 
@@ -331,7 +332,7 @@
             this.collectiveTab.Controls.Add(this.bttnRemove);
             this.collectiveTab.Controls.Add(this.bttnClear);
             this.collectiveTab.Controls.Add(this.pictureBox2);
-            this.collectiveTab.Controls.Add(this.label3);
+            this.collectiveTab.Controls.Add(this.collectiveLbl);
             this.collectiveTab.Controls.Add(this.dataGridView4);
             this.collectiveTab.Controls.Add(this.pictureBox4);
             this.collectiveTab.Controls.Add(this.d3pTitle3);
@@ -339,7 +340,7 @@
             this.collectiveTab.Location = new System.Drawing.Point(4, 22);
             this.collectiveTab.Name = "collectiveTab";
             this.collectiveTab.Padding = new System.Windows.Forms.Padding(3);
-            this.collectiveTab.Size = new System.Drawing.Size(938, 504);
+            this.collectiveTab.Size = new System.Drawing.Size(942, 507);
             this.collectiveTab.TabIndex = 2;
             this.collectiveTab.Text = "Collective";
             this.collectiveTab.UseVisualStyleBackColor = true;
@@ -353,15 +354,16 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // label3
+            // collectiveLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(563, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Collective Parts List";
+            this.collectiveLbl.AutoSize = true;
+            this.collectiveLbl.Location = new System.Drawing.Point(563, 26);
+            this.collectiveLbl.Name = "collectiveLbl";
+            this.collectiveLbl.Size = new System.Drawing.Size(99, 13);
+            this.collectiveLbl.TabIndex = 18;
+            this.collectiveLbl.Text = "Collective Parts List";
             // 
             // dataGridView4
             // 
@@ -396,7 +398,7 @@
             // d3pLogo3
             // 
             this.d3pLogo3.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.d3pLogo3.Location = new System.Drawing.Point(13, 70);
+            this.d3pLogo3.Location = new System.Drawing.Point(12, 51);
             this.d3pLogo3.Name = "d3pLogo3";
             this.d3pLogo3.Size = new System.Drawing.Size(224, 143);
             this.d3pLogo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -473,9 +475,9 @@
         public System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.Label d3pTitle2;
         public System.Windows.Forms.PictureBox d3pLogo2;
-        public System.Windows.Forms.Label collective;
+        public System.Windows.Forms.Label dumpLbl;
         public System.Windows.Forms.TabPage collectiveTab;
-        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label collectiveLbl;
         public System.Windows.Forms.DataGridView dataGridView4;
         public System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.Label d3pTitle3;
