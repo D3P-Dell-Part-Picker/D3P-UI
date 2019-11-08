@@ -79,6 +79,10 @@ namespace DellPartPicker
         private void listSearchBttn_Click(object sender, EventArgs e)
         {
             String data = listTextBox.Text;
+            String[] dataArray = data.Split(
+                new[] { Environment.NewLine }
+                ,StringSplitOptions.None);
+
         }
     }
 }

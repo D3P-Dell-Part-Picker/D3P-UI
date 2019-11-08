@@ -27,8 +27,11 @@ namespace DellPartPicker
 
         }
 
-        public void search(String data, Field f, DataGridView dgv, Loader loader)
+        public void searchList(String[] data, DataGridView dgv, Loader l)
         {
+            String[] dataString;
+            DataGridView table = dgv;
+            Loader loader = l;
 
         }
     }
