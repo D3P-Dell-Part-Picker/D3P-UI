@@ -84,6 +84,13 @@ namespace DellPartPicker
                 form1.d3pTitle3.ForeColor = Color.White;
                 form1.d3pTitle3.BackColor = Color.FromArgb(46, 48, 54);
 
+                //labels
+
+                form1.collectiveLbl.ForeColor = Color.White;
+                form1.dumpLbl.ForeColor = Color.White;
+                form1.enterHere.ForeColor = Color.White;
+
+
                 //checked
 
                 radioDrk.Checked = true;
@@ -127,10 +134,24 @@ namespace DellPartPicker
                 form1.searchBox.BackColor = Color.White;
                 form1.searchBox.ForeColor = Color.Black;
                 form1.error.ForeColor = Color.Maroon;
+
+                //title
+
+
                 form1.d3pTitle1.ForeColor = SystemColors.Highlight;
                 form1.d3pTitle1.BackColor = Color.White;
+                form1.d3pTitle2.ForeColor = SystemColors.Highlight;
+                form1.d3pTitle2.BackColor = Color.White;
+                form1.d3pTitle3.ForeColor = SystemColors.Highlight;
+                form1.d3pTitle3.BackColor = Color.White;
 
                 radioLt.Checked = true;
+
+                //labels
+
+                form1.collectiveLbl.ForeColor = Color.Black;
+                form1.dumpLbl.ForeColor = Color.Black;
+                form1.enterHere.ForeColor = Color.Black;
 
                 //edit tabs
 

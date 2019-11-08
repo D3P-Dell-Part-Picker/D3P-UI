@@ -46,6 +46,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.singleItemTab = new System.Windows.Forms.TabPage();
             this.listTab = new System.Windows.Forms.TabPage();
+            this.enterHere = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.dumpLbl = new System.Windows.Forms.Label();
@@ -53,14 +54,15 @@
             this.d3pTitle2 = new System.Windows.Forms.Label();
             this.d3pLogo2 = new System.Windows.Forms.PictureBox();
             this.collectiveTab = new System.Windows.Forms.TabPage();
+            this.bttnRemove = new System.Windows.Forms.Button();
+            this.bttnClear = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.collectiveLbl = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.d3pTitle3 = new System.Windows.Forms.Label();
             this.d3pLogo3 = new System.Windows.Forms.PictureBox();
-            this.bttnClear = new System.Windows.Forms.Button();
-            this.bttnRemove = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
@@ -214,6 +216,7 @@
             this.listSearchBttn.TabIndex = 13;
             this.listSearchBttn.Text = "Search";
             this.listSearchBttn.UseVisualStyleBackColor = true;
+            this.listSearchBttn.Click += new System.EventHandler(this.listSearchBttn_Click);
             // 
             // tabControl1
             // 
@@ -242,13 +245,15 @@
             this.singleItemTab.Location = new System.Drawing.Point(4, 22);
             this.singleItemTab.Name = "singleItemTab";
             this.singleItemTab.Padding = new System.Windows.Forms.Padding(3);
-            this.singleItemTab.Size = new System.Drawing.Size(938, 504);
+            this.singleItemTab.Size = new System.Drawing.Size(942, 507);
             this.singleItemTab.TabIndex = 0;
             this.singleItemTab.Text = "Add Single Item";
             this.singleItemTab.UseVisualStyleBackColor = true;
             // 
             // listTab
             // 
+            this.listTab.Controls.Add(this.label1);
+            this.listTab.Controls.Add(this.enterHere);
             this.listTab.Controls.Add(this.pictureBox1);
             this.listTab.Controls.Add(this.button2);
             this.listTab.Controls.Add(this.dumpLbl);
@@ -261,10 +266,19 @@
             this.listTab.Location = new System.Drawing.Point(4, 22);
             this.listTab.Name = "listTab";
             this.listTab.Padding = new System.Windows.Forms.Padding(3);
-            this.listTab.Size = new System.Drawing.Size(938, 504);
+            this.listTab.Size = new System.Drawing.Size(942, 507);
             this.listTab.TabIndex = 1;
             this.listTab.Text = "List Dump";
             this.listTab.UseVisualStyleBackColor = true;
+            // 
+            // enterHere
+            // 
+            this.enterHere.AutoSize = true;
+            this.enterHere.Location = new System.Drawing.Point(87, 212);
+            this.enterHere.Name = "enterHere";
+            this.enterHere.Size = new System.Drawing.Size(113, 13);
+            this.enterHere.TabIndex = 21;
+            this.enterHere.Text = "Enter Part Number List";
             // 
             // pictureBox1
             // 
@@ -345,6 +359,24 @@
             this.collectiveTab.Text = "Collective";
             this.collectiveTab.UseVisualStyleBackColor = true;
             // 
+            // bttnRemove
+            // 
+            this.bttnRemove.Location = new System.Drawing.Point(454, 472);
+            this.bttnRemove.Name = "bttnRemove";
+            this.bttnRemove.Size = new System.Drawing.Size(112, 23);
+            this.bttnRemove.TabIndex = 21;
+            this.bttnRemove.Text = "Remove Selected";
+            this.bttnRemove.UseVisualStyleBackColor = true;
+            // 
+            // bttnClear
+            // 
+            this.bttnClear.Location = new System.Drawing.Point(730, 472);
+            this.bttnClear.Name = "bttnClear";
+            this.bttnClear.Size = new System.Drawing.Size(75, 23);
+            this.bttnClear.TabIndex = 20;
+            this.bttnClear.Text = "Clear";
+            this.bttnClear.UseVisualStyleBackColor = true;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -405,23 +437,14 @@
             this.d3pLogo3.TabIndex = 14;
             this.d3pLogo3.TabStop = false;
             // 
-            // bttnClear
+            // label1
             // 
-            this.bttnClear.Location = new System.Drawing.Point(730, 472);
-            this.bttnClear.Name = "bttnClear";
-            this.bttnClear.Size = new System.Drawing.Size(75, 23);
-            this.bttnClear.TabIndex = 20;
-            this.bttnClear.Text = "Clear";
-            this.bttnClear.UseVisualStyleBackColor = true;
-            // 
-            // bttnRemove
-            // 
-            this.bttnRemove.Location = new System.Drawing.Point(454, 472);
-            this.bttnRemove.Name = "bttnRemove";
-            this.bttnRemove.Size = new System.Drawing.Size(112, 23);
-            this.bttnRemove.TabIndex = 21;
-            this.bttnRemove.Text = "Remove Selected";
-            this.bttnRemove.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(63, 225);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(195, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "put each part number on a seperate line";
             // 
             // Form1
             // 
@@ -485,8 +508,10 @@
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button bttnRemove;
-        private System.Windows.Forms.Button bttnClear;
+        public System.Windows.Forms.Button bttnRemove;
+        public System.Windows.Forms.Button bttnClear;
+        public System.Windows.Forms.Label enterHere;
+        private System.Windows.Forms.Label label1;
     }
 }
 
