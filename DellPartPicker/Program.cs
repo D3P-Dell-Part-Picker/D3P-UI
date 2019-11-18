@@ -14,9 +14,13 @@ namespace DellPartPicker
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+               
+	        Application.EnableVisualStyles();
+		    Application.SetCompatibleTextRenderingDefault(false);
+		    Application.Run(new Form1());
+
+            SocketComms.sendMessage("test", "10.0.0.4", 9876);
+            SocketComms.sendMessage("exit", "10.0.0.4", 9876);
         }
     }
 }
