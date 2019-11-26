@@ -12,6 +12,7 @@ namespace DellPartPicker
         public List<String> descList;
         public List<String> locList;
         private String[] partnum, desc, loc;
+        String ip = "73.17.34.121";
 
 
 
@@ -20,7 +21,12 @@ namespace DellPartPicker
         public Loader()
         {
             partnumList = new List<String>();
+            string externalip = new WebClient().DownloadString("http://icanhazip.com");
 
+            if (externalip.Equals("73.17.34.121"))
+            {
+                ip = "10.0.0.4";
+            }
             
 
             descList = new List<String>();
@@ -41,7 +47,12 @@ namespace DellPartPicker
             string userName = Environment.UserName;
             Console.WriteLine(userName);
             WebClient Client = new WebClient();
-            Client.DownloadFile("http://10.0.0.4/Racks.csv", @"C:\Temp\Racks.csv");
+            if (!Directory.Exists(@"C:\Temp"))
+            {
+                Directory.CreateDirectory(@"C:\Temp");
+            }
+            
+            Client.DownloadFile("http://" + ip + "/Racks.csv", @"C:\Temp\Racks.csv");
         }
 
         private void readToMemory()
