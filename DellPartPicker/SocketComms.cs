@@ -10,12 +10,25 @@ namespace DellPartPicker
 {
     class SocketComms
     {
-        public static void sendMessage(String message, String ip, int port)
+        public static void sendMessage(String message, String ip, int port, Destination d)
         {
 
             try
             {
+                if(d == Destination.localServer)
+                {
+                    ip = Constants.LOCAL_SERVER;
+                }else if(d == Destination.remoteServer)
+                {
+                    ip = Constants.REMOTE_SERVER;
+                }else if(d == Destination.inputted)
+                {
 
+                }
+                else
+                {
+                    throw new System.ArgumentException("incorrectly entered option for field");
+                }
                 // Establish the remote endpoint  
                 // for the socket. This example  
                 // uses port 11111 on the local  

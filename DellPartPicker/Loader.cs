@@ -12,7 +12,7 @@ namespace DellPartPicker
         public List<String> descList;
         public List<String> locList;
         private String[] partnum, desc, loc;
-        String ip = "73.17.34.121";
+        String ip = Constants.REMOTE_SERVER;
 
 
 
@@ -23,9 +23,9 @@ namespace DellPartPicker
             partnumList = new List<String>();
             string externalip = new WebClient().DownloadString("http://icanhazip.com");
 
-            if (externalip.Equals("73.17.34.121"))
+            if (externalip.Equals(Constants.REMOTE_SERVER))
             {
-                ip = "10.0.0.4";
+                ip = Constants.LOCAL_SERVER;
             }
             
 
@@ -147,16 +147,7 @@ namespace DellPartPicker
     }
 }
 
-namespace DellPartPicker
-{
-    //the different fields
-    public enum Field
-    {
-        PartNumber = 0,
-        Desc = 1,
-        Location = 2
-    }
-}
+
 namespace DellPartPicker
 {
 

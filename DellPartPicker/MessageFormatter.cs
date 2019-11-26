@@ -8,12 +8,13 @@ namespace DellPartPicker
 {
     class MessageFormatter
     {
-        public static void sendMessage(String message, String ip, int port)
+        public static void sendMessage(String message, String ip, int port, Destination d)
         {
             string NewMessage = formatMessage(message);
+            SocketComms.sendMessage(NewMessage, ip, port, d);
         }
 
-        public static String formatMessage(String message)
+        private static String formatMessage(String message)
         {
             int length = message.ToArray().Length;
             Char StartingChar = (char)length;
