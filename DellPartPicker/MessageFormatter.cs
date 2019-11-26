@@ -13,16 +13,24 @@ namespace DellPartPicker
             string NewMessage = formatMessage(message);
         }
 
-        private static String formatMessage(String message)
+        public static String formatMessage(String message)
         {
             int length = message.ToArray().Length;
             Char StartingChar = (char)length;
-            return null;
+            Random random = new Random();
+            StringBuilder sb = new StringBuilder(StartingChar);
+            for(int i = 0; i < 8; i++)
+            {
+                sb.Append(randomOctet(random));
+            }
+            sb.Append(":");
+            sb.Append(message);
+            return sb.ToString();
         }
 
-        private String randomOctet()
+        private static String randomOctet(Random random)
         {
-            Random random = new Random();
+            
             byte ran = (byte)random.Next(0, 255);
             return ran.ToString("X2");
         }
