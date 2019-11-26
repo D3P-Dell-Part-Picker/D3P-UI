@@ -19,8 +19,7 @@ namespace DellPartPicker
 		    Application.SetCompatibleTextRenderingDefault(false);
 		    Application.Run(new Form1());
 
-            SocketComms.sendMessage("test", "73.17.34.121", 9876);
-            SocketComms.sendMessage("exit", "73.17.34.121", 9876);
+            
         }
     }
 }
