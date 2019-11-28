@@ -22,14 +22,14 @@ namespace DellPartPicker
             StringBuilder sb = new StringBuilder(StartingChar);
             for(int i = 0; i < 8; i++)
             {
-                sb.Append(randomOctet(random));
+                sb.Append(randomByte(random));
             }
             sb.Append(":");
             sb.Append(message);
             return sb.ToString();
         }
 
-        private static String randomOctet(Random random)
+        private static String randomByte(Random random)
         {
             
             byte ran = (byte)random.Next(0, 255);
