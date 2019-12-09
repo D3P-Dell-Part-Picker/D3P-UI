@@ -61,6 +61,7 @@ namespace DellPartPicker
         {
             if (b)
             {
+                /*
                 this.BackColor = Color.FromArgb(46, 48, 54);
                 radioLt.ForeColor = Color.White;
                 radioDrk.ForeColor = Color.White;
@@ -120,9 +121,20 @@ namespace DellPartPicker
                style.ForeColor = Color.Black;
                row.Cells[color.Index].Style = style;
                */
+                radioDrk.Checked = true;
+                foreach (Control subC in this.Controls)
+                {
+                    UpdateColorControlsDrk(subC);
+                }
+                foreach (Control subC in form1.Controls)
+                {
+                    UpdateColorControlsDrk(subC);
+                }
+                
             }
             else
             {
+                /*
                 this.BackColor = Color.White;
                 radioLt.ForeColor = Color.Black;
                 radioDrk.ForeColor = Color.Black;
@@ -160,7 +172,41 @@ namespace DellPartPicker
                 form1.listTab.BackColor = Color.White;
                 form1.collectiveTab.BackColor = Color.White;
                 form1.singleItemTab.BackColor = Color.White;
+                */
+                radioLt.Checked = true;
+                foreach (Control subC in this.Controls)
+                {
+                    UpdateColorControlsLite(subC);
+                }
+                foreach (Control subC in form1.Controls)
+                {
+                    UpdateColorControlsLite(subC);
+                }
+                
             }
+        }
+        public void UpdateColorControlsDrk(Control myControl)
+        {
+            this.BackColor = Color.FromArgb(46, 48, 54);
+            form1.BackColor = Color.FromArgb(46, 48, 54);
+
+            form1.listTab.BackColor = Color.FromArgb(46, 48, 54);
+            form1.collectiveTab.BackColor = Color.FromArgb(46, 48, 54);
+            form1.singleItemTab.BackColor = Color.FromArgb(46, 48, 54);
+            myControl.BackColor = Color.Transparent;
+            myControl.ForeColor = Color.White;
+        }
+            
+        public void UpdateColorControlsLite(Control myControl)
+        {
+            this.BackColor = Color.White;
+            form1.BackColor = Color.White;
+
+            form1.listTab.BackColor = Color.White;
+            form1.collectiveTab.BackColor = Color.White;
+            form1.singleItemTab.BackColor = Color.White;
+            myControl.BackColor = Color.Transparent;
+            myControl.ForeColor = Color.Black;
         }
     }
 }

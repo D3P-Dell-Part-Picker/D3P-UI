@@ -49,9 +49,10 @@
             // radioLt
             // 
             this.radioLt.AutoSize = true;
-            this.radioLt.Location = new System.Drawing.Point(20, 72);
+            this.radioLt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioLt.Location = new System.Drawing.Point(12, 68);
             this.radioLt.Name = "radioLt";
-            this.radioLt.Size = new System.Drawing.Size(127, 17);
+            this.radioLt.Size = new System.Drawing.Size(181, 24);
             this.radioLt.TabIndex = 1;
             this.radioLt.TabStop = true;
             this.radioLt.Text = "Light Theme (Default)";
@@ -61,9 +62,10 @@
             // radioDrk
             // 
             this.radioDrk.AutoSize = true;
-            this.radioDrk.Location = new System.Drawing.Point(20, 117);
+            this.radioDrk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioDrk.Location = new System.Drawing.Point(12, 118);
             this.radioDrk.Name = "radioDrk";
-            this.radioDrk.Size = new System.Drawing.Size(84, 17);
+            this.radioDrk.Size = new System.Drawing.Size(114, 24);
             this.radioDrk.TabIndex = 2;
             this.radioDrk.TabStop = true;
             this.radioDrk.Text = "Dark Theme";
@@ -72,22 +74,29 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(20, 258);
+            this.buttonBack.BackColor = System.Drawing.Color.White;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonBack.Location = new System.Drawing.Point(12, 370);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(108, 47);
+            this.buttonBack.Size = new System.Drawing.Size(202, 68);
             this.buttonBack.TabIndex = 3;
             this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonApply
             // 
-            this.buttonApply.Location = new System.Drawing.Point(20, 172);
+            this.buttonApply.BackColor = System.Drawing.Color.White;
+            this.buttonApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApply.Location = new System.Drawing.Point(12, 296);
             this.buttonApply.Name = "buttonApply";
-            this.buttonApply.Size = new System.Drawing.Size(108, 50);
+            this.buttonApply.Size = new System.Drawing.Size(202, 68);
             this.buttonApply.TabIndex = 4;
             this.buttonApply.Text = "Apply Changes";
-            this.buttonApply.UseVisualStyleBackColor = true;
+            this.buttonApply.UseVisualStyleBackColor = false;
             this.buttonApply.Click += new System.EventHandler(this.buttonApply_Click);
             // 
             // OptionsMenu
