@@ -47,12 +47,20 @@ namespace DellPartPicker
             string userName = Environment.UserName;
             Console.WriteLine(userName);
             WebClient Client = new WebClient();
+            /*
             if (!Directory.Exists(@"C:\Temp"))
             {
                 Directory.CreateDirectory(@"C:\Temp");
             }
-            
-            Client.DownloadFile("http://" + ip + "/Racks.csv", @"C:\Temp\Racks.csv");
+            try{
+                Client.DownloadFile("http://" + ip + "/Racks.csv", @"C:\Temp\Racks.csv");
+            }catch(WebException e){
+                //check for existing backups
+                if(!File.Exists(@"C:\Temp\Racks.csv")){
+                    throw new WebException("unable to update, and there are now local backups");
+                }
+            }
+            */
         }
 
         private void readToMemory()
