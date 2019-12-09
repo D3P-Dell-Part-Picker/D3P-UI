@@ -127,5 +127,10 @@ namespace DellPartPicker
             }
 
         }
+
+        private void pictureBox29_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

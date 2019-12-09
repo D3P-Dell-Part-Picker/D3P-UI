@@ -45,6 +45,7 @@
             this.listSearchBttn = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.singleItemTab = new System.Windows.Forms.TabPage();
+            this.addSelectedBttn = new System.Windows.Forms.Button();
             this.listTab = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.enterHere = new System.Windows.Forms.Label();
@@ -63,7 +64,54 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.d3pTitle3 = new System.Windows.Forms.Label();
             this.d3pLogo3 = new System.Windows.Forms.PictureBox();
-            this.addSelectedBttn = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.mapTitle = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.maplistTitle = new System.Windows.Forms.Label();
+            this.shelfM = new System.Windows.Forms.PictureBox();
+            this.shelfN = new System.Windows.Forms.PictureBox();
+            this.shelfP = new System.Windows.Forms.PictureBox();
+            this.shelfO = new System.Windows.Forms.PictureBox();
+            this.shelfR = new System.Windows.Forms.PictureBox();
+            this.shelfQ = new System.Windows.Forms.PictureBox();
+            this.shelfT = new System.Windows.Forms.PictureBox();
+            this.shelfS = new System.Windows.Forms.PictureBox();
+            this.shelfV = new System.Windows.Forms.PictureBox();
+            this.shelfU = new System.Windows.Forms.PictureBox();
+            this.shelfX = new System.Windows.Forms.PictureBox();
+            this.shelfW = new System.Windows.Forms.PictureBox();
+            this.shelfL = new System.Windows.Forms.PictureBox();
+            this.shelfK = new System.Windows.Forms.PictureBox();
+            this.shelfJ = new System.Windows.Forms.PictureBox();
+            this.shelfI = new System.Windows.Forms.PictureBox();
+            this.shelfH = new System.Windows.Forms.PictureBox();
+            this.shelfG = new System.Windows.Forms.PictureBox();
+            this.shelfF = new System.Windows.Forms.PictureBox();
+            this.shelfE = new System.Windows.Forms.PictureBox();
+            this.sheldD = new System.Windows.Forms.PictureBox();
+            this.shelfC = new System.Windows.Forms.PictureBox();
+            this.shelfB = new System.Windows.Forms.PictureBox();
+            this.shelfA = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.labelA = new System.Windows.Forms.Label();
+            this.labelB = new System.Windows.Forms.Label();
+            this.labelC = new System.Windows.Forms.Label();
+            this.labelD = new System.Windows.Forms.Label();
+            this.labelE = new System.Windows.Forms.Label();
+            this.labelF = new System.Windows.Forms.Label();
+            this.labelG = new System.Windows.Forms.Label();
+            this.labelH = new System.Windows.Forms.Label();
+            this.labelI = new System.Windows.Forms.Label();
+            this.labelJ = new System.Windows.Forms.Label();
+            this.labelK = new System.Windows.Forms.Label();
+            this.labelL = new System.Windows.Forms.Label();
+            this.labelM = new System.Windows.Forms.Label();
+            this.labelN = new System.Windows.Forms.Label();
+            this.labelO = new System.Windows.Forms.Label();
+            this.labelP = new System.Windows.Forms.Label();
+            this.labelQ = new System.Windows.Forms.Label();
+            this.labelR = new System.Windows.Forms.Label();
+            this.labelS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
@@ -79,6 +127,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.collectiveTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfQ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfK)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfJ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sheldD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             this.SuspendLayout();
             // 
             // IDsearch
@@ -224,6 +299,7 @@
             this.tabControl1.Controls.Add(this.singleItemTab);
             this.tabControl1.Controls.Add(this.listTab);
             this.tabControl1.Controls.Add(this.collectiveTab);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(-4, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -251,6 +327,16 @@
             this.singleItemTab.TabIndex = 0;
             this.singleItemTab.Text = "Add Single Item";
             this.singleItemTab.UseVisualStyleBackColor = true;
+            // 
+            // addSelectedBttn
+            // 
+            this.addSelectedBttn.Location = new System.Drawing.Point(664, 439);
+            this.addSelectedBttn.Name = "addSelectedBttn";
+            this.addSelectedBttn.Size = new System.Drawing.Size(75, 23);
+            this.addSelectedBttn.TabIndex = 11;
+            this.addSelectedBttn.Text = "Add Selected";
+            this.addSelectedBttn.UseVisualStyleBackColor = false;
+            this.addSelectedBttn.Click += new System.EventHandler(this.addSelectedBttn_Click);
             // 
             // listTab
             // 
@@ -451,15 +537,590 @@
             this.d3pLogo3.TabIndex = 14;
             this.d3pLogo3.TabStop = false;
             // 
-            // addSelectedBttn
+            // tabPage1
             // 
-            this.addSelectedBttn.Location = new System.Drawing.Point(664, 439);
-            this.addSelectedBttn.Name = "addSelectedBttn";
-            this.addSelectedBttn.Size = new System.Drawing.Size(75, 23);
-            this.addSelectedBttn.TabIndex = 11;
-            this.addSelectedBttn.Text = "Add Selected";
-            this.addSelectedBttn.UseVisualStyleBackColor = false;
-            this.addSelectedBttn.Click += new System.EventHandler(this.addSelectedBttn_Click);
+            this.tabPage1.Controls.Add(this.labelS);
+            this.tabPage1.Controls.Add(this.labelR);
+            this.tabPage1.Controls.Add(this.labelQ);
+            this.tabPage1.Controls.Add(this.labelP);
+            this.tabPage1.Controls.Add(this.labelO);
+            this.tabPage1.Controls.Add(this.labelN);
+            this.tabPage1.Controls.Add(this.labelM);
+            this.tabPage1.Controls.Add(this.labelL);
+            this.tabPage1.Controls.Add(this.labelK);
+            this.tabPage1.Controls.Add(this.labelJ);
+            this.tabPage1.Controls.Add(this.labelI);
+            this.tabPage1.Controls.Add(this.labelH);
+            this.tabPage1.Controls.Add(this.labelG);
+            this.tabPage1.Controls.Add(this.labelF);
+            this.tabPage1.Controls.Add(this.labelE);
+            this.tabPage1.Controls.Add(this.labelD);
+            this.tabPage1.Controls.Add(this.labelC);
+            this.tabPage1.Controls.Add(this.labelB);
+            this.tabPage1.Controls.Add(this.labelA);
+            this.tabPage1.Controls.Add(this.shelfL);
+            this.tabPage1.Controls.Add(this.shelfK);
+            this.tabPage1.Controls.Add(this.shelfJ);
+            this.tabPage1.Controls.Add(this.shelfI);
+            this.tabPage1.Controls.Add(this.shelfH);
+            this.tabPage1.Controls.Add(this.shelfG);
+            this.tabPage1.Controls.Add(this.shelfF);
+            this.tabPage1.Controls.Add(this.shelfE);
+            this.tabPage1.Controls.Add(this.sheldD);
+            this.tabPage1.Controls.Add(this.shelfC);
+            this.tabPage1.Controls.Add(this.shelfB);
+            this.tabPage1.Controls.Add(this.shelfA);
+            this.tabPage1.Controls.Add(this.shelfX);
+            this.tabPage1.Controls.Add(this.shelfW);
+            this.tabPage1.Controls.Add(this.shelfV);
+            this.tabPage1.Controls.Add(this.shelfU);
+            this.tabPage1.Controls.Add(this.shelfT);
+            this.tabPage1.Controls.Add(this.shelfS);
+            this.tabPage1.Controls.Add(this.shelfR);
+            this.tabPage1.Controls.Add(this.shelfQ);
+            this.tabPage1.Controls.Add(this.shelfP);
+            this.tabPage1.Controls.Add(this.shelfO);
+            this.tabPage1.Controls.Add(this.shelfN);
+            this.tabPage1.Controls.Add(this.shelfM);
+            this.tabPage1.Controls.Add(this.maplistTitle);
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.mapTitle);
+            this.tabPage1.Controls.Add(this.pictureBox29);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(942, 507);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "Map";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // mapTitle
+            // 
+            this.mapTitle.AutoSize = true;
+            this.mapTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mapTitle.Location = new System.Drawing.Point(6, 3);
+            this.mapTitle.Name = "mapTitle";
+            this.mapTitle.Size = new System.Drawing.Size(52, 25);
+            this.mapTitle.TabIndex = 0;
+            this.mapTitle.Text = "Map";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(656, 34);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(280, 461);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // maplistTitle
+            // 
+            this.maplistTitle.AutoSize = true;
+            this.maplistTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maplistTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.maplistTitle.Location = new System.Drawing.Point(502, 6);
+            this.maplistTitle.Name = "maplistTitle";
+            this.maplistTitle.Size = new System.Drawing.Size(437, 25);
+            this.maplistTitle.TabIndex = 2;
+            this.maplistTitle.Text = "List (this acutally doesn\'t show anything as of now)";
+            this.maplistTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // shelfM
+            // 
+            this.shelfM.BackColor = System.Drawing.Color.Gray;
+            this.shelfM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfM.Location = new System.Drawing.Point(14, 116);
+            this.shelfM.Name = "shelfM";
+            this.shelfM.Size = new System.Drawing.Size(40, 95);
+            this.shelfM.TabIndex = 3;
+            this.shelfM.TabStop = false;
+            // 
+            // shelfN
+            // 
+            this.shelfN.BackColor = System.Drawing.Color.Gray;
+            this.shelfN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfN.Location = new System.Drawing.Point(50, 116);
+            this.shelfN.Name = "shelfN";
+            this.shelfN.Size = new System.Drawing.Size(40, 95);
+            this.shelfN.TabIndex = 4;
+            this.shelfN.TabStop = false;
+            // 
+            // shelfP
+            // 
+            this.shelfP.BackColor = System.Drawing.Color.Gray;
+            this.shelfP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfP.Location = new System.Drawing.Point(156, 116);
+            this.shelfP.Name = "shelfP";
+            this.shelfP.Size = new System.Drawing.Size(40, 95);
+            this.shelfP.TabIndex = 6;
+            this.shelfP.TabStop = false;
+            // 
+            // shelfO
+            // 
+            this.shelfO.BackColor = System.Drawing.Color.Gray;
+            this.shelfO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfO.Location = new System.Drawing.Point(120, 116);
+            this.shelfO.Name = "shelfO";
+            this.shelfO.Size = new System.Drawing.Size(40, 95);
+            this.shelfO.TabIndex = 5;
+            this.shelfO.TabStop = false;
+            // 
+            // shelfR
+            // 
+            this.shelfR.BackColor = System.Drawing.Color.Gray;
+            this.shelfR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfR.Location = new System.Drawing.Point(262, 116);
+            this.shelfR.Name = "shelfR";
+            this.shelfR.Size = new System.Drawing.Size(40, 95);
+            this.shelfR.TabIndex = 8;
+            this.shelfR.TabStop = false;
+            // 
+            // shelfQ
+            // 
+            this.shelfQ.BackColor = System.Drawing.Color.Gray;
+            this.shelfQ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfQ.Location = new System.Drawing.Point(226, 116);
+            this.shelfQ.Name = "shelfQ";
+            this.shelfQ.Size = new System.Drawing.Size(40, 95);
+            this.shelfQ.TabIndex = 7;
+            this.shelfQ.TabStop = false;
+            // 
+            // shelfT
+            // 
+            this.shelfT.BackColor = System.Drawing.Color.Gray;
+            this.shelfT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfT.Location = new System.Drawing.Point(373, 116);
+            this.shelfT.Name = "shelfT";
+            this.shelfT.Size = new System.Drawing.Size(40, 95);
+            this.shelfT.TabIndex = 10;
+            this.shelfT.TabStop = false;
+            // 
+            // shelfS
+            // 
+            this.shelfS.BackColor = System.Drawing.Color.Gray;
+            this.shelfS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfS.Location = new System.Drawing.Point(337, 116);
+            this.shelfS.Name = "shelfS";
+            this.shelfS.Size = new System.Drawing.Size(40, 95);
+            this.shelfS.TabIndex = 9;
+            this.shelfS.TabStop = false;
+            // 
+            // shelfV
+            // 
+            this.shelfV.BackColor = System.Drawing.Color.Gray;
+            this.shelfV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfV.Location = new System.Drawing.Point(485, 116);
+            this.shelfV.Name = "shelfV";
+            this.shelfV.Size = new System.Drawing.Size(40, 95);
+            this.shelfV.TabIndex = 12;
+            this.shelfV.TabStop = false;
+            // 
+            // shelfU
+            // 
+            this.shelfU.BackColor = System.Drawing.Color.Gray;
+            this.shelfU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfU.Location = new System.Drawing.Point(449, 116);
+            this.shelfU.Name = "shelfU";
+            this.shelfU.Size = new System.Drawing.Size(40, 95);
+            this.shelfU.TabIndex = 11;
+            this.shelfU.TabStop = false;
+            // 
+            // shelfX
+            // 
+            this.shelfX.BackColor = System.Drawing.Color.Gray;
+            this.shelfX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfX.Location = new System.Drawing.Point(599, 116);
+            this.shelfX.Name = "shelfX";
+            this.shelfX.Size = new System.Drawing.Size(40, 95);
+            this.shelfX.TabIndex = 14;
+            this.shelfX.TabStop = false;
+            // 
+            // shelfW
+            // 
+            this.shelfW.BackColor = System.Drawing.Color.Gray;
+            this.shelfW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfW.Location = new System.Drawing.Point(563, 116);
+            this.shelfW.Name = "shelfW";
+            this.shelfW.Size = new System.Drawing.Size(40, 95);
+            this.shelfW.TabIndex = 13;
+            this.shelfW.TabStop = false;
+            // 
+            // shelfL
+            // 
+            this.shelfL.BackColor = System.Drawing.Color.Gray;
+            this.shelfL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfL.Location = new System.Drawing.Point(599, 282);
+            this.shelfL.Name = "shelfL";
+            this.shelfL.Size = new System.Drawing.Size(40, 95);
+            this.shelfL.TabIndex = 26;
+            this.shelfL.TabStop = false;
+            // 
+            // shelfK
+            // 
+            this.shelfK.BackColor = System.Drawing.Color.Gray;
+            this.shelfK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfK.Location = new System.Drawing.Point(563, 282);
+            this.shelfK.Name = "shelfK";
+            this.shelfK.Size = new System.Drawing.Size(40, 95);
+            this.shelfK.TabIndex = 25;
+            this.shelfK.TabStop = false;
+            // 
+            // shelfJ
+            // 
+            this.shelfJ.BackColor = System.Drawing.Color.Gray;
+            this.shelfJ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfJ.Location = new System.Drawing.Point(485, 282);
+            this.shelfJ.Name = "shelfJ";
+            this.shelfJ.Size = new System.Drawing.Size(40, 95);
+            this.shelfJ.TabIndex = 24;
+            this.shelfJ.TabStop = false;
+            // 
+            // shelfI
+            // 
+            this.shelfI.BackColor = System.Drawing.Color.Gray;
+            this.shelfI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfI.Location = new System.Drawing.Point(449, 282);
+            this.shelfI.Name = "shelfI";
+            this.shelfI.Size = new System.Drawing.Size(40, 95);
+            this.shelfI.TabIndex = 23;
+            this.shelfI.TabStop = false;
+            // 
+            // shelfH
+            // 
+            this.shelfH.BackColor = System.Drawing.Color.Gray;
+            this.shelfH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfH.Location = new System.Drawing.Point(373, 282);
+            this.shelfH.Name = "shelfH";
+            this.shelfH.Size = new System.Drawing.Size(40, 95);
+            this.shelfH.TabIndex = 22;
+            this.shelfH.TabStop = false;
+            // 
+            // shelfG
+            // 
+            this.shelfG.BackColor = System.Drawing.Color.Gray;
+            this.shelfG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfG.Location = new System.Drawing.Point(337, 282);
+            this.shelfG.Name = "shelfG";
+            this.shelfG.Size = new System.Drawing.Size(40, 95);
+            this.shelfG.TabIndex = 21;
+            this.shelfG.TabStop = false;
+            // 
+            // shelfF
+            // 
+            this.shelfF.BackColor = System.Drawing.Color.Gray;
+            this.shelfF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfF.Location = new System.Drawing.Point(262, 282);
+            this.shelfF.Name = "shelfF";
+            this.shelfF.Size = new System.Drawing.Size(40, 95);
+            this.shelfF.TabIndex = 20;
+            this.shelfF.TabStop = false;
+            // 
+            // shelfE
+            // 
+            this.shelfE.BackColor = System.Drawing.Color.Gray;
+            this.shelfE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfE.Location = new System.Drawing.Point(226, 282);
+            this.shelfE.Name = "shelfE";
+            this.shelfE.Size = new System.Drawing.Size(40, 95);
+            this.shelfE.TabIndex = 19;
+            this.shelfE.TabStop = false;
+            // 
+            // sheldD
+            // 
+            this.sheldD.BackColor = System.Drawing.Color.Gray;
+            this.sheldD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sheldD.Location = new System.Drawing.Point(156, 282);
+            this.sheldD.Name = "sheldD";
+            this.sheldD.Size = new System.Drawing.Size(40, 95);
+            this.sheldD.TabIndex = 18;
+            this.sheldD.TabStop = false;
+            // 
+            // shelfC
+            // 
+            this.shelfC.BackColor = System.Drawing.Color.Gray;
+            this.shelfC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfC.Location = new System.Drawing.Point(120, 282);
+            this.shelfC.Name = "shelfC";
+            this.shelfC.Size = new System.Drawing.Size(40, 95);
+            this.shelfC.TabIndex = 17;
+            this.shelfC.TabStop = false;
+            // 
+            // shelfB
+            // 
+            this.shelfB.BackColor = System.Drawing.Color.Gray;
+            this.shelfB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfB.Location = new System.Drawing.Point(50, 282);
+            this.shelfB.Name = "shelfB";
+            this.shelfB.Size = new System.Drawing.Size(40, 95);
+            this.shelfB.TabIndex = 16;
+            this.shelfB.TabStop = false;
+            // 
+            // shelfA
+            // 
+            this.shelfA.BackColor = System.Drawing.Color.Gray;
+            this.shelfA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfA.Location = new System.Drawing.Point(14, 282);
+            this.shelfA.Name = "shelfA";
+            this.shelfA.Size = new System.Drawing.Size(40, 95);
+            this.shelfA.TabIndex = 15;
+            this.shelfA.TabStop = false;
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox29.Location = new System.Drawing.Point(3, 34);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(649, 461);
+            this.pictureBox29.TabIndex = 27;
+            this.pictureBox29.TabStop = false;
+            this.pictureBox29.Click += new System.EventHandler(this.pictureBox29_Click);
+            // 
+            // labelA
+            // 
+            this.labelA.AutoSize = true;
+            this.labelA.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelA.Location = new System.Drawing.Point(27, 380);
+            this.labelA.Name = "labelA";
+            this.labelA.Size = new System.Drawing.Size(17, 17);
+            this.labelA.TabIndex = 28;
+            this.labelA.Text = "A";
+            this.labelA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB
+            // 
+            this.labelB.AutoSize = true;
+            this.labelB.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelB.Location = new System.Drawing.Point(61, 380);
+            this.labelB.Name = "labelB";
+            this.labelB.Size = new System.Drawing.Size(16, 17);
+            this.labelB.TabIndex = 29;
+            this.labelB.Text = "B";
+            this.labelB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC
+            // 
+            this.labelC.AutoSize = true;
+            this.labelC.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelC.Location = new System.Drawing.Point(131, 380);
+            this.labelC.Name = "labelC";
+            this.labelC.Size = new System.Drawing.Size(16, 17);
+            this.labelC.TabIndex = 30;
+            this.labelC.Text = "C";
+            this.labelC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelD
+            // 
+            this.labelD.AutoSize = true;
+            this.labelD.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelD.Location = new System.Drawing.Point(171, 380);
+            this.labelD.Name = "labelD";
+            this.labelD.Size = new System.Drawing.Size(17, 17);
+            this.labelD.TabIndex = 31;
+            this.labelD.Text = "D";
+            this.labelD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelE
+            // 
+            this.labelE.AutoSize = true;
+            this.labelE.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelE.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelE.Location = new System.Drawing.Point(237, 380);
+            this.labelE.Name = "labelE";
+            this.labelE.Size = new System.Drawing.Size(15, 17);
+            this.labelE.TabIndex = 32;
+            this.labelE.Text = "E";
+            this.labelE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelF
+            // 
+            this.labelF.AutoSize = true;
+            this.labelF.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelF.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelF.Location = new System.Drawing.Point(275, 380);
+            this.labelF.Name = "labelF";
+            this.labelF.Size = new System.Drawing.Size(15, 17);
+            this.labelF.TabIndex = 33;
+            this.labelF.Text = "F";
+            this.labelF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelG
+            // 
+            this.labelG.AutoSize = true;
+            this.labelG.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelG.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelG.Location = new System.Drawing.Point(348, 380);
+            this.labelG.Name = "labelG";
+            this.labelG.Size = new System.Drawing.Size(17, 17);
+            this.labelG.TabIndex = 34;
+            this.labelG.Text = "G";
+            this.labelG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelH
+            // 
+            this.labelH.AutoSize = true;
+            this.labelH.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelH.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelH.Location = new System.Drawing.Point(383, 380);
+            this.labelH.Name = "labelH";
+            this.labelH.Size = new System.Drawing.Size(18, 17);
+            this.labelH.TabIndex = 35;
+            this.labelH.Text = "H";
+            this.labelH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelI
+            // 
+            this.labelI.AutoSize = true;
+            this.labelI.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelI.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelI.Location = new System.Drawing.Point(460, 380);
+            this.labelI.Name = "labelI";
+            this.labelI.Size = new System.Drawing.Size(12, 17);
+            this.labelI.TabIndex = 36;
+            this.labelI.Text = "I";
+            this.labelI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelJ
+            // 
+            this.labelJ.AutoSize = true;
+            this.labelJ.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelJ.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelJ.Location = new System.Drawing.Point(504, 380);
+            this.labelJ.Name = "labelJ";
+            this.labelJ.Size = new System.Drawing.Size(13, 17);
+            this.labelJ.TabIndex = 37;
+            this.labelJ.Text = "J";
+            this.labelJ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelK
+            // 
+            this.labelK.AutoSize = true;
+            this.labelK.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelK.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelK.Location = new System.Drawing.Point(575, 380);
+            this.labelK.Name = "labelK";
+            this.labelK.Size = new System.Drawing.Size(16, 17);
+            this.labelK.TabIndex = 38;
+            this.labelK.Text = "K";
+            this.labelK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelL
+            // 
+            this.labelL.AutoSize = true;
+            this.labelL.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelL.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelL.Location = new System.Drawing.Point(612, 380);
+            this.labelL.Name = "labelL";
+            this.labelL.Size = new System.Drawing.Size(14, 17);
+            this.labelL.TabIndex = 39;
+            this.labelL.Text = "L";
+            this.labelL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelM
+            // 
+            this.labelM.AutoSize = true;
+            this.labelM.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelM.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelM.Location = new System.Drawing.Point(27, 214);
+            this.labelM.Name = "labelM";
+            this.labelM.Size = new System.Drawing.Size(20, 17);
+            this.labelM.TabIndex = 40;
+            this.labelM.Text = "M";
+            this.labelM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelN
+            // 
+            this.labelN.AutoSize = true;
+            this.labelN.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelN.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelN.Location = new System.Drawing.Point(61, 214);
+            this.labelN.Name = "labelN";
+            this.labelN.Size = new System.Drawing.Size(18, 17);
+            this.labelN.TabIndex = 41;
+            this.labelN.Text = "N";
+            this.labelN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelO
+            // 
+            this.labelO.AutoSize = true;
+            this.labelO.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelO.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelO.Location = new System.Drawing.Point(131, 214);
+            this.labelO.Name = "labelO";
+            this.labelO.Size = new System.Drawing.Size(18, 17);
+            this.labelO.TabIndex = 42;
+            this.labelO.Text = "O";
+            this.labelO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelP
+            // 
+            this.labelP.AutoSize = true;
+            this.labelP.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelP.Location = new System.Drawing.Point(170, 214);
+            this.labelP.Name = "labelP";
+            this.labelP.Size = new System.Drawing.Size(16, 17);
+            this.labelP.TabIndex = 43;
+            this.labelP.Text = "P";
+            this.labelP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelQ
+            // 
+            this.labelQ.AutoSize = true;
+            this.labelQ.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelQ.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQ.Location = new System.Drawing.Point(236, 214);
+            this.labelQ.Name = "labelQ";
+            this.labelQ.Size = new System.Drawing.Size(18, 17);
+            this.labelQ.TabIndex = 44;
+            this.labelQ.Text = "Q";
+            this.labelQ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelR
+            // 
+            this.labelR.AutoSize = true;
+            this.labelR.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelR.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelR.Location = new System.Drawing.Point(272, 214);
+            this.labelR.Name = "labelR";
+            this.labelR.Size = new System.Drawing.Size(16, 17);
+            this.labelR.TabIndex = 45;
+            this.labelR.Text = "R";
+            this.labelR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelS
+            // 
+            this.labelS.AutoSize = true;
+            this.labelS.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelS.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelS.Location = new System.Drawing.Point(349, 214);
+            this.labelS.Name = "labelS";
+            this.labelS.Size = new System.Drawing.Size(15, 17);
+            this.labelS.TabIndex = 46;
+            this.labelS.Text = "S";
+            this.labelS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -488,6 +1149,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.collectiveTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfQ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfK)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfJ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sheldD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -528,6 +1217,54 @@
         public System.Windows.Forms.Label enterHere;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button addSelectedBttn;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label mapTitle;
+        private System.Windows.Forms.Label maplistTitle;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox shelfN;
+        private System.Windows.Forms.PictureBox shelfM;
+        private System.Windows.Forms.PictureBox shelfX;
+        private System.Windows.Forms.PictureBox shelfW;
+        private System.Windows.Forms.PictureBox shelfV;
+        private System.Windows.Forms.PictureBox shelfU;
+        private System.Windows.Forms.PictureBox shelfT;
+        private System.Windows.Forms.PictureBox shelfS;
+        private System.Windows.Forms.PictureBox shelfR;
+        private System.Windows.Forms.PictureBox shelfQ;
+        private System.Windows.Forms.PictureBox shelfP;
+        private System.Windows.Forms.PictureBox shelfO;
+        private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.PictureBox shelfL;
+        private System.Windows.Forms.PictureBox shelfK;
+        private System.Windows.Forms.PictureBox shelfJ;
+        private System.Windows.Forms.PictureBox shelfI;
+        private System.Windows.Forms.PictureBox shelfH;
+        private System.Windows.Forms.PictureBox shelfG;
+        private System.Windows.Forms.PictureBox shelfF;
+        private System.Windows.Forms.PictureBox shelfE;
+        private System.Windows.Forms.PictureBox sheldD;
+        private System.Windows.Forms.PictureBox shelfC;
+        private System.Windows.Forms.PictureBox shelfB;
+        private System.Windows.Forms.PictureBox shelfA;
+        private System.Windows.Forms.Label labelS;
+        private System.Windows.Forms.Label labelR;
+        private System.Windows.Forms.Label labelQ;
+        private System.Windows.Forms.Label labelP;
+        private System.Windows.Forms.Label labelO;
+        private System.Windows.Forms.Label labelN;
+        private System.Windows.Forms.Label labelM;
+        private System.Windows.Forms.Label labelL;
+        private System.Windows.Forms.Label labelK;
+        private System.Windows.Forms.Label labelJ;
+        private System.Windows.Forms.Label labelI;
+        private System.Windows.Forms.Label labelH;
+        private System.Windows.Forms.Label labelG;
+        private System.Windows.Forms.Label labelF;
+        private System.Windows.Forms.Label labelE;
+        private System.Windows.Forms.Label labelD;
+        private System.Windows.Forms.Label labelC;
+        private System.Windows.Forms.Label labelB;
+        private System.Windows.Forms.Label labelA;
     }
 }
 
