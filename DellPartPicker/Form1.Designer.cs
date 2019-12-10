@@ -42,6 +42,9 @@
             this.listSearchBttn = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.singleItemTab = new System.Windows.Forms.TabPage();
+            this.searchLocation = new System.Windows.Forms.Button();
+            this.searchName = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.addSelectedBttn = new System.Windows.Forms.Button();
             this.listTab = new System.Windows.Forms.TabPage();
             this.enterHere = new System.Windows.Forms.Label();
@@ -52,6 +55,7 @@
             this.d3pTitle2 = new System.Windows.Forms.Label();
             this.d3pLogo2 = new System.Windows.Forms.PictureBox();
             this.collectiveTab = new System.Windows.Forms.TabPage();
+            this.resultsLbl = new System.Windows.Forms.Label();
             this.bttnRemove = new System.Windows.Forms.Button();
             this.bttnClear = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -61,10 +65,6 @@
             this.d3pTitle3 = new System.Windows.Forms.Label();
             this.d3pLogo3 = new System.Windows.Forms.PictureBox();
             this.Map = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.searchName = new System.Windows.Forms.Button();
-            this.searchLocation = new System.Windows.Forms.Button();
-            this.resultsLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
@@ -230,10 +230,42 @@
             this.singleItemTab.Text = "Add Single Item";
             this.singleItemTab.UseVisualStyleBackColor = true;
             // 
+            // searchLocation
+            // 
+            this.searchLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchLocation.Location = new System.Drawing.Point(130, 230);
+            this.searchLocation.Name = "searchLocation";
+            this.searchLocation.Size = new System.Drawing.Size(70, 44);
+            this.searchLocation.TabIndex = 21;
+            this.searchLocation.Text = "Location";
+            this.searchLocation.UseVisualStyleBackColor = true;
+            this.searchLocation.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // searchName
+            // 
+            this.searchName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchName.Location = new System.Drawing.Point(69, 230);
+            this.searchName.Name = "searchName";
+            this.searchName.Size = new System.Drawing.Size(55, 44);
+            this.searchName.TabIndex = 20;
+            this.searchName.Text = "Name";
+            this.searchName.UseVisualStyleBackColor = true;
+            this.searchName.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(430, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 21);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Results";
+            // 
             // addSelectedBttn
             // 
             this.addSelectedBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addSelectedBttn.Location = new System.Drawing.Point(206, 229);
+            this.addSelectedBttn.Location = new System.Drawing.Point(207, 229);
             this.addSelectedBttn.Name = "addSelectedBttn";
             this.addSelectedBttn.Size = new System.Drawing.Size(197, 45);
             this.addSelectedBttn.TabIndex = 11;
@@ -356,6 +388,16 @@
             this.collectiveTab.Text = "Collective";
             this.collectiveTab.UseVisualStyleBackColor = true;
             // 
+            // resultsLbl
+            // 
+            this.resultsLbl.AutoSize = true;
+            this.resultsLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultsLbl.Location = new System.Drawing.Point(430, 114);
+            this.resultsLbl.Name = "resultsLbl";
+            this.resultsLbl.Size = new System.Drawing.Size(60, 21);
+            this.resultsLbl.TabIndex = 22;
+            this.resultsLbl.Text = "Results";
+            // 
             // bttnRemove
             // 
             this.bttnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -451,48 +493,6 @@
             this.Map.TabIndex = 3;
             this.Map.Text = "Map";
             this.Map.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(430, 114);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 21);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Results";
-            // 
-            // searchName
-            // 
-            this.searchName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchName.Location = new System.Drawing.Point(69, 230);
-            this.searchName.Name = "searchName";
-            this.searchName.Size = new System.Drawing.Size(55, 44);
-            this.searchName.TabIndex = 20;
-            this.searchName.Text = "Name";
-            this.searchName.UseVisualStyleBackColor = true;
-            this.searchName.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // searchLocation
-            // 
-            this.searchLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchLocation.Location = new System.Drawing.Point(130, 230);
-            this.searchLocation.Name = "searchLocation";
-            this.searchLocation.Size = new System.Drawing.Size(70, 44);
-            this.searchLocation.TabIndex = 21;
-            this.searchLocation.Text = "Location";
-            this.searchLocation.UseVisualStyleBackColor = true;
-            this.searchLocation.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // resultsLbl
-            // 
-            this.resultsLbl.AutoSize = true;
-            this.resultsLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultsLbl.Location = new System.Drawing.Point(430, 114);
-            this.resultsLbl.Name = "resultsLbl";
-            this.resultsLbl.Size = new System.Drawing.Size(60, 21);
-            this.resultsLbl.TabIndex = 22;
-            this.resultsLbl.Text = "Results";
             // 
             // Form1
             // 
