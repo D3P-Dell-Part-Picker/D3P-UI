@@ -265,7 +265,7 @@
             // addSelectedBttn
             // 
             this.addSelectedBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addSelectedBttn.Location = new System.Drawing.Point(206, 229);
+            this.addSelectedBttn.Location = new System.Drawing.Point(207, 229);
             this.addSelectedBttn.Name = "addSelectedBttn";
             this.addSelectedBttn.Size = new System.Drawing.Size(197, 45);
             this.addSelectedBttn.TabIndex = 11;
