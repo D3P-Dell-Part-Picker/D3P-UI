@@ -129,7 +129,7 @@
             this.error.AutoSize = true;
             this.error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.error.ForeColor = System.Drawing.Color.Maroon;
-            this.error.Location = new System.Drawing.Point(12, 199);
+            this.error.Location = new System.Drawing.Point(11, 200);
             this.error.Name = "error";
             this.error.Size = new System.Drawing.Size(115, 20);
             this.error.TabIndex = 7;
