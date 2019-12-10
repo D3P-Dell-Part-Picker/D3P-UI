@@ -50,19 +50,8 @@ namespace DellPartPicker
             if(searchBox.Text == null || searchBox.Text == "")
             {
                 error.Show();
-            }
-            else if(IDsearch.Checked == true)
-            {
-                
-                parser.parse(searchBox.Text, Field.PartNumber, addSingletable, loader);
-            }else if(nameSearch.Checked == true)
-            {
-                parser.parse(searchBox.Text, Field.Desc, addSingletable, loader);
-            }
-            else if (locSearch.Checked == true)
-            {
-                parser.parse(searchBox.Text, Field.Location, addSingletable, loader);
-            }
+            }           
+            parser.parse(searchBox.Text, Field.PartNumber, addSingletable, loader);
         }
 
         private void pictureSettings_Click(object sender, EventArgs e)
@@ -126,6 +115,38 @@ namespace DellPartPicker
                 addSingletable.Rows.RemoveAt(item.Index);
             }
 
+        }
+
+        private void d3pLogo1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+            error.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            addSingletable.Rows.Clear();
+
+            if (searchBox.Text == null || searchBox.Text == "")
+            {
+                error.Show();
+            }
+            parser.parse(searchBox.Text, Field.Desc, addSingletable, loader);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            addSingletable.Rows.Clear();
+
+            if (searchBox.Text == null || searchBox.Text == "")
+            {
+                error.Show();
+            }
+            parser.parse(searchBox.Text, Field.Location, addSingletable, loader);
         }
     }
 }

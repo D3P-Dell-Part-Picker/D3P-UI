@@ -29,11 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.IDsearch = new System.Windows.Forms.RadioButton();
-            this.nameSearch = new System.Windows.Forms.RadioButton();
-            this.locSearch = new System.Windows.Forms.RadioButton();
             this.d3pLogo1 = new System.Windows.Forms.PictureBox();
-            this.search = new System.Windows.Forms.Button();
+            this.searchID = new System.Windows.Forms.Button();
             this.addSingletable = new System.Windows.Forms.DataGridView();
             this.d3pTitle1 = new System.Windows.Forms.Label();
             this.error = new System.Windows.Forms.Label();
@@ -64,6 +61,10 @@
             this.d3pTitle3 = new System.Windows.Forms.Label();
             this.d3pLogo3 = new System.Windows.Forms.PictureBox();
             this.Map = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.searchName = new System.Windows.Forms.Button();
+            this.searchLocation = new System.Windows.Forms.Button();
+            this.resultsLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
@@ -81,105 +82,78 @@
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).BeginInit();
             this.SuspendLayout();
             // 
-            // IDsearch
-            // 
-            this.IDsearch.AutoSize = true;
-            this.IDsearch.Location = new System.Drawing.Point(152, 403);
-            this.IDsearch.Name = "IDsearch";
-            this.IDsearch.Size = new System.Drawing.Size(86, 17);
-            this.IDsearch.TabIndex = 0;
-            this.IDsearch.TabStop = true;
-            this.IDsearch.Text = "Search By Id";
-            this.IDsearch.UseVisualStyleBackColor = true;
-            // 
-            // nameSearch
-            // 
-            this.nameSearch.AutoSize = true;
-            this.nameSearch.Location = new System.Drawing.Point(152, 426);
-            this.nameSearch.Name = "nameSearch";
-            this.nameSearch.Size = new System.Drawing.Size(105, 17);
-            this.nameSearch.TabIndex = 1;
-            this.nameSearch.TabStop = true;
-            this.nameSearch.Text = "Search By Name";
-            this.nameSearch.UseVisualStyleBackColor = true;
-            // 
-            // locSearch
-            // 
-            this.locSearch.AutoSize = true;
-            this.locSearch.Location = new System.Drawing.Point(152, 449);
-            this.locSearch.Name = "locSearch";
-            this.locSearch.Size = new System.Drawing.Size(118, 17);
-            this.locSearch.TabIndex = 2;
-            this.locSearch.TabStop = true;
-            this.locSearch.Text = "Search By Location";
-            this.locSearch.UseVisualStyleBackColor = true;
-            // 
             // d3pLogo1
             // 
             this.d3pLogo1.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.d3pLogo1.Location = new System.Drawing.Point(6, 59);
+            this.d3pLogo1.Location = new System.Drawing.Point(3, 48);
             this.d3pLogo1.Name = "d3pLogo1";
-            this.d3pLogo1.Size = new System.Drawing.Size(177, 133);
+            this.d3pLogo1.Size = new System.Drawing.Size(117, 112);
             this.d3pLogo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.d3pLogo1.TabIndex = 3;
             this.d3pLogo1.TabStop = false;
+            this.d3pLogo1.Click += new System.EventHandler(this.d3pLogo1_Click);
             // 
-            // search
+            // searchID
             // 
-            this.search.Location = new System.Drawing.Point(36, 420);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(110, 44);
-            this.search.TabIndex = 4;
-            this.search.Text = "Search";
-            this.search.UseVisualStyleBackColor = true;
-            this.search.Click += new System.EventHandler(this.search_Click);
+            this.searchID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchID.Location = new System.Drawing.Point(10, 230);
+            this.searchID.Name = "searchID";
+            this.searchID.Size = new System.Drawing.Size(53, 44);
+            this.searchID.TabIndex = 4;
+            this.searchID.Text = "ID";
+            this.searchID.UseVisualStyleBackColor = true;
+            this.searchID.Click += new System.EventHandler(this.search_Click);
             // 
             // addSingletable
             // 
             this.addSingletable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.addSingletable.Location = new System.Drawing.Point(506, 62);
+            this.addSingletable.Location = new System.Drawing.Point(434, 138);
             this.addSingletable.Name = "addSingletable";
-            this.addSingletable.Size = new System.Drawing.Size(369, 346);
+            this.addSingletable.Size = new System.Drawing.Size(496, 357);
             this.addSingletable.TabIndex = 5;
             // 
             // d3pTitle1
             // 
             this.d3pTitle1.AutoSize = true;
-            this.d3pTitle1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.d3pTitle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d3pTitle1.BackColor = System.Drawing.Color.Transparent;
+            this.d3pTitle1.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d3pTitle1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.d3pTitle1.Location = new System.Drawing.Point(6, 19);
+            this.d3pTitle1.Location = new System.Drawing.Point(3, 0);
             this.d3pTitle1.Name = "d3pTitle1";
-            this.d3pTitle1.Size = new System.Drawing.Size(295, 37);
+            this.d3pTitle1.Size = new System.Drawing.Size(298, 45);
             this.d3pTitle1.TabIndex = 6;
             this.d3pTitle1.Text = "Dell Part Picker UI";
             // 
             // error
             // 
             this.error.AutoSize = true;
+            this.error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.error.ForeColor = System.Drawing.Color.Maroon;
-            this.error.Location = new System.Drawing.Point(33, 403);
+            this.error.Location = new System.Drawing.Point(12, 199);
             this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(76, 13);
+            this.error.Size = new System.Drawing.Size(115, 20);
             this.error.TabIndex = 7;
-            this.error.Text = "Error, no input!";
+            this.error.Text = "Error: No input!";
             // 
             // searchBox
             // 
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchBox.Location = new System.Drawing.Point(124, 377);
+            this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBox.Location = new System.Drawing.Point(10, 197);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(114, 20);
+            this.searchBox.Size = new System.Drawing.Size(393, 26);
             this.searchBox.TabIndex = 8;
+            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
             // Searchlbl
             // 
             this.Searchlbl.AutoSize = true;
-            this.Searchlbl.Location = new System.Drawing.Point(55, 377);
+            this.Searchlbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Searchlbl.Location = new System.Drawing.Point(6, 174);
             this.Searchlbl.Name = "Searchlbl";
-            this.Searchlbl.Size = new System.Drawing.Size(44, 13);
+            this.Searchlbl.Size = new System.Drawing.Size(64, 21);
             this.Searchlbl.TabIndex = 9;
-            this.Searchlbl.Text = "Search ";
+            this.Searchlbl.Text = "Search: ";
             // 
             // pictureSettings1
             // 
@@ -195,9 +169,9 @@
             // addListTable
             // 
             this.addListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.addListTable.Location = new System.Drawing.Point(481, 6);
+            this.addListTable.Location = new System.Drawing.Point(434, 138);
             this.addListTable.Name = "addListTable";
-            this.addListTable.Size = new System.Drawing.Size(455, 357);
+            this.addListTable.Size = new System.Drawing.Size(496, 357);
             this.addListTable.TabIndex = 11;
             // 
             // listTextBox
@@ -212,6 +186,7 @@
             // listSearchBttn
             // 
             this.listSearchBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.listSearchBttn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listSearchBttn.Location = new System.Drawing.Point(13, 419);
             this.listSearchBttn.Name = "listSearchBttn";
             this.listSearchBttn.Size = new System.Drawing.Size(201, 76);
@@ -226,6 +201,7 @@
             this.tabControl1.Controls.Add(this.listTab);
             this.tabControl1.Controls.Add(this.collectiveTab);
             this.tabControl1.Controls.Add(this.Map);
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(-4, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -234,18 +210,18 @@
             // 
             // singleItemTab
             // 
+            this.singleItemTab.Controls.Add(this.searchLocation);
+            this.singleItemTab.Controls.Add(this.searchName);
+            this.singleItemTab.Controls.Add(this.error);
+            this.singleItemTab.Controls.Add(this.label1);
             this.singleItemTab.Controls.Add(this.addSelectedBttn);
             this.singleItemTab.Controls.Add(this.addSingletable);
             this.singleItemTab.Controls.Add(this.pictureSettings1);
             this.singleItemTab.Controls.Add(this.d3pTitle1);
             this.singleItemTab.Controls.Add(this.d3pLogo1);
-            this.singleItemTab.Controls.Add(this.search);
-            this.singleItemTab.Controls.Add(this.searchBox);
+            this.singleItemTab.Controls.Add(this.searchID);
             this.singleItemTab.Controls.Add(this.Searchlbl);
-            this.singleItemTab.Controls.Add(this.IDsearch);
-            this.singleItemTab.Controls.Add(this.nameSearch);
-            this.singleItemTab.Controls.Add(this.error);
-            this.singleItemTab.Controls.Add(this.locSearch);
+            this.singleItemTab.Controls.Add(this.searchBox);
             this.singleItemTab.Location = new System.Drawing.Point(4, 22);
             this.singleItemTab.Name = "singleItemTab";
             this.singleItemTab.Padding = new System.Windows.Forms.Padding(3);
@@ -256,9 +232,10 @@
             // 
             // addSelectedBttn
             // 
-            this.addSelectedBttn.Location = new System.Drawing.Point(664, 439);
+            this.addSelectedBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addSelectedBttn.Location = new System.Drawing.Point(206, 229);
             this.addSelectedBttn.Name = "addSelectedBttn";
-            this.addSelectedBttn.Size = new System.Drawing.Size(75, 23);
+            this.addSelectedBttn.Size = new System.Drawing.Size(197, 45);
             this.addSelectedBttn.TabIndex = 11;
             this.addSelectedBttn.Text = "Add Selected";
             this.addSelectedBttn.UseVisualStyleBackColor = false;
@@ -297,7 +274,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(319, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(875, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -308,10 +285,10 @@
             // addAll
             // 
             this.addAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addAll.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addAll.Location = new System.Drawing.Point(481, 431);
+            this.addAll.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addAll.Location = new System.Drawing.Point(220, 419);
             this.addAll.Name = "addAll";
-            this.addAll.Size = new System.Drawing.Size(455, 55);
+            this.addAll.Size = new System.Drawing.Size(195, 76);
             this.addAll.TabIndex = 19;
             this.addAll.Text = "Add All";
             this.addAll.UseVisualStyleBackColor = true;
@@ -320,10 +297,10 @@
             // dumpLbl
             // 
             this.dumpLbl.AutoSize = true;
-            this.dumpLbl.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dumpLbl.Location = new System.Drawing.Point(276, 80);
+            this.dumpLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dumpLbl.Location = new System.Drawing.Point(430, 114);
             this.dumpLbl.Name = "dumpLbl";
-            this.dumpLbl.Size = new System.Drawing.Size(70, 25);
+            this.dumpLbl.Size = new System.Drawing.Size(60, 21);
             this.dumpLbl.TabIndex = 18;
             this.dumpLbl.Text = "Results";
             // 
@@ -340,27 +317,28 @@
             // d3pTitle2
             // 
             this.d3pTitle2.AutoSize = true;
-            this.d3pTitle2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.d3pTitle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d3pTitle2.BackColor = System.Drawing.Color.Transparent;
+            this.d3pTitle2.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d3pTitle2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.d3pTitle2.Location = new System.Drawing.Point(12, 2);
+            this.d3pTitle2.Location = new System.Drawing.Point(3, 0);
             this.d3pTitle2.Name = "d3pTitle2";
-            this.d3pTitle2.Size = new System.Drawing.Size(295, 37);
+            this.d3pTitle2.Size = new System.Drawing.Size(298, 45);
             this.d3pTitle2.TabIndex = 15;
             this.d3pTitle2.Text = "Dell Part Picker UI";
             // 
             // d3pLogo2
             // 
             this.d3pLogo2.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.d3pLogo2.Location = new System.Drawing.Point(13, 42);
+            this.d3pLogo2.Location = new System.Drawing.Point(3, 48);
             this.d3pLogo2.Name = "d3pLogo2";
-            this.d3pLogo2.Size = new System.Drawing.Size(129, 119);
+            this.d3pLogo2.Size = new System.Drawing.Size(117, 112);
             this.d3pLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.d3pLogo2.TabIndex = 14;
             this.d3pLogo2.TabStop = false;
             // 
             // collectiveTab
             // 
+            this.collectiveTab.Controls.Add(this.resultsLbl);
             this.collectiveTab.Controls.Add(this.bttnRemove);
             this.collectiveTab.Controls.Add(this.bttnClear);
             this.collectiveTab.Controls.Add(this.pictureBox2);
@@ -380,10 +358,11 @@
             // 
             // bttnRemove
             // 
-            this.bttnRemove.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnRemove.Location = new System.Drawing.Point(480, 339);
+            this.bttnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnRemove.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnRemove.Location = new System.Drawing.Point(6, 256);
             this.bttnRemove.Name = "bttnRemove";
-            this.bttnRemove.Size = new System.Drawing.Size(450, 62);
+            this.bttnRemove.Size = new System.Drawing.Size(391, 62);
             this.bttnRemove.TabIndex = 21;
             this.bttnRemove.Text = "Remove Selected";
             this.bttnRemove.UseVisualStyleBackColor = true;
@@ -391,10 +370,11 @@
             // 
             // bttnClear
             // 
-            this.bttnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnClear.Location = new System.Drawing.Point(480, 407);
+            this.bttnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnClear.Location = new System.Drawing.Point(6, 191);
             this.bttnClear.Name = "bttnClear";
-            this.bttnClear.Size = new System.Drawing.Size(450, 59);
+            this.bttnClear.Size = new System.Drawing.Size(391, 59);
             this.bttnClear.TabIndex = 20;
             this.bttnClear.Text = "Clear";
             this.bttnClear.UseVisualStyleBackColor = true;
@@ -403,7 +383,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(789, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(875, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(63, 56);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -415,7 +395,7 @@
             // 
             this.collectiveLbl.AutoSize = true;
             this.collectiveLbl.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.collectiveLbl.Location = new System.Drawing.Point(15, 76);
+            this.collectiveLbl.Location = new System.Drawing.Point(6, 163);
             this.collectiveLbl.Name = "collectiveLbl";
             this.collectiveLbl.Size = new System.Drawing.Size(183, 25);
             this.collectiveLbl.TabIndex = 18;
@@ -424,9 +404,9 @@
             // collectiveTable
             // 
             this.collectiveTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.collectiveTable.Location = new System.Drawing.Point(20, 104);
+            this.collectiveTable.Location = new System.Drawing.Point(434, 138);
             this.collectiveTable.Name = "collectiveTable";
-            this.collectiveTable.Size = new System.Drawing.Size(454, 362);
+            this.collectiveTable.Size = new System.Drawing.Size(496, 357);
             this.collectiveTable.TabIndex = 17;
             // 
             // pictureBox4
@@ -442,10 +422,10 @@
             // d3pTitle3
             // 
             this.d3pTitle3.AutoSize = true;
-            this.d3pTitle3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d3pTitle3.BackColor = System.Drawing.Color.Transparent;
             this.d3pTitle3.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d3pTitle3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.d3pTitle3.Location = new System.Drawing.Point(12, 17);
+            this.d3pTitle3.Location = new System.Drawing.Point(3, 0);
             this.d3pTitle3.Name = "d3pTitle3";
             this.d3pTitle3.Size = new System.Drawing.Size(298, 45);
             this.d3pTitle3.TabIndex = 15;
@@ -454,9 +434,9 @@
             // d3pLogo3
             // 
             this.d3pLogo3.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.d3pLogo3.Location = new System.Drawing.Point(858, 6);
+            this.d3pLogo3.Location = new System.Drawing.Point(3, 48);
             this.d3pLogo3.Name = "d3pLogo3";
-            this.d3pLogo3.Size = new System.Drawing.Size(72, 70);
+            this.d3pLogo3.Size = new System.Drawing.Size(117, 112);
             this.d3pLogo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.d3pLogo3.TabIndex = 14;
             this.d3pLogo3.TabStop = false;
@@ -471,6 +451,48 @@
             this.Map.TabIndex = 3;
             this.Map.Text = "Map";
             this.Map.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(430, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 21);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Results";
+            // 
+            // searchName
+            // 
+            this.searchName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchName.Location = new System.Drawing.Point(69, 230);
+            this.searchName.Name = "searchName";
+            this.searchName.Size = new System.Drawing.Size(55, 44);
+            this.searchName.TabIndex = 20;
+            this.searchName.Text = "Name";
+            this.searchName.UseVisualStyleBackColor = true;
+            this.searchName.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // searchLocation
+            // 
+            this.searchLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchLocation.Location = new System.Drawing.Point(130, 230);
+            this.searchLocation.Name = "searchLocation";
+            this.searchLocation.Size = new System.Drawing.Size(70, 44);
+            this.searchLocation.TabIndex = 21;
+            this.searchLocation.Text = "Location";
+            this.searchLocation.UseVisualStyleBackColor = true;
+            this.searchLocation.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // resultsLbl
+            // 
+            this.resultsLbl.AutoSize = true;
+            this.resultsLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultsLbl.Location = new System.Drawing.Point(430, 114);
+            this.resultsLbl.Name = "resultsLbl";
+            this.resultsLbl.Size = new System.Drawing.Size(60, 21);
+            this.resultsLbl.TabIndex = 22;
+            this.resultsLbl.Text = "Results";
             // 
             // Form1
             // 
@@ -505,12 +527,9 @@
 
         #endregion
         public System.Windows.Forms.PictureBox d3pLogo1;
-        public System.Windows.Forms.Button search;
+        public System.Windows.Forms.Button searchID;
         public System.Windows.Forms.DataGridView addSingletable;
         public System.Windows.Forms.PictureBox pictureSettings1;
-        public System.Windows.Forms.RadioButton IDsearch;
-        public System.Windows.Forms.RadioButton nameSearch;
-        public System.Windows.Forms.RadioButton locSearch;
         public System.Windows.Forms.Label error;
         public System.Windows.Forms.Label Searchlbl;
         public System.Windows.Forms.Label d3pTitle1;
@@ -539,6 +558,10 @@
         public System.Windows.Forms.Label enterHere;
         public System.Windows.Forms.Button addSelectedBttn;
         private System.Windows.Forms.TabPage Map;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button searchLocation;
+        public System.Windows.Forms.Button searchName;
+        public System.Windows.Forms.Label resultsLbl;
     }
 }
 

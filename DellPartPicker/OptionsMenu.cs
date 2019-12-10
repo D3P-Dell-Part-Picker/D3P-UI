@@ -189,7 +189,7 @@ namespace DellPartPicker
         {
             this.BackColor = Color.FromArgb(46, 48, 54);
             form1.BackColor = Color.FromArgb(46, 48, 54);
-
+            form1.error.BackColor = Color.White;
             form1.listTab.BackColor = Color.FromArgb(46, 48, 54);
             form1.collectiveTab.BackColor = Color.FromArgb(46, 48, 54);
             form1.singleItemTab.BackColor = Color.FromArgb(46, 48, 54);
@@ -201,7 +201,7 @@ namespace DellPartPicker
         {
             this.BackColor = Color.White;
             form1.BackColor = Color.White;
-
+            form1.error.BackColor = Color.White;
             form1.listTab.BackColor = Color.White;
             form1.collectiveTab.BackColor = Color.White;
             form1.singleItemTab.BackColor = Color.White;
