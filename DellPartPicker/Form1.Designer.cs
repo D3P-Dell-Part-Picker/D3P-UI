@@ -65,21 +65,25 @@
             this.d3pTitle3 = new System.Windows.Forms.Label();
             this.d3pLogo3 = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.mapTitle = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maplistTitle = new System.Windows.Forms.Label();
-            this.shelfM = new System.Windows.Forms.PictureBox();
-            this.shelfN = new System.Windows.Forms.PictureBox();
-            this.shelfP = new System.Windows.Forms.PictureBox();
-            this.shelfO = new System.Windows.Forms.PictureBox();
-            this.shelfR = new System.Windows.Forms.PictureBox();
-            this.shelfQ = new System.Windows.Forms.PictureBox();
-            this.shelfT = new System.Windows.Forms.PictureBox();
-            this.shelfS = new System.Windows.Forms.PictureBox();
-            this.shelfV = new System.Windows.Forms.PictureBox();
-            this.shelfU = new System.Windows.Forms.PictureBox();
-            this.shelfX = new System.Windows.Forms.PictureBox();
-            this.shelfW = new System.Windows.Forms.PictureBox();
+            this.labelS = new System.Windows.Forms.Label();
+            this.labelR = new System.Windows.Forms.Label();
+            this.labelQ = new System.Windows.Forms.Label();
+            this.labelP = new System.Windows.Forms.Label();
+            this.labelO = new System.Windows.Forms.Label();
+            this.labelN = new System.Windows.Forms.Label();
+            this.labelM = new System.Windows.Forms.Label();
+            this.labelL = new System.Windows.Forms.Label();
+            this.labelK = new System.Windows.Forms.Label();
+            this.labelJ = new System.Windows.Forms.Label();
+            this.labelI = new System.Windows.Forms.Label();
+            this.labelH = new System.Windows.Forms.Label();
+            this.labelG = new System.Windows.Forms.Label();
+            this.labelF = new System.Windows.Forms.Label();
+            this.labelE = new System.Windows.Forms.Label();
+            this.labelD = new System.Windows.Forms.Label();
+            this.labelC = new System.Windows.Forms.Label();
+            this.labelB = new System.Windows.Forms.Label();
+            this.labelA = new System.Windows.Forms.Label();
             this.shelfL = new System.Windows.Forms.PictureBox();
             this.shelfK = new System.Windows.Forms.PictureBox();
             this.shelfJ = new System.Windows.Forms.PictureBox();
@@ -92,26 +96,28 @@
             this.shelfC = new System.Windows.Forms.PictureBox();
             this.shelfB = new System.Windows.Forms.PictureBox();
             this.shelfA = new System.Windows.Forms.PictureBox();
+            this.shelfX = new System.Windows.Forms.PictureBox();
+            this.shelfW = new System.Windows.Forms.PictureBox();
+            this.shelfV = new System.Windows.Forms.PictureBox();
+            this.shelfU = new System.Windows.Forms.PictureBox();
+            this.shelfT = new System.Windows.Forms.PictureBox();
+            this.shelfS = new System.Windows.Forms.PictureBox();
+            this.shelfR = new System.Windows.Forms.PictureBox();
+            this.shelfQ = new System.Windows.Forms.PictureBox();
+            this.shelfP = new System.Windows.Forms.PictureBox();
+            this.shelfO = new System.Windows.Forms.PictureBox();
+            this.shelfN = new System.Windows.Forms.PictureBox();
+            this.shelfM = new System.Windows.Forms.PictureBox();
+            this.maplistTitle = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mapTitle = new System.Windows.Forms.Label();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.labelA = new System.Windows.Forms.Label();
-            this.labelB = new System.Windows.Forms.Label();
-            this.labelC = new System.Windows.Forms.Label();
-            this.labelD = new System.Windows.Forms.Label();
-            this.labelE = new System.Windows.Forms.Label();
-            this.labelF = new System.Windows.Forms.Label();
-            this.labelG = new System.Windows.Forms.Label();
-            this.labelH = new System.Windows.Forms.Label();
-            this.labelI = new System.Windows.Forms.Label();
-            this.labelJ = new System.Windows.Forms.Label();
-            this.labelK = new System.Windows.Forms.Label();
-            this.labelL = new System.Windows.Forms.Label();
-            this.labelM = new System.Windows.Forms.Label();
-            this.labelN = new System.Windows.Forms.Label();
-            this.labelO = new System.Windows.Forms.Label();
-            this.labelP = new System.Windows.Forms.Label();
-            this.labelQ = new System.Windows.Forms.Label();
-            this.labelR = new System.Windows.Forms.Label();
-            this.labelS = new System.Windows.Forms.Label();
+            this.labelT = new System.Windows.Forms.Label();
+            this.labelU = new System.Windows.Forms.Label();
+            this.labelV = new System.Windows.Forms.Label();
+            this.labelW = new System.Windows.Forms.Label();
+            this.labelX = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
@@ -128,19 +134,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).BeginInit();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfQ)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfJ)).BeginInit();
@@ -153,6 +146,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.shelfC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfQ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             this.SuspendLayout();
             // 
@@ -539,6 +545,12 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.labelX);
+            this.tabPage1.Controls.Add(this.labelW);
+            this.tabPage1.Controls.Add(this.labelV);
+            this.tabPage1.Controls.Add(this.labelU);
+            this.tabPage1.Controls.Add(this.labelT);
             this.tabPage1.Controls.Add(this.labelS);
             this.tabPage1.Controls.Add(this.labelR);
             this.tabPage1.Controls.Add(this.labelQ);
@@ -594,156 +606,252 @@
             this.tabPage1.Text = "Map";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // mapTitle
+            // labelS
             // 
-            this.mapTitle.AutoSize = true;
-            this.mapTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mapTitle.Location = new System.Drawing.Point(6, 3);
-            this.mapTitle.Name = "mapTitle";
-            this.mapTitle.Size = new System.Drawing.Size(52, 25);
-            this.mapTitle.TabIndex = 0;
-            this.mapTitle.Text = "Map";
+            this.labelS.AutoSize = true;
+            this.labelS.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelS.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelS.Location = new System.Drawing.Point(349, 214);
+            this.labelS.Name = "labelS";
+            this.labelS.Size = new System.Drawing.Size(15, 17);
+            this.labelS.TabIndex = 46;
+            this.labelS.Text = "S";
+            this.labelS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // labelR
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(656, 34);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(280, 461);
-            this.dataGridView1.TabIndex = 1;
+            this.labelR.AutoSize = true;
+            this.labelR.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelR.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelR.Location = new System.Drawing.Point(272, 214);
+            this.labelR.Name = "labelR";
+            this.labelR.Size = new System.Drawing.Size(16, 17);
+            this.labelR.TabIndex = 45;
+            this.labelR.Text = "R";
+            this.labelR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // maplistTitle
+            // labelQ
             // 
-            this.maplistTitle.AutoSize = true;
-            this.maplistTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maplistTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.maplistTitle.Location = new System.Drawing.Point(502, 6);
-            this.maplistTitle.Name = "maplistTitle";
-            this.maplistTitle.Size = new System.Drawing.Size(437, 25);
-            this.maplistTitle.TabIndex = 2;
-            this.maplistTitle.Text = "List (this acutally doesn\'t show anything as of now)";
-            this.maplistTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelQ.AutoSize = true;
+            this.labelQ.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelQ.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQ.Location = new System.Drawing.Point(236, 214);
+            this.labelQ.Name = "labelQ";
+            this.labelQ.Size = new System.Drawing.Size(18, 17);
+            this.labelQ.TabIndex = 44;
+            this.labelQ.Text = "Q";
+            this.labelQ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfM
+            // labelP
             // 
-            this.shelfM.BackColor = System.Drawing.Color.Gray;
-            this.shelfM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfM.Location = new System.Drawing.Point(14, 116);
-            this.shelfM.Name = "shelfM";
-            this.shelfM.Size = new System.Drawing.Size(40, 95);
-            this.shelfM.TabIndex = 3;
-            this.shelfM.TabStop = false;
+            this.labelP.AutoSize = true;
+            this.labelP.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelP.Location = new System.Drawing.Point(170, 214);
+            this.labelP.Name = "labelP";
+            this.labelP.Size = new System.Drawing.Size(16, 17);
+            this.labelP.TabIndex = 43;
+            this.labelP.Text = "P";
+            this.labelP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfN
+            // labelO
             // 
-            this.shelfN.BackColor = System.Drawing.Color.Gray;
-            this.shelfN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfN.Location = new System.Drawing.Point(50, 116);
-            this.shelfN.Name = "shelfN";
-            this.shelfN.Size = new System.Drawing.Size(40, 95);
-            this.shelfN.TabIndex = 4;
-            this.shelfN.TabStop = false;
+            this.labelO.AutoSize = true;
+            this.labelO.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelO.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelO.Location = new System.Drawing.Point(131, 214);
+            this.labelO.Name = "labelO";
+            this.labelO.Size = new System.Drawing.Size(18, 17);
+            this.labelO.TabIndex = 42;
+            this.labelO.Text = "O";
+            this.labelO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfP
+            // labelN
             // 
-            this.shelfP.BackColor = System.Drawing.Color.Gray;
-            this.shelfP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfP.Location = new System.Drawing.Point(156, 116);
-            this.shelfP.Name = "shelfP";
-            this.shelfP.Size = new System.Drawing.Size(40, 95);
-            this.shelfP.TabIndex = 6;
-            this.shelfP.TabStop = false;
+            this.labelN.AutoSize = true;
+            this.labelN.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelN.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelN.Location = new System.Drawing.Point(61, 214);
+            this.labelN.Name = "labelN";
+            this.labelN.Size = new System.Drawing.Size(18, 17);
+            this.labelN.TabIndex = 41;
+            this.labelN.Text = "N";
+            this.labelN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfO
+            // labelM
             // 
-            this.shelfO.BackColor = System.Drawing.Color.Gray;
-            this.shelfO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfO.Location = new System.Drawing.Point(120, 116);
-            this.shelfO.Name = "shelfO";
-            this.shelfO.Size = new System.Drawing.Size(40, 95);
-            this.shelfO.TabIndex = 5;
-            this.shelfO.TabStop = false;
+            this.labelM.AutoSize = true;
+            this.labelM.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelM.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelM.Location = new System.Drawing.Point(27, 214);
+            this.labelM.Name = "labelM";
+            this.labelM.Size = new System.Drawing.Size(20, 17);
+            this.labelM.TabIndex = 40;
+            this.labelM.Text = "M";
+            this.labelM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfR
+            // labelL
             // 
-            this.shelfR.BackColor = System.Drawing.Color.Gray;
-            this.shelfR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfR.Location = new System.Drawing.Point(262, 116);
-            this.shelfR.Name = "shelfR";
-            this.shelfR.Size = new System.Drawing.Size(40, 95);
-            this.shelfR.TabIndex = 8;
-            this.shelfR.TabStop = false;
+            this.labelL.AutoSize = true;
+            this.labelL.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelL.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelL.Location = new System.Drawing.Point(612, 380);
+            this.labelL.Name = "labelL";
+            this.labelL.Size = new System.Drawing.Size(14, 17);
+            this.labelL.TabIndex = 39;
+            this.labelL.Text = "L";
+            this.labelL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfQ
+            // labelK
             // 
-            this.shelfQ.BackColor = System.Drawing.Color.Gray;
-            this.shelfQ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfQ.Location = new System.Drawing.Point(226, 116);
-            this.shelfQ.Name = "shelfQ";
-            this.shelfQ.Size = new System.Drawing.Size(40, 95);
-            this.shelfQ.TabIndex = 7;
-            this.shelfQ.TabStop = false;
+            this.labelK.AutoSize = true;
+            this.labelK.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelK.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelK.Location = new System.Drawing.Point(575, 380);
+            this.labelK.Name = "labelK";
+            this.labelK.Size = new System.Drawing.Size(16, 17);
+            this.labelK.TabIndex = 38;
+            this.labelK.Text = "K";
+            this.labelK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfT
+            // labelJ
             // 
-            this.shelfT.BackColor = System.Drawing.Color.Gray;
-            this.shelfT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfT.Location = new System.Drawing.Point(373, 116);
-            this.shelfT.Name = "shelfT";
-            this.shelfT.Size = new System.Drawing.Size(40, 95);
-            this.shelfT.TabIndex = 10;
-            this.shelfT.TabStop = false;
+            this.labelJ.AutoSize = true;
+            this.labelJ.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelJ.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelJ.Location = new System.Drawing.Point(504, 380);
+            this.labelJ.Name = "labelJ";
+            this.labelJ.Size = new System.Drawing.Size(13, 17);
+            this.labelJ.TabIndex = 37;
+            this.labelJ.Text = "J";
+            this.labelJ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfS
+            // labelI
             // 
-            this.shelfS.BackColor = System.Drawing.Color.Gray;
-            this.shelfS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfS.Location = new System.Drawing.Point(337, 116);
-            this.shelfS.Name = "shelfS";
-            this.shelfS.Size = new System.Drawing.Size(40, 95);
-            this.shelfS.TabIndex = 9;
-            this.shelfS.TabStop = false;
+            this.labelI.AutoSize = true;
+            this.labelI.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelI.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelI.Location = new System.Drawing.Point(460, 380);
+            this.labelI.Name = "labelI";
+            this.labelI.Size = new System.Drawing.Size(12, 17);
+            this.labelI.TabIndex = 36;
+            this.labelI.Text = "I";
+            this.labelI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfV
+            // labelH
             // 
-            this.shelfV.BackColor = System.Drawing.Color.Gray;
-            this.shelfV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfV.Location = new System.Drawing.Point(485, 116);
-            this.shelfV.Name = "shelfV";
-            this.shelfV.Size = new System.Drawing.Size(40, 95);
-            this.shelfV.TabIndex = 12;
-            this.shelfV.TabStop = false;
+            this.labelH.AutoSize = true;
+            this.labelH.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelH.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelH.Location = new System.Drawing.Point(383, 380);
+            this.labelH.Name = "labelH";
+            this.labelH.Size = new System.Drawing.Size(18, 17);
+            this.labelH.TabIndex = 35;
+            this.labelH.Text = "H";
+            this.labelH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfU
+            // labelG
             // 
-            this.shelfU.BackColor = System.Drawing.Color.Gray;
-            this.shelfU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfU.Location = new System.Drawing.Point(449, 116);
-            this.shelfU.Name = "shelfU";
-            this.shelfU.Size = new System.Drawing.Size(40, 95);
-            this.shelfU.TabIndex = 11;
-            this.shelfU.TabStop = false;
+            this.labelG.AutoSize = true;
+            this.labelG.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelG.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelG.Location = new System.Drawing.Point(348, 380);
+            this.labelG.Name = "labelG";
+            this.labelG.Size = new System.Drawing.Size(17, 17);
+            this.labelG.TabIndex = 34;
+            this.labelG.Text = "G";
+            this.labelG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfX
+            // labelF
             // 
-            this.shelfX.BackColor = System.Drawing.Color.Gray;
-            this.shelfX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfX.Location = new System.Drawing.Point(599, 116);
-            this.shelfX.Name = "shelfX";
-            this.shelfX.Size = new System.Drawing.Size(40, 95);
-            this.shelfX.TabIndex = 14;
-            this.shelfX.TabStop = false;
+            this.labelF.AutoSize = true;
+            this.labelF.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelF.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelF.Location = new System.Drawing.Point(275, 380);
+            this.labelF.Name = "labelF";
+            this.labelF.Size = new System.Drawing.Size(15, 17);
+            this.labelF.TabIndex = 33;
+            this.labelF.Text = "F";
+            this.labelF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shelfW
+            // labelE
             // 
-            this.shelfW.BackColor = System.Drawing.Color.Gray;
-            this.shelfW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.shelfW.Location = new System.Drawing.Point(563, 116);
-            this.shelfW.Name = "shelfW";
-            this.shelfW.Size = new System.Drawing.Size(40, 95);
-            this.shelfW.TabIndex = 13;
-            this.shelfW.TabStop = false;
+            this.labelE.AutoSize = true;
+            this.labelE.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelE.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelE.Location = new System.Drawing.Point(237, 380);
+            this.labelE.Name = "labelE";
+            this.labelE.Size = new System.Drawing.Size(15, 17);
+            this.labelE.TabIndex = 32;
+            this.labelE.Text = "E";
+            this.labelE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelD
+            // 
+            this.labelD.AutoSize = true;
+            this.labelD.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelD.Location = new System.Drawing.Point(171, 380);
+            this.labelD.Name = "labelD";
+            this.labelD.Size = new System.Drawing.Size(17, 17);
+            this.labelD.TabIndex = 31;
+            this.labelD.Text = "D";
+            this.labelD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC
+            // 
+            this.labelC.AutoSize = true;
+            this.labelC.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelC.Location = new System.Drawing.Point(131, 380);
+            this.labelC.Name = "labelC";
+            this.labelC.Size = new System.Drawing.Size(16, 17);
+            this.labelC.TabIndex = 30;
+            this.labelC.Text = "C";
+            this.labelC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB
+            // 
+            this.labelB.AutoSize = true;
+            this.labelB.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelB.Location = new System.Drawing.Point(61, 380);
+            this.labelB.Name = "labelB";
+            this.labelB.Size = new System.Drawing.Size(16, 17);
+            this.labelB.TabIndex = 29;
+            this.labelB.Text = "B";
+            this.labelB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelA
+            // 
+            this.labelA.AutoSize = true;
+            this.labelA.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelA.Location = new System.Drawing.Point(27, 380);
+            this.labelA.Name = "labelA";
+            this.labelA.Size = new System.Drawing.Size(17, 17);
+            this.labelA.TabIndex = 28;
+            this.labelA.Text = "A";
+            this.labelA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // shelfL
             // 
@@ -865,6 +973,157 @@
             this.shelfA.TabIndex = 15;
             this.shelfA.TabStop = false;
             // 
+            // shelfX
+            // 
+            this.shelfX.BackColor = System.Drawing.Color.Gray;
+            this.shelfX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfX.Location = new System.Drawing.Point(599, 116);
+            this.shelfX.Name = "shelfX";
+            this.shelfX.Size = new System.Drawing.Size(40, 95);
+            this.shelfX.TabIndex = 14;
+            this.shelfX.TabStop = false;
+            // 
+            // shelfW
+            // 
+            this.shelfW.BackColor = System.Drawing.Color.Gray;
+            this.shelfW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfW.Location = new System.Drawing.Point(563, 116);
+            this.shelfW.Name = "shelfW";
+            this.shelfW.Size = new System.Drawing.Size(40, 95);
+            this.shelfW.TabIndex = 13;
+            this.shelfW.TabStop = false;
+            // 
+            // shelfV
+            // 
+            this.shelfV.BackColor = System.Drawing.Color.Gray;
+            this.shelfV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfV.Location = new System.Drawing.Point(485, 116);
+            this.shelfV.Name = "shelfV";
+            this.shelfV.Size = new System.Drawing.Size(40, 95);
+            this.shelfV.TabIndex = 12;
+            this.shelfV.TabStop = false;
+            // 
+            // shelfU
+            // 
+            this.shelfU.BackColor = System.Drawing.Color.Gray;
+            this.shelfU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfU.Location = new System.Drawing.Point(449, 116);
+            this.shelfU.Name = "shelfU";
+            this.shelfU.Size = new System.Drawing.Size(40, 95);
+            this.shelfU.TabIndex = 11;
+            this.shelfU.TabStop = false;
+            // 
+            // shelfT
+            // 
+            this.shelfT.BackColor = System.Drawing.Color.Gray;
+            this.shelfT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfT.Location = new System.Drawing.Point(373, 116);
+            this.shelfT.Name = "shelfT";
+            this.shelfT.Size = new System.Drawing.Size(40, 95);
+            this.shelfT.TabIndex = 10;
+            this.shelfT.TabStop = false;
+            // 
+            // shelfS
+            // 
+            this.shelfS.BackColor = System.Drawing.Color.Gray;
+            this.shelfS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfS.Location = new System.Drawing.Point(337, 116);
+            this.shelfS.Name = "shelfS";
+            this.shelfS.Size = new System.Drawing.Size(40, 95);
+            this.shelfS.TabIndex = 9;
+            this.shelfS.TabStop = false;
+            // 
+            // shelfR
+            // 
+            this.shelfR.BackColor = System.Drawing.Color.Gray;
+            this.shelfR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfR.Location = new System.Drawing.Point(262, 116);
+            this.shelfR.Name = "shelfR";
+            this.shelfR.Size = new System.Drawing.Size(40, 95);
+            this.shelfR.TabIndex = 8;
+            this.shelfR.TabStop = false;
+            // 
+            // shelfQ
+            // 
+            this.shelfQ.BackColor = System.Drawing.Color.Gray;
+            this.shelfQ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfQ.Location = new System.Drawing.Point(226, 116);
+            this.shelfQ.Name = "shelfQ";
+            this.shelfQ.Size = new System.Drawing.Size(40, 95);
+            this.shelfQ.TabIndex = 7;
+            this.shelfQ.TabStop = false;
+            // 
+            // shelfP
+            // 
+            this.shelfP.BackColor = System.Drawing.Color.Gray;
+            this.shelfP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfP.Location = new System.Drawing.Point(156, 116);
+            this.shelfP.Name = "shelfP";
+            this.shelfP.Size = new System.Drawing.Size(40, 95);
+            this.shelfP.TabIndex = 6;
+            this.shelfP.TabStop = false;
+            // 
+            // shelfO
+            // 
+            this.shelfO.BackColor = System.Drawing.Color.Gray;
+            this.shelfO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfO.Location = new System.Drawing.Point(120, 116);
+            this.shelfO.Name = "shelfO";
+            this.shelfO.Size = new System.Drawing.Size(40, 95);
+            this.shelfO.TabIndex = 5;
+            this.shelfO.TabStop = false;
+            // 
+            // shelfN
+            // 
+            this.shelfN.BackColor = System.Drawing.Color.Gray;
+            this.shelfN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfN.Location = new System.Drawing.Point(50, 116);
+            this.shelfN.Name = "shelfN";
+            this.shelfN.Size = new System.Drawing.Size(40, 95);
+            this.shelfN.TabIndex = 4;
+            this.shelfN.TabStop = false;
+            // 
+            // shelfM
+            // 
+            this.shelfM.BackColor = System.Drawing.Color.Gray;
+            this.shelfM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shelfM.Location = new System.Drawing.Point(14, 116);
+            this.shelfM.Name = "shelfM";
+            this.shelfM.Size = new System.Drawing.Size(40, 95);
+            this.shelfM.TabIndex = 3;
+            this.shelfM.TabStop = false;
+            // 
+            // maplistTitle
+            // 
+            this.maplistTitle.AutoSize = true;
+            this.maplistTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maplistTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.maplistTitle.Location = new System.Drawing.Point(502, 6);
+            this.maplistTitle.Name = "maplistTitle";
+            this.maplistTitle.Size = new System.Drawing.Size(437, 25);
+            this.maplistTitle.TabIndex = 2;
+            this.maplistTitle.Text = "(this acutally doesn\'t show anything as of now) List";
+            this.maplistTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(656, 34);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(280, 392);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // mapTitle
+            // 
+            this.mapTitle.AutoSize = true;
+            this.mapTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mapTitle.Location = new System.Drawing.Point(6, 3);
+            this.mapTitle.Name = "mapTitle";
+            this.mapTitle.Size = new System.Drawing.Size(52, 25);
+            this.mapTitle.TabIndex = 0;
+            this.mapTitle.Text = "Map";
+            // 
             // pictureBox29
             // 
             this.pictureBox29.BackColor = System.Drawing.Color.Gainsboro;
@@ -875,252 +1134,82 @@
             this.pictureBox29.TabStop = false;
             this.pictureBox29.Click += new System.EventHandler(this.pictureBox29_Click);
             // 
-            // labelA
+            // labelT
             // 
-            this.labelA.AutoSize = true;
-            this.labelA.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelA.Location = new System.Drawing.Point(27, 380);
-            this.labelA.Name = "labelA";
-            this.labelA.Size = new System.Drawing.Size(17, 17);
-            this.labelA.TabIndex = 28;
-            this.labelA.Text = "A";
-            this.labelA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelT.AutoSize = true;
+            this.labelT.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelT.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelT.Location = new System.Drawing.Point(386, 214);
+            this.labelT.Name = "labelT";
+            this.labelT.Size = new System.Drawing.Size(15, 17);
+            this.labelT.TabIndex = 47;
+            this.labelT.Text = "T";
+            this.labelT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelB
+            // labelU
             // 
-            this.labelB.AutoSize = true;
-            this.labelB.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelB.Location = new System.Drawing.Point(61, 380);
-            this.labelB.Name = "labelB";
-            this.labelB.Size = new System.Drawing.Size(16, 17);
-            this.labelB.TabIndex = 29;
-            this.labelB.Text = "B";
-            this.labelB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelU.AutoSize = true;
+            this.labelU.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelU.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelU.Location = new System.Drawing.Point(460, 214);
+            this.labelU.Name = "labelU";
+            this.labelU.Size = new System.Drawing.Size(17, 17);
+            this.labelU.TabIndex = 48;
+            this.labelU.Text = "U";
+            this.labelU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelC
+            // labelV
             // 
-            this.labelC.AutoSize = true;
-            this.labelC.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelC.Location = new System.Drawing.Point(131, 380);
-            this.labelC.Name = "labelC";
-            this.labelC.Size = new System.Drawing.Size(16, 17);
-            this.labelC.TabIndex = 30;
-            this.labelC.Text = "C";
-            this.labelC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelV.AutoSize = true;
+            this.labelV.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelV.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelV.Location = new System.Drawing.Point(495, 214);
+            this.labelV.Name = "labelV";
+            this.labelV.Size = new System.Drawing.Size(16, 17);
+            this.labelV.TabIndex = 49;
+            this.labelV.Text = "V";
+            this.labelV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelD
+            // labelW
             // 
-            this.labelD.AutoSize = true;
-            this.labelD.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelD.Location = new System.Drawing.Point(171, 380);
-            this.labelD.Name = "labelD";
-            this.labelD.Size = new System.Drawing.Size(17, 17);
-            this.labelD.TabIndex = 31;
-            this.labelD.Text = "D";
-            this.labelD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelW.AutoSize = true;
+            this.labelW.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelW.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelW.Location = new System.Drawing.Point(575, 214);
+            this.labelW.Name = "labelW";
+            this.labelW.Size = new System.Drawing.Size(21, 17);
+            this.labelW.TabIndex = 50;
+            this.labelW.Text = "W";
+            this.labelW.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelW.Click += new System.EventHandler(this.label2_Click);
             // 
-            // labelE
+            // labelX
             // 
-            this.labelE.AutoSize = true;
-            this.labelE.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelE.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelE.Location = new System.Drawing.Point(237, 380);
-            this.labelE.Name = "labelE";
-            this.labelE.Size = new System.Drawing.Size(15, 17);
-            this.labelE.TabIndex = 32;
-            this.labelE.Text = "E";
-            this.labelE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelX.AutoSize = true;
+            this.labelX.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelX.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX.Location = new System.Drawing.Point(612, 214);
+            this.labelX.Name = "labelX";
+            this.labelX.Size = new System.Drawing.Size(16, 17);
+            this.labelX.TabIndex = 51;
+            this.labelX.Text = "X";
+            this.labelX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelF
+            // button1
             // 
-            this.labelF.AutoSize = true;
-            this.labelF.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelF.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelF.Location = new System.Drawing.Point(275, 380);
-            this.labelF.Name = "labelF";
-            this.labelF.Size = new System.Drawing.Size(15, 17);
-            this.labelF.TabIndex = 33;
-            this.labelF.Text = "F";
-            this.labelF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelG
-            // 
-            this.labelG.AutoSize = true;
-            this.labelG.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelG.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelG.Location = new System.Drawing.Point(348, 380);
-            this.labelG.Name = "labelG";
-            this.labelG.Size = new System.Drawing.Size(17, 17);
-            this.labelG.TabIndex = 34;
-            this.labelG.Text = "G";
-            this.labelG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelH
-            // 
-            this.labelH.AutoSize = true;
-            this.labelH.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelH.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelH.Location = new System.Drawing.Point(383, 380);
-            this.labelH.Name = "labelH";
-            this.labelH.Size = new System.Drawing.Size(18, 17);
-            this.labelH.TabIndex = 35;
-            this.labelH.Text = "H";
-            this.labelH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelI
-            // 
-            this.labelI.AutoSize = true;
-            this.labelI.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelI.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelI.Location = new System.Drawing.Point(460, 380);
-            this.labelI.Name = "labelI";
-            this.labelI.Size = new System.Drawing.Size(12, 17);
-            this.labelI.TabIndex = 36;
-            this.labelI.Text = "I";
-            this.labelI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelJ
-            // 
-            this.labelJ.AutoSize = true;
-            this.labelJ.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelJ.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJ.Location = new System.Drawing.Point(504, 380);
-            this.labelJ.Name = "labelJ";
-            this.labelJ.Size = new System.Drawing.Size(13, 17);
-            this.labelJ.TabIndex = 37;
-            this.labelJ.Text = "J";
-            this.labelJ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelK
-            // 
-            this.labelK.AutoSize = true;
-            this.labelK.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelK.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelK.Location = new System.Drawing.Point(575, 380);
-            this.labelK.Name = "labelK";
-            this.labelK.Size = new System.Drawing.Size(16, 17);
-            this.labelK.TabIndex = 38;
-            this.labelK.Text = "K";
-            this.labelK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelL
-            // 
-            this.labelL.AutoSize = true;
-            this.labelL.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelL.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelL.Location = new System.Drawing.Point(612, 380);
-            this.labelL.Name = "labelL";
-            this.labelL.Size = new System.Drawing.Size(14, 17);
-            this.labelL.TabIndex = 39;
-            this.labelL.Text = "L";
-            this.labelL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelM
-            // 
-            this.labelM.AutoSize = true;
-            this.labelM.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelM.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelM.Location = new System.Drawing.Point(27, 214);
-            this.labelM.Name = "labelM";
-            this.labelM.Size = new System.Drawing.Size(20, 17);
-            this.labelM.TabIndex = 40;
-            this.labelM.Text = "M";
-            this.labelM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelN
-            // 
-            this.labelN.AutoSize = true;
-            this.labelN.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelN.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelN.Location = new System.Drawing.Point(61, 214);
-            this.labelN.Name = "labelN";
-            this.labelN.Size = new System.Drawing.Size(18, 17);
-            this.labelN.TabIndex = 41;
-            this.labelN.Text = "N";
-            this.labelN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelO
-            // 
-            this.labelO.AutoSize = true;
-            this.labelO.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelO.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelO.Location = new System.Drawing.Point(131, 214);
-            this.labelO.Name = "labelO";
-            this.labelO.Size = new System.Drawing.Size(18, 17);
-            this.labelO.TabIndex = 42;
-            this.labelO.Text = "O";
-            this.labelO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelP
-            // 
-            this.labelP.AutoSize = true;
-            this.labelP.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelP.Location = new System.Drawing.Point(170, 214);
-            this.labelP.Name = "labelP";
-            this.labelP.Size = new System.Drawing.Size(16, 17);
-            this.labelP.TabIndex = 43;
-            this.labelP.Text = "P";
-            this.labelP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelQ
-            // 
-            this.labelQ.AutoSize = true;
-            this.labelQ.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelQ.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQ.Location = new System.Drawing.Point(236, 214);
-            this.labelQ.Name = "labelQ";
-            this.labelQ.Size = new System.Drawing.Size(18, 17);
-            this.labelQ.TabIndex = 44;
-            this.labelQ.Text = "Q";
-            this.labelQ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelR
-            // 
-            this.labelR.AutoSize = true;
-            this.labelR.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelR.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelR.Location = new System.Drawing.Point(272, 214);
-            this.labelR.Name = "labelR";
-            this.labelR.Size = new System.Drawing.Size(16, 17);
-            this.labelR.TabIndex = 45;
-            this.labelR.Text = "R";
-            this.labelR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelS
-            // 
-            this.labelS.AutoSize = true;
-            this.labelS.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelS.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelS.Location = new System.Drawing.Point(349, 214);
-            this.labelS.Name = "labelS";
-            this.labelS.Size = new System.Drawing.Size(15, 17);
-            this.labelS.TabIndex = 46;
-            this.labelS.Text = "S";
-            this.labelS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(656, 432);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(280, 63);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "Remove Selected Item";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1151,19 +1240,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfQ)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shelfW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfJ)).EndInit();
@@ -1176,6 +1252,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.shelfC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfQ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shelfM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             this.ResumeLayout(false);
 
@@ -1265,6 +1354,12 @@
         private System.Windows.Forms.Label labelC;
         private System.Windows.Forms.Label labelB;
         private System.Windows.Forms.Label labelA;
+        private System.Windows.Forms.Label labelW;
+        private System.Windows.Forms.Label labelV;
+        private System.Windows.Forms.Label labelU;
+        private System.Windows.Forms.Label labelT;
+        private System.Windows.Forms.Label labelX;
+        private System.Windows.Forms.Button button1;
     }
 }
 
