@@ -38,8 +38,8 @@ namespace DellPartPicker
             addSingletable.AllowUserToResizeColumns = false;
             addSingletable.AllowUserToResizeRows = false;
             addSingletable.ReadOnly = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.MaximizeBox = true;
+            this.MinimizeBox = true;
             error.Hide();
         }
 
@@ -100,6 +100,7 @@ namespace DellPartPicker
 
         private void bttnRemove_Click(object sender, EventArgs e)
         {
+            // remove the all selected items from the collected list
             foreach (DataGridViewRow item in this.collectiveTable.SelectedRows)
             {
                 collectiveTable.Rows.RemoveAt(item.Index);
@@ -108,11 +109,13 @@ namespace DellPartPicker
 
         private void bttnClear_Click(object sender, EventArgs e)
         {
+            // clear the list
             collectiveTable.Rows.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // search the master list for parameters based on the search box
             collectiveTable.Rows.Add(addListTable.Rows);
             collectiveTable.Rows.Clear();
         }

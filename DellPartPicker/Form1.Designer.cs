@@ -164,8 +164,9 @@
             // 
             // IDsearch
             // 
+            this.IDsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.IDsearch.AutoSize = true;
-            this.IDsearch.Location = new System.Drawing.Point(152, 403);
+            this.IDsearch.Location = new System.Drawing.Point(152, 662);
             this.IDsearch.Name = "IDsearch";
             this.IDsearch.Size = new System.Drawing.Size(86, 17);
             this.IDsearch.TabIndex = 0;
@@ -175,8 +176,9 @@
             // 
             // nameSearch
             // 
+            this.nameSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.nameSearch.AutoSize = true;
-            this.nameSearch.Location = new System.Drawing.Point(152, 426);
+            this.nameSearch.Location = new System.Drawing.Point(152, 685);
             this.nameSearch.Name = "nameSearch";
             this.nameSearch.Size = new System.Drawing.Size(105, 17);
             this.nameSearch.TabIndex = 1;
@@ -186,8 +188,9 @@
             // 
             // locSearch
             // 
+            this.locSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.locSearch.AutoSize = true;
-            this.locSearch.Location = new System.Drawing.Point(152, 449);
+            this.locSearch.Location = new System.Drawing.Point(152, 708);
             this.locSearch.Name = "locSearch";
             this.locSearch.Size = new System.Drawing.Size(118, 17);
             this.locSearch.TabIndex = 2;
@@ -207,7 +210,8 @@
             // 
             // search
             // 
-            this.search.Location = new System.Drawing.Point(36, 420);
+            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.search.Location = new System.Drawing.Point(36, 679);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(110, 44);
             this.search.TabIndex = 4;
@@ -217,8 +221,9 @@
             // 
             // addSingletable
             // 
+            this.addSingletable.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.addSingletable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.addSingletable.Location = new System.Drawing.Point(506, 62);
+            this.addSingletable.Location = new System.Drawing.Point(805, 192);
             this.addSingletable.Name = "addSingletable";
             this.addSingletable.Size = new System.Drawing.Size(369, 346);
             this.addSingletable.TabIndex = 5;
@@ -237,9 +242,10 @@
             // 
             // error
             // 
+            this.error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.error.AutoSize = true;
             this.error.ForeColor = System.Drawing.Color.Maroon;
-            this.error.Location = new System.Drawing.Point(33, 403);
+            this.error.Location = new System.Drawing.Point(33, 662);
             this.error.Name = "error";
             this.error.Size = new System.Drawing.Size(76, 13);
             this.error.TabIndex = 7;
@@ -247,16 +253,18 @@
             // 
             // searchBox
             // 
+            this.searchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchBox.Location = new System.Drawing.Point(124, 377);
+            this.searchBox.Location = new System.Drawing.Point(124, 636);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(114, 20);
             this.searchBox.TabIndex = 8;
             // 
             // Searchlbl
             // 
+            this.Searchlbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Searchlbl.AutoSize = true;
-            this.Searchlbl.Location = new System.Drawing.Point(55, 377);
+            this.Searchlbl.Location = new System.Drawing.Point(55, 636);
             this.Searchlbl.Name = "Searchlbl";
             this.Searchlbl.Size = new System.Drawing.Size(44, 13);
             this.Searchlbl.TabIndex = 9;
@@ -264,8 +272,9 @@
             // 
             // pictureSettings1
             // 
+            this.pictureSettings1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureSettings1.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings1.Image")));
-            this.pictureSettings1.Location = new System.Drawing.Point(875, 0);
+            this.pictureSettings1.Location = new System.Drawing.Point(1174, 0);
             this.pictureSettings1.Name = "pictureSettings1";
             this.pictureSettings1.Size = new System.Drawing.Size(63, 56);
             this.pictureSettings1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -302,14 +311,19 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.singleItemTab);
             this.tabControl1.Controls.Add(this.listTab);
             this.tabControl1.Controls.Add(this.collectiveTab);
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.HotTrack = true;
             this.tabControl1.Location = new System.Drawing.Point(-4, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(950, 533);
+            this.tabControl1.Size = new System.Drawing.Size(1249, 792);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 14;
             // 
             // singleItemTab
@@ -329,14 +343,15 @@
             this.singleItemTab.Location = new System.Drawing.Point(4, 22);
             this.singleItemTab.Name = "singleItemTab";
             this.singleItemTab.Padding = new System.Windows.Forms.Padding(3);
-            this.singleItemTab.Size = new System.Drawing.Size(942, 507);
+            this.singleItemTab.Size = new System.Drawing.Size(1241, 766);
             this.singleItemTab.TabIndex = 0;
             this.singleItemTab.Text = "Add Single Item";
             this.singleItemTab.UseVisualStyleBackColor = true;
             // 
             // addSelectedBttn
             // 
-            this.addSelectedBttn.Location = new System.Drawing.Point(664, 439);
+            this.addSelectedBttn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addSelectedBttn.Location = new System.Drawing.Point(963, 698);
             this.addSelectedBttn.Name = "addSelectedBttn";
             this.addSelectedBttn.Size = new System.Drawing.Size(75, 23);
             this.addSelectedBttn.TabIndex = 11;
@@ -360,7 +375,7 @@
             this.listTab.Location = new System.Drawing.Point(4, 22);
             this.listTab.Name = "listTab";
             this.listTab.Padding = new System.Windows.Forms.Padding(3);
-            this.listTab.Size = new System.Drawing.Size(942, 507);
+            this.listTab.Size = new System.Drawing.Size(1241, 766);
             this.listTab.TabIndex = 1;
             this.listTab.Text = "List Dump";
             this.listTab.UseVisualStyleBackColor = true;
@@ -458,7 +473,7 @@
             this.collectiveTab.Location = new System.Drawing.Point(4, 22);
             this.collectiveTab.Name = "collectiveTab";
             this.collectiveTab.Padding = new System.Windows.Forms.Padding(3);
-            this.collectiveTab.Size = new System.Drawing.Size(942, 507);
+            this.collectiveTab.Size = new System.Drawing.Size(1241, 766);
             this.collectiveTab.TabIndex = 2;
             this.collectiveTab.Text = "Collective";
             this.collectiveTab.UseVisualStyleBackColor = true;
@@ -601,7 +616,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(942, 507);
+            this.tabPage1.Size = new System.Drawing.Size(1241, 766);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Map";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1215,11 +1230,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(942, 530);
+            this.ClientSize = new System.Drawing.Size(1264, 761);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).EndInit();
@@ -1285,7 +1304,6 @@
         public System.Windows.Forms.DataGridView addListTable;
         public System.Windows.Forms.TextBox listTextBox;
         public System.Windows.Forms.Button listSearchBttn;
-        public System.Windows.Forms.TabControl tabControl1;
         public System.Windows.Forms.TabPage singleItemTab;
         public System.Windows.Forms.TabPage listTab;
         public System.Windows.Forms.PictureBox pictureBox3;
@@ -1360,6 +1378,7 @@
         private System.Windows.Forms.Label labelT;
         private System.Windows.Forms.Label labelX;
         private System.Windows.Forms.Button removeSelected;
+        protected internal System.Windows.Forms.TabControl tabControl1;
     }
 }
 
