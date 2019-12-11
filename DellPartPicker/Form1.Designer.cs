@@ -42,13 +42,13 @@
             this.listSearchBttn = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.singleItemTab = new System.Windows.Forms.TabPage();
-            this.searchLocation = new System.Windows.Forms.Button();
+            this.searchLoc = new System.Windows.Forms.Button();
             this.searchName = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.addSelectedBttn = new System.Windows.Forms.Button();
             this.listTab = new System.Windows.Forms.TabPage();
             this.enterHere = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureSettings2 = new System.Windows.Forms.PictureBox();
             this.addAll = new System.Windows.Forms.Button();
             this.dumpLbl = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -58,7 +58,7 @@
             this.resultsLbl = new System.Windows.Forms.Label();
             this.bttnRemove = new System.Windows.Forms.Button();
             this.bttnClear = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureSettings3 = new System.Windows.Forms.PictureBox();
             this.collectiveLbl = new System.Windows.Forms.Label();
             this.collectiveTable = new System.Windows.Forms.DataGridView();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -72,11 +72,11 @@
             this.tabControl1.SuspendLayout();
             this.singleItemTab.SuspendLayout();
             this.listTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSettings2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo2)).BeginInit();
             this.collectiveTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSettings3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.collectiveTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).BeginInit();
@@ -210,7 +210,7 @@
             // 
             // singleItemTab
             // 
-            this.singleItemTab.Controls.Add(this.searchLocation);
+            this.singleItemTab.Controls.Add(this.searchLoc);
             this.singleItemTab.Controls.Add(this.searchName);
             this.singleItemTab.Controls.Add(this.error);
             this.singleItemTab.Controls.Add(this.label1);
@@ -230,16 +230,16 @@
             this.singleItemTab.Text = "Add Single Item";
             this.singleItemTab.UseVisualStyleBackColor = true;
             // 
-            // searchLocation
+            // searchLoc
             // 
-            this.searchLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchLocation.Location = new System.Drawing.Point(130, 230);
-            this.searchLocation.Name = "searchLocation";
-            this.searchLocation.Size = new System.Drawing.Size(70, 44);
-            this.searchLocation.TabIndex = 21;
-            this.searchLocation.Text = "Location";
-            this.searchLocation.UseVisualStyleBackColor = true;
-            this.searchLocation.Click += new System.EventHandler(this.button2_Click_1);
+            this.searchLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchLoc.Location = new System.Drawing.Point(130, 230);
+            this.searchLoc.Name = "searchLoc";
+            this.searchLoc.Size = new System.Drawing.Size(70, 44);
+            this.searchLoc.TabIndex = 21;
+            this.searchLoc.Text = "Location";
+            this.searchLoc.UseVisualStyleBackColor = true;
+            this.searchLoc.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // searchName
             // 
@@ -276,7 +276,7 @@
             // listTab
             // 
             this.listTab.Controls.Add(this.enterHere);
-            this.listTab.Controls.Add(this.pictureBox1);
+            this.listTab.Controls.Add(this.pictureSettings2);
             this.listTab.Controls.Add(this.addAll);
             this.listTab.Controls.Add(this.dumpLbl);
             this.listTab.Controls.Add(this.pictureBox3);
@@ -303,16 +303,16 @@
             this.enterHere.TabIndex = 21;
             this.enterHere.Text = "Enter part number below.  Put each part number on a separate line.";
             // 
-            // pictureBox1
+            // pictureSettings2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(875, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureSettings2.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings2.Image")));
+            this.pictureSettings2.Location = new System.Drawing.Point(875, 0);
+            this.pictureSettings2.Name = "pictureSettings2";
+            this.pictureSettings2.Size = new System.Drawing.Size(63, 56);
+            this.pictureSettings2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureSettings2.TabIndex = 20;
+            this.pictureSettings2.TabStop = false;
+            this.pictureSettings2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // addAll
             // 
@@ -373,7 +373,7 @@
             this.collectiveTab.Controls.Add(this.resultsLbl);
             this.collectiveTab.Controls.Add(this.bttnRemove);
             this.collectiveTab.Controls.Add(this.bttnClear);
-            this.collectiveTab.Controls.Add(this.pictureBox2);
+            this.collectiveTab.Controls.Add(this.pictureSettings3);
             this.collectiveTab.Controls.Add(this.collectiveLbl);
             this.collectiveTab.Controls.Add(this.collectiveTable);
             this.collectiveTab.Controls.Add(this.pictureBox4);
@@ -422,16 +422,16 @@
             this.bttnClear.UseVisualStyleBackColor = true;
             this.bttnClear.Click += new System.EventHandler(this.bttnClear_Click);
             // 
-            // pictureBox2
+            // pictureSettings3
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(875, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 56);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureSettings3.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings3.Image")));
+            this.pictureSettings3.Location = new System.Drawing.Point(875, 0);
+            this.pictureSettings3.Name = "pictureSettings3";
+            this.pictureSettings3.Size = new System.Drawing.Size(63, 56);
+            this.pictureSettings3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureSettings3.TabIndex = 19;
+            this.pictureSettings3.TabStop = false;
+            this.pictureSettings3.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // collectiveLbl
             // 
@@ -512,12 +512,12 @@
             this.singleItemTab.PerformLayout();
             this.listTab.ResumeLayout(false);
             this.listTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSettings2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo2)).EndInit();
             this.collectiveTab.ResumeLayout(false);
             this.collectiveTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSettings3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.collectiveTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).EndInit();
@@ -551,15 +551,15 @@
         public System.Windows.Forms.Label d3pTitle3;
         public System.Windows.Forms.PictureBox d3pLogo3;
         public System.Windows.Forms.Button addAll;
-        public System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureSettings2;
+        public System.Windows.Forms.PictureBox pictureSettings3;
         public System.Windows.Forms.Button bttnRemove;
         public System.Windows.Forms.Button bttnClear;
         public System.Windows.Forms.Label enterHere;
         public System.Windows.Forms.Button addSelectedBttn;
         private System.Windows.Forms.TabPage Map;
         public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Button searchLocation;
+        public System.Windows.Forms.Button searchLoc;
         public System.Windows.Forms.Button searchName;
         public System.Windows.Forms.Label resultsLbl;
     }

@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>d3picon_g7g_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -94,6 +98,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Dell_logo_2016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dell_logo_2016_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingsicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingsicon_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="d3picon_g7g_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

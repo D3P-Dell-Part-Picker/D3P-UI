@@ -13,6 +13,7 @@ namespace DellPartPicker
     public partial class Form1 : Form
     {
         Loader loader = new Loader();
+        public static Boolean isDark = false;
         Parser parser = new Parser();
 
         public Form1()

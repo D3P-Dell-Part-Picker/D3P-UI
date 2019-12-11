@@ -41,7 +41,7 @@ namespace DellPartPicker
             string userName = Environment.UserName;
             Console.WriteLine(userName);
             WebClient Client = new WebClient();
-            //Client.DownloadFile("http://10.0.0.4/Racks.csv", @"C:\Temp\Racks.csv");
+            Client.DownloadFile("http://73.17.34.121/Racks.csv", @"C:\Temp\Racks.csv");
         }
 
         private void readToMemory()
