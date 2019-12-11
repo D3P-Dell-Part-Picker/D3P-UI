@@ -106,6 +106,7 @@
             // 
             // addSingletable
             // 
+            this.addSingletable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.addSingletable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.addSingletable.Location = new System.Drawing.Point(434, 138);
             this.addSingletable.Name = "addSingletable";

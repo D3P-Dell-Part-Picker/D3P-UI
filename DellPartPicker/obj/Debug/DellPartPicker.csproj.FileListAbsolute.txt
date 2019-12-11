@@ -54,7 +54,6 @@ C:\Users\cis\Source\Repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.Form1.r
 C:\Users\cis\Source\Repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.OptionsMenu.resources
 C:\Users\cis\Source\Repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.Properties.Resources.resources
 C:\Users\cis\Source\Repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.csproj.GenerateResource.cache
-C:\Users\cis\Source\Repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.csproj.CoreCompileInputs.cache
 C:\Users\cis\Source\Repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.exe
 C:\Users\cis\Source\Repos\D3P-UI\DellPartPicker\obj\Debug\DellPartPicker.pdb
 C:\Users\cis\Source\Repos\D3P-UI\DellPartPicker\bin\Debug\DellPartPicker.exe.config

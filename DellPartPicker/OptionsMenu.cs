@@ -107,6 +107,9 @@ namespace DellPartPicker
             form1.d3pTitle1.ForeColor = Color.White;
             form1.d3pTitle2.ForeColor = Color.White;
             form1.d3pTitle3.ForeColor = Color.White;
+            form1.addSingletable.BackgroundColor = Color.FromArgb(44, 47, 51);
+            form1.addSingletable.ForeColor = Color.Gray;
+            form1.addSingletable.GridColor = Color.Gray;
 
             //Changes logo to Dark Ver.
             form1.d3pLogo1.Image = Properties.Resources.Dell_logo_2016_dark;
@@ -162,6 +165,7 @@ namespace DellPartPicker
             form1.d3pTitle1.ForeColor = SystemColors.Highlight;
             form1.d3pTitle2.ForeColor = SystemColors.Highlight;
             form1.d3pTitle3.ForeColor = SystemColors.Highlight;
+            form1.addSingletable.BackgroundColor = Color.White;
             
 
             //Changes backcolor and forecolor of everything it can change

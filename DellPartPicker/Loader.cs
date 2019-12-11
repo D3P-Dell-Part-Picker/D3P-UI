@@ -41,6 +41,12 @@ namespace DellPartPicker
             string userName = Environment.UserName;
             Console.WriteLine(userName);
             WebClient Client = new WebClient();
+
+            if (!Directory.Exists(@"C:\Temp"))
+            {
+                Directory.CreateDirectory(@"C:\Temp");
+            }
+
             Client.DownloadFile("http://73.17.34.121/Racks.csv", @"C:\Temp\Racks.csv");
         }
 
