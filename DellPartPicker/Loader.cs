@@ -34,12 +34,13 @@ namespace DellPartPicker
             downloadFile();
             readToMemory();
 
-            //Console.WriteLine(partnum[287]);
-            //Console.WriteLine(desc[287]);
-            //Console.WriteLine(loc[287]);
+            // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            // Console.WriteLine(partnum[287]);
+            // Console.WriteLine(desc[287]);
+            // Console.WriteLine(loc[287]);
 
-            //String[][] temp = getData("042", Field.PartNumber);
-            //Console.WriteLine(temp[0][0]);
+            String[][] temp = getData("042", Field.PartNumber);
+            Console.WriteLine(temp[0][0]);
         }
 
         private void downloadFile()
@@ -47,7 +48,7 @@ namespace DellPartPicker
             string userName = Environment.UserName;
             Console.WriteLine(userName);
             WebClient Client = new WebClient();
-            /*
+            
             if (!Directory.Exists(@"C:\Temp"))
             {
                 Directory.CreateDirectory(@"C:\Temp");
@@ -60,7 +61,7 @@ namespace DellPartPicker
                     throw new WebException("unable to update, and there are now local backups");
                 }
             }
-            */
+            
         }
 
         private void readToMemory()
