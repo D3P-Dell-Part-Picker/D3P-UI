@@ -12,6 +12,7 @@ namespace DellPartPicker
         public List<String> descList;
         public List<String> locList;
         private String[] partnum, desc, loc;
+        String ip = Constants.REMOTE_SERVER;
 
 
 
@@ -20,7 +21,12 @@ namespace DellPartPicker
         public Loader()
         {
             partnumList = new List<String>();
+            string externalip = new WebClient().DownloadString("http://icanhazip.com");
 
+            if (externalip.Equals(Constants.REMOTE_SERVER))
+            {
+                ip = Constants.LOCAL_SERVER;
+            }
             
 
             descList = new List<String>();
@@ -47,7 +53,15 @@ namespace DellPartPicker
                 Directory.CreateDirectory(@"C:\Temp");
             }
 
-            Client.DownloadFile("http://73.17.34.121/Racks.csv", @"C:\Temp\Racks.csv");
+            try{
+                Client.DownloadFile("http://" + ip + "/Racks.csv", @"C:\Temp\Racks.csv");
+            }catch(WebException e){
+                //check for existing backups
+                if(!File.Exists(@"C:\Temp\Racks.csv")){
+                    throw new WebException("unable to update, and there are now local backups");
+                }
+            }
+            
         }
 
         private void readToMemory()
@@ -142,16 +156,7 @@ namespace DellPartPicker
     }
 }
 
-namespace DellPartPicker
-{
-    //the different fields
-    public enum Field
-    {
-        PartNumber = 0,
-        Desc = 1,
-        Location = 2
-    }
-}
+
 namespace DellPartPicker
 {
 

@@ -101,21 +101,61 @@ namespace DellPartPicker
             collectiveTable.Rows.Clear();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            collectiveTable.Rows.Add(addListTable.Rows);
-            collectiveTable.Rows.Clear();
+        private void button2_Click(object sender, EventArgs e) {
+            
+            DataTable dt = toTable(addListTable);
+
+            foreach (DataColumn dc in dt.Columns)
+            {
+
+                collectiveTable.Columns.Add(new DataGridViewTextBoxColumn());
+
+            }
+            foreach (DataRow dr in dt.Rows)
+            {
+
+                collectiveTable.Rows.Add(dr.ItemArray);
+
+            }
+            
+            
+
+
         }
 
         private void addSelectedBttn_Click(object sender, EventArgs e)
         {
-            
-            foreach (DataGridViewRow item in this.addSingletable.SelectedRows)
+
+
+            for (int i = 0; i < addSingletable.SelectedRows.Count; i++)
             {
-                collectiveTable.Rows.Add(((DataGridViewRow) addSingletable.Rows[item.Index].Clone()));
-                addSingletable.Rows.RemoveAt(item.Index);
+                int index = collectiveTable.Rows.Add();
+                collectiveTable.Rows[index].Cells[0].Value = addSingletable.SelectedRows[i].Cells[0].Value.ToString();
+                collectiveTable.Rows[index].Cells[1].Value = addSingletable.SelectedRows[i].Cells[1].Value.ToString();
+                collectiveTable.Rows[index].Cells[2].Value = addSingletable.SelectedRows[i].Cells[2].Value.ToString();
             }
 
+        }
+
+        private DataTable toTable(DataGridView dgv)
+        {
+
+            DataTable dt = new DataTable();
+            foreach (DataGridViewColumn col in dgv.Columns)
+            {
+                dt.Columns.Add(col.Name);
+            }
+
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                DataRow dRow = dt.NewRow();
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    dRow[cell.ColumnIndex] = cell.Value;
+                }
+                dt.Rows.Add(dRow);
+            }
+            return dt;
         }
 
         private void d3pLogo1_Click(object sender, EventArgs e)
