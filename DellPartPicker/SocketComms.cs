@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-<<<<<<< HEAD
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -20,45 +19,7 @@ namespace DellPartPicker
             sendMessage("test");
         }*/
 
-        public static void sendMessage(String message, String addr, int port)
-        {
-            try
-            {
-
-                IPAddress ipAddr = IPAddress.Parse(addr);
-                IPEndPoint iPEndPoint = new IPEndPoint(ipAddr, port);
-
-                Socket sender = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-
-                try
-                {
-                    sender.Connect(iPEndPoint);
-                    
-                    Console.WriteLine("Socket connected to -> {0} ", sender.RemoteEndPoint.ToString());
-
-                    byte[] messageSent = Encoding.ASCII.GetBytes(message);
-                    int byteSent = sender.Send(messageSent);
-
-
-                    sender.Shutdown(SocketShutdown.Both);
-
-                    
-
-
-                    
-
-                    
-
-                    sender.Close();
-
-                }
-
-                catch(ArgumentNullException ane)
-                {
-                    Console.WriteLine("ArgumentNullException : {0}", ane.ToString());
-                }
-
-                catch(SocketException se) {
+        
         public static void sendMessage(String message, String ip, int port, Destination d)
         {
 
