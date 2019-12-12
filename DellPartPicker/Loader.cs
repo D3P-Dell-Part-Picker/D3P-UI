@@ -47,7 +47,7 @@ namespace DellPartPicker
             string userName = Environment.UserName;
             Console.WriteLine(userName);
             WebClient Client = new WebClient();
-            /*
+            
             if (!Directory.Exists(@"C:\Temp"))
             {
                 Directory.CreateDirectory(@"C:\Temp");
@@ -60,7 +60,7 @@ namespace DellPartPicker
                     throw new WebException("unable to update, and there are now local backups");
                 }
             }
-            */
+            
         }
 
         private void readToMemory()
