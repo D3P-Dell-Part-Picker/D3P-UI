@@ -169,6 +169,7 @@
             // 
             // addListTable
             // 
+            this.addListTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.addListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.addListTable.Location = new System.Drawing.Point(434, 138);
             this.addListTable.Name = "addListTable";
@@ -446,6 +447,7 @@
             // 
             // collectiveTable
             // 
+            this.collectiveTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.collectiveTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.collectiveTable.Location = new System.Drawing.Point(434, 138);
             this.collectiveTable.Name = "collectiveTable";
