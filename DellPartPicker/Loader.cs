@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -54,7 +55,7 @@ namespace DellPartPicker
             }
 
             try{
-                Client.DownloadFile("http://" + ip + "/Racks.csv", @"C:\Temp\Racks.csv");
+                Client.DownloadFile("http://" + ip + "hosted/Racks.csv", @"C:\Temp\Racks.csv");
             }catch(WebException e){
                 //check for existing backups
                 if(!File.Exists(@"C:\Temp\Racks.csv")){
