@@ -35,12 +35,13 @@ namespace DellPartPicker
             downloadFile();
             readToMemory();
 
-            //Console.WriteLine(partnum[287]);
-            //Console.WriteLine(desc[287]);
-            //Console.WriteLine(loc[287]);
+            // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            // Console.WriteLine(partnum[287]);
+            // Console.WriteLine(desc[287]);
+            // Console.WriteLine(loc[287]);
 
-            //String[][] temp = getData("042", Field.PartNumber);
-            //Console.WriteLine(temp[0][0]);
+            String[][] temp = getData("042", Field.PartNumber);
+            Console.WriteLine(temp[0][0]);
         }
 
         private void downloadFile()
@@ -53,7 +54,6 @@ namespace DellPartPicker
             {
                 Directory.CreateDirectory(@"C:\Temp");
             }
-
             try{
                 Client.DownloadFile("http://" + ip + "hosted/Racks.csv", @"C:\Temp\Racks.csv");
             }catch(WebException e){
