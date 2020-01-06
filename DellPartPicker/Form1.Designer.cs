@@ -64,7 +64,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.d3pTitle3 = new System.Windows.Forms.Label();
             this.d3pLogo3 = new System.Windows.Forms.PictureBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.map = new System.Windows.Forms.TabPage();
+            
             this.removeSelected = new System.Windows.Forms.Button();
             this.labelX = new System.Windows.Forms.Label();
             this.labelW = new System.Windows.Forms.Label();
@@ -133,7 +134,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.collectiveTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.map.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shelfL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfJ)).BeginInit();
@@ -161,42 +162,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapBackground)).BeginInit();
             this.SuspendLayout();
-            // 
-            // IDsearch
-            // 
-            this.IDsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.IDsearch.AutoSize = true;
-            this.IDsearch.Location = new System.Drawing.Point(152, 662);
-            this.IDsearch.Name = "IDsearch";
-            this.IDsearch.Size = new System.Drawing.Size(86, 17);
-            this.IDsearch.TabIndex = 0;
-            this.IDsearch.TabStop = true;
-            this.IDsearch.Text = "Search By Id";
-            this.IDsearch.UseVisualStyleBackColor = true;
-            // 
-            // nameSearch
-            // 
-            this.nameSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.nameSearch.AutoSize = true;
-            this.nameSearch.Location = new System.Drawing.Point(152, 685);
-            this.nameSearch.Name = "nameSearch";
-            this.nameSearch.Size = new System.Drawing.Size(105, 17);
-            this.nameSearch.TabIndex = 1;
-            this.nameSearch.TabStop = true;
-            this.nameSearch.Text = "Search By Name";
-            this.nameSearch.UseVisualStyleBackColor = true;
-            // 
-            // locSearch
-            // 
-            this.locSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.locSearch.AutoSize = true;
-            this.locSearch.Location = new System.Drawing.Point(152, 708);
-            this.locSearch.Name = "locSearch";
-            this.locSearch.Size = new System.Drawing.Size(118, 17);
-            this.locSearch.TabIndex = 2;
-            this.locSearch.TabStop = true;
-            this.locSearch.Text = "Search By Location";
-            this.locSearch.UseVisualStyleBackColor = true;
             // 
             // d3pLogo1
             // 
@@ -226,6 +191,7 @@
             this.addSingletable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.addSingletable.Location = new System.Drawing.Point(434, 138);
             this.addSingletable.Name = "addSingletable";
+            this.addSingletable.Size = new System.Drawing.Size(240, 150);
             this.addSingletable.TabIndex = 5;
             // 
             // d3pTitle1
@@ -246,7 +212,7 @@
             this.error.AutoSize = true;
             this.error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.error.ForeColor = System.Drawing.Color.Maroon;
-            this.error.Location = new System.Drawing.Point(11, 200);
+            this.error.Location = new System.Drawing.Point(11, 188);
             this.error.Name = "error";
             this.error.Size = new System.Drawing.Size(115, 20);
             this.error.TabIndex = 7;
@@ -257,7 +223,7 @@
             this.searchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(10, 197);
+            this.searchBox.Location = new System.Drawing.Point(10, 185);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(393, 26);
             this.searchBox.TabIndex = 8;
@@ -268,7 +234,7 @@
             this.Searchlbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Searchlbl.AutoSize = true;
             this.Searchlbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Searchlbl.Location = new System.Drawing.Point(6, 174);
+            this.Searchlbl.Location = new System.Drawing.Point(6, 162);
             this.Searchlbl.Name = "Searchlbl";
             this.Searchlbl.Size = new System.Drawing.Size(64, 21);
             this.Searchlbl.TabIndex = 9;
@@ -324,12 +290,12 @@
             this.tabControl1.Controls.Add(this.singleItemTab);
             this.tabControl1.Controls.Add(this.listTab);
             this.tabControl1.Controls.Add(this.collectiveTab);
-            this.tabControl1.Controls.Add(this.Map);
+            this.tabControl1.Controls.Add(this.map);
             this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(-4, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1249, 792);
+            this.tabControl1.Size = new System.Drawing.Size(1249, 780);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 14;
             // 
@@ -350,7 +316,7 @@
             this.singleItemTab.Location = new System.Drawing.Point(4, 22);
             this.singleItemTab.Name = "singleItemTab";
             this.singleItemTab.Padding = new System.Windows.Forms.Padding(3);
-            this.singleItemTab.Size = new System.Drawing.Size(1241, 766);
+            this.singleItemTab.Size = new System.Drawing.Size(1241, 754);
             this.singleItemTab.TabIndex = 0;
             this.singleItemTab.Text = "Add Single Item";
             this.singleItemTab.UseVisualStyleBackColor = true;
@@ -609,68 +575,75 @@
             this.d3pLogo3.TabIndex = 14;
             this.d3pLogo3.TabStop = false;
             // 
-            // tabPage1
+            // map
             // 
-            this.tabPage1.Controls.Add(this.removeSelected);
-            this.tabPage1.Controls.Add(this.labelX);
-            this.tabPage1.Controls.Add(this.labelW);
-            this.tabPage1.Controls.Add(this.labelV);
-            this.tabPage1.Controls.Add(this.labelU);
-            this.tabPage1.Controls.Add(this.labelT);
-            this.tabPage1.Controls.Add(this.labelS);
-            this.tabPage1.Controls.Add(this.labelR);
-            this.tabPage1.Controls.Add(this.labelQ);
-            this.tabPage1.Controls.Add(this.labelP);
-            this.tabPage1.Controls.Add(this.labelO);
-            this.tabPage1.Controls.Add(this.labelN);
-            this.tabPage1.Controls.Add(this.labelM);
-            this.tabPage1.Controls.Add(this.labelL);
-            this.tabPage1.Controls.Add(this.labelK);
-            this.tabPage1.Controls.Add(this.labelJ);
-            this.tabPage1.Controls.Add(this.labelI);
-            this.tabPage1.Controls.Add(this.labelH);
-            this.tabPage1.Controls.Add(this.labelG);
-            this.tabPage1.Controls.Add(this.labelF);
-            this.tabPage1.Controls.Add(this.labelE);
-            this.tabPage1.Controls.Add(this.labelD);
-            this.tabPage1.Controls.Add(this.labelC);
-            this.tabPage1.Controls.Add(this.labelB);
-            this.tabPage1.Controls.Add(this.labelA);
-            this.tabPage1.Controls.Add(this.shelfL);
-            this.tabPage1.Controls.Add(this.shelfK);
-            this.tabPage1.Controls.Add(this.shelfJ);
-            this.tabPage1.Controls.Add(this.shelfI);
-            this.tabPage1.Controls.Add(this.shelfH);
-            this.tabPage1.Controls.Add(this.shelfG);
-            this.tabPage1.Controls.Add(this.shelfF);
-            this.tabPage1.Controls.Add(this.shelfE);
-            this.tabPage1.Controls.Add(this.sheldD);
-            this.tabPage1.Controls.Add(this.shelfC);
-            this.tabPage1.Controls.Add(this.shelfB);
-            this.tabPage1.Controls.Add(this.shelfA);
-            this.tabPage1.Controls.Add(this.shelfX);
-            this.tabPage1.Controls.Add(this.shelfW);
-            this.tabPage1.Controls.Add(this.shelfV);
-            this.tabPage1.Controls.Add(this.shelfU);
-            this.tabPage1.Controls.Add(this.shelfT);
-            this.tabPage1.Controls.Add(this.shelfS);
-            this.tabPage1.Controls.Add(this.shelfR);
-            this.tabPage1.Controls.Add(this.shelfQ);
-            this.tabPage1.Controls.Add(this.shelfP);
-            this.tabPage1.Controls.Add(this.shelfO);
-            this.tabPage1.Controls.Add(this.shelfN);
-            this.tabPage1.Controls.Add(this.shelfM);
-            this.tabPage1.Controls.Add(this.maplistTitle);
-            this.tabPage1.Controls.Add(this.dataGridList);
-            this.tabPage1.Controls.Add(this.mapTitle);
-            this.tabPage1.Controls.Add(this.mapBackground);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1241, 766);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "Map";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.map.Location = new System.Drawing.Point(4, 22);
+            this.map.Name = "map";
+            this.map.Size = new System.Drawing.Size(1241, 754);
+            this.map.TabIndex = 3;
+            // 
+            // map
+            // 
+            this.map.Controls.Add(this.removeSelected);
+            this.map.Controls.Add(this.labelX);
+            this.map.Controls.Add(this.labelW);
+            this.map.Controls.Add(this.labelV);
+            this.map.Controls.Add(this.labelU);
+            this.map.Controls.Add(this.labelT);
+            this.map.Controls.Add(this.labelS);
+            this.map.Controls.Add(this.labelR);
+            this.map.Controls.Add(this.labelQ);
+            this.map.Controls.Add(this.labelP);
+            this.map.Controls.Add(this.labelO);
+            this.map.Controls.Add(this.labelN);
+            this.map.Controls.Add(this.labelM);
+            this.map.Controls.Add(this.labelL);
+            this.map.Controls.Add(this.labelK);
+            this.map.Controls.Add(this.labelJ);
+            this.map.Controls.Add(this.labelI);
+            this.map.Controls.Add(this.labelH);
+            this.map.Controls.Add(this.labelG);
+            this.map.Controls.Add(this.labelF);
+            this.map.Controls.Add(this.labelE);
+            this.map.Controls.Add(this.labelD);
+            this.map.Controls.Add(this.labelC);
+            this.map.Controls.Add(this.labelB);
+            this.map.Controls.Add(this.labelA);
+            this.map.Controls.Add(this.shelfL);
+            this.map.Controls.Add(this.shelfK);
+            this.map.Controls.Add(this.shelfJ);
+            this.map.Controls.Add(this.shelfI);
+            this.map.Controls.Add(this.shelfH);
+            this.map.Controls.Add(this.shelfG);
+            this.map.Controls.Add(this.shelfF);
+            this.map.Controls.Add(this.shelfE);
+            this.map.Controls.Add(this.sheldD);
+            this.map.Controls.Add(this.shelfC);
+            this.map.Controls.Add(this.shelfB);
+            this.map.Controls.Add(this.shelfA);
+            this.map.Controls.Add(this.shelfX);
+            this.map.Controls.Add(this.shelfW);
+            this.map.Controls.Add(this.shelfV);
+            this.map.Controls.Add(this.shelfU);
+            this.map.Controls.Add(this.shelfT);
+            this.map.Controls.Add(this.shelfS);
+            this.map.Controls.Add(this.shelfR);
+            this.map.Controls.Add(this.shelfQ);
+            this.map.Controls.Add(this.shelfP);
+            this.map.Controls.Add(this.shelfO);
+            this.map.Controls.Add(this.shelfN);
+            this.map.Controls.Add(this.shelfM);
+            this.map.Controls.Add(this.maplistTitle);
+            this.map.Controls.Add(this.dataGridList);
+            this.map.Controls.Add(this.mapTitle);
+            this.map.Controls.Add(this.mapBackground);
+            this.map.Location = new System.Drawing.Point(4, 22);
+            this.map.Name = "map";
+            this.map.Padding = new System.Windows.Forms.Padding(3);
+            this.map.Size = new System.Drawing.Size(1241, 766);
+            this.map.TabIndex = 3;
+            this.map.Text = "Map";
+            this.map.UseVisualStyleBackColor = true;
             // 
             // removeSelected
             // 
@@ -1284,7 +1257,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.ClientSize = new System.Drawing.Size(1264, 749);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -1308,8 +1281,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.collectiveTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo3)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.map.ResumeLayout(false);
+            this.map.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shelfL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfJ)).EndInit();
@@ -1354,6 +1327,7 @@
         public System.Windows.Forms.Button listSearchBttn;
         public System.Windows.Forms.TabPage singleItemTab;
         public System.Windows.Forms.TabPage listTab;
+        public System.Windows.Forms.TabPage map;
         public System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.Label d3pTitle2;
         public System.Windows.Forms.PictureBox d3pLogo2;
@@ -1367,11 +1341,13 @@
         public System.Windows.Forms.Button addAll;
         public System.Windows.Forms.PictureBox pictureSettings2;
         public System.Windows.Forms.PictureBox pictureSettings3;
+        public System.Windows.Forms.Button searchLoc;
+        public System.Windows.Forms.Button searchName;
         public System.Windows.Forms.Button bttnRemove;
         public System.Windows.Forms.Button bttnClear;
         public System.Windows.Forms.Label enterHere;
         public System.Windows.Forms.Button addSelectedBttn;
-        private System.Windows.Forms.TabPage tabPage1;
+        
         private System.Windows.Forms.Label mapTitle;
         private System.Windows.Forms.Label maplistTitle;
         private System.Windows.Forms.DataGridView dataGridList;
@@ -1400,7 +1376,9 @@
         private System.Windows.Forms.PictureBox shelfC;
         private System.Windows.Forms.PictureBox shelfB;
         private System.Windows.Forms.PictureBox shelfA;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelS;
+        private System.Windows.Forms.Label resultsLbl;
         private System.Windows.Forms.Label labelR;
         private System.Windows.Forms.Label labelQ;
         private System.Windows.Forms.Label labelP;
