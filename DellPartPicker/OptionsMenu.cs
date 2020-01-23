@@ -99,17 +99,63 @@ namespace DellPartPicker
             //set boolean variable
             Form1.isDark = true;
 
-            //Exceptions from the function (form background, title backcolor)
+            //Lets try to condense this shall we?
+            var optionb = from controls in this.Controls.OfType<Button>()
+                    select controls;
+            foreach (var control in optionb)
+            {
+                control.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+                control.BackColor = Color.FromArgb(115, 138, 214);
+                control.ForeColor = Color.White;
+            }
+
+            var optionrb = from controls in this.Controls.OfType<RadioButton>()
+                          select controls;
+            foreach (var control in optionrb)
+            {
+                control.ForeColor = Color.White;
+            }
+
+            var optionlbl = from controls in this.Controls.OfType<Label>()
+                          select controls;
+            foreach (var control in optionlbl)
+            {
+                control.ForeColor = Color.White;
+            }
+
+
+            var form1b = from controls in form1.Controls.OfType<Label>()
+                        select controls;
+            foreach (var f1control in form1b)
+            {
+                f1control.ForeColor = Color.White;
+            }
+
             this.BackColor = Color.FromArgb(44, 47, 51);
             form1.BackColor = Color.FromArgb(35, 39, 42);
-            form1.error.BackColor = Color.White;
             form1.listTab.BackColor = Color.FromArgb(44, 47, 51);
             form1.collectiveTab.BackColor = Color.FromArgb(44, 47, 51);
             form1.singleItemTab.BackColor = Color.FromArgb(44, 47, 51);
+            form1.error.BackColor = Color.White;
             form1.d3pTitle1.ForeColor = Color.White;
             form1.d3pTitle2.ForeColor = Color.White;
             form1.d3pTitle3.ForeColor = Color.White;
 
+            //Changes settings to Dark Ver.
+            form1.pictureSettings1.Image = Properties.Resources.settingsicon_dark;
+            form1.pictureSettings2.Image = Properties.Resources.settingsicon_dark;
+            form1.pictureSettings3.Image = Properties.Resources.settingsicon_dark;
+
+            //Changes logo to Dark Ver.
+            form1.d3pLogo1.Image = Properties.Resources.Dell_logo_2016_dark;
+            form1.d3pLogo2.Image = Properties.Resources.Dell_logo_2016_dark;
+            form1.d3pLogo3.Image = Properties.Resources.Dell_logo_2016_dark;
+            //Exceptions from the function (form background, title backcolor)
+            /*
+            
+
+            
+            /*
             //Change table colors
             form1.addSingletable.BackgroundColor = Color.FromArgb(35, 39, 42);
             form1.addSingletable.ForeColor = Color.Gray;
@@ -121,26 +167,6 @@ namespace DellPartPicker
             form1.collectiveTable.ForeColor = Color.Gray;
             form1.collectiveTable.GridColor = Color.Gray;
 
-            //Changes logo to Dark Ver.
-            form1.d3pLogo1.Image = Properties.Resources.Dell_logo_2016_dark;
-            form1.d3pLogo2.Image = Properties.Resources.Dell_logo_2016_dark;
-            form1.d3pLogo3.Image = Properties.Resources.Dell_logo_2016_dark;
-
-            //Changes settings to Dark Ver.
-            form1.pictureSettings1.Image = Properties.Resources.settingsicon_dark;
-            form1.pictureSettings2.Image = Properties.Resources.settingsicon_dark;
-            form1.pictureSettings3.Image = Properties.Resources.settingsicon_dark;
-
-            //Changes backcolor and forecolor of everything it can change
-            myControl.BackColor = Color.Transparent;
-            myControl.ForeColor = Color.White;
-
-            //Change color of all buttons manually
-            myControl.BackColor = Color.Transparent;
-            this.buttonApply.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
-            this.buttonBack.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
-            this.buttonApply.BackColor = Color.FromArgb(115, 138, 214);
-            this.buttonBack.BackColor = Color.FromArgb(115, 138, 214);
             form1.searchName.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
             form1.searchLoc.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
             form1.searchID.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
@@ -156,7 +182,7 @@ namespace DellPartPicker
             form1.bttnClear.BackColor = Color.FromArgb(115, 138, 214);
             form1.bttnRemove.BackColor = Color.FromArgb(115, 138, 214);
             form1.addSelectedBttn.BackColor = Color.FromArgb(115, 138, 214);
-            form1.addSelectedBttn.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+            form1.addSelectedBttn.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);*/
         }
             
         //Light theme function
