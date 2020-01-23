@@ -23,7 +23,8 @@ namespace DellPartPicker
             disableFunctions();
 
             initCollective();
-            
+
+            initMapList();
         }
 
         private void initCollective()
@@ -32,6 +33,13 @@ namespace DellPartPicker
             collectiveTable.Columns[0].Name = "Part Number";
             collectiveTable.Columns[1].Name = "Description";
             collectiveTable.Columns[2].Name = "Location";
+        }
+        private void initMapList()
+        {
+            mapList.ColumnCount = 3;
+            mapList.Columns[0].Name = "Part Number";
+            mapList.Columns[1].Name = "Description";
+            mapList.Columns[2].Name = "Location";
         }
         private void disableFunctions()
         {
@@ -111,18 +119,14 @@ namespace DellPartPicker
             {
 
                 collectiveTable.Columns.Add(new DataGridViewTextBoxColumn());
+                mapList.Columns.Add(new DataGridViewTextBoxColumn());
 
             }
             foreach (DataRow dr in dt.Rows)
             {
-
                 collectiveTable.Rows.Add(dr.ItemArray);
-
+                mapList.Rows.Add(dr.ItemArray);
             }
-            
-            
-
-
         }
 
         private void addSelectedBttn_Click(object sender, EventArgs e)
@@ -137,6 +141,11 @@ namespace DellPartPicker
                 collectiveTable.Rows[index].Cells[2].Value = addSingletable.SelectedRows[i].Cells[2].Value.ToString();
             }
 
+        }
+
+        private void CopyCollectiveTable()
+        {
+            foreach ()
         }
 
         private DataTable toTable(DataGridView dgv)
@@ -191,6 +200,8 @@ namespace DellPartPicker
             }
             parser.parse(searchBox.Text, Field.Location, addSingletable, loader);
         }
+
+
 
         private void pictureBox29_Click(object sender, EventArgs e)
         {

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.d3pLogo1 = new System.Windows.Forms.PictureBox();
             this.searchID = new System.Windows.Forms.Button();
@@ -65,7 +66,6 @@
             this.d3pTitle3 = new System.Windows.Forms.Label();
             this.d3pLogo3 = new System.Windows.Forms.PictureBox();
             this.map = new System.Windows.Forms.TabPage();
-            
             this.removeSelected = new System.Windows.Forms.Button();
             this.labelX = new System.Windows.Forms.Label();
             this.labelW = new System.Windows.Forms.Label();
@@ -116,9 +116,11 @@
             this.shelfN = new System.Windows.Forms.PictureBox();
             this.shelfM = new System.Windows.Forms.PictureBox();
             this.maplistTitle = new System.Windows.Forms.Label();
-            this.dataGridList = new System.Windows.Forms.DataGridView();
+            this.mapList = new System.Windows.Forms.DataGridView();
             this.mapTitle = new System.Windows.Forms.Label();
             this.mapBackground = new System.Windows.Forms.PictureBox();
+            this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.form1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
@@ -159,8 +161,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.shelfO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // d3pLogo1
@@ -292,7 +296,7 @@
             this.tabControl1.Controls.Add(this.collectiveTab);
             this.tabControl1.Controls.Add(this.map);
             this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(-4, 1);
+            this.tabControl1.Location = new System.Drawing.Point(2, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1249, 780);
@@ -379,7 +383,7 @@
             this.listTab.Location = new System.Drawing.Point(4, 22);
             this.listTab.Name = "listTab";
             this.listTab.Padding = new System.Windows.Forms.Padding(3);
-            this.listTab.Size = new System.Drawing.Size(1241, 766);
+            this.listTab.Size = new System.Drawing.Size(1241, 754);
             this.listTab.TabIndex = 1;
             this.listTab.Text = "List Dump";
             this.listTab.UseVisualStyleBackColor = true;
@@ -474,7 +478,7 @@
             this.collectiveTab.Location = new System.Drawing.Point(4, 22);
             this.collectiveTab.Name = "collectiveTab";
             this.collectiveTab.Padding = new System.Windows.Forms.Padding(3);
-            this.collectiveTab.Size = new System.Drawing.Size(1241, 766);
+            this.collectiveTab.Size = new System.Drawing.Size(1241, 754);
             this.collectiveTab.TabIndex = 2;
             this.collectiveTab.Text = "Collective";
             this.collectiveTab.UseVisualStyleBackColor = true;
@@ -577,13 +581,6 @@
             // 
             // map
             // 
-            this.map.Location = new System.Drawing.Point(4, 22);
-            this.map.Name = "map";
-            this.map.Size = new System.Drawing.Size(1241, 754);
-            this.map.TabIndex = 3;
-            // 
-            // map
-            // 
             this.map.Controls.Add(this.removeSelected);
             this.map.Controls.Add(this.labelX);
             this.map.Controls.Add(this.labelW);
@@ -634,13 +631,13 @@
             this.map.Controls.Add(this.shelfN);
             this.map.Controls.Add(this.shelfM);
             this.map.Controls.Add(this.maplistTitle);
-            this.map.Controls.Add(this.dataGridList);
+            this.map.Controls.Add(this.mapList);
             this.map.Controls.Add(this.mapTitle);
             this.map.Controls.Add(this.mapBackground);
             this.map.Location = new System.Drawing.Point(4, 22);
             this.map.Name = "map";
             this.map.Padding = new System.Windows.Forms.Padding(3);
-            this.map.Size = new System.Drawing.Size(1241, 766);
+            this.map.Size = new System.Drawing.Size(1241, 754);
             this.map.TabIndex = 3;
             this.map.Text = "Map";
             this.map.UseVisualStyleBackColor = true;
@@ -1221,14 +1218,14 @@
             this.maplistTitle.Text = "(this acutally doesn\'t show anything as of now) List";
             this.maplistTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dataGridList
+            // mapList
             // 
-            this.dataGridList.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dataGridList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridList.Location = new System.Drawing.Point(656, 34);
-            this.dataGridList.Name = "dataGridList";
-            this.dataGridList.Size = new System.Drawing.Size(280, 392);
-            this.dataGridList.TabIndex = 1;
+            this.mapList.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.mapList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.mapList.Location = new System.Drawing.Point(656, 34);
+            this.mapList.Name = "mapList";
+            this.mapList.Size = new System.Drawing.Size(437, 392);
+            this.mapList.TabIndex = 1;
             // 
             // mapTitle
             // 
@@ -1249,6 +1246,14 @@
             this.mapBackground.TabIndex = 27;
             this.mapBackground.TabStop = false;
             this.mapBackground.Click += new System.EventHandler(this.pictureBox29_Click);
+            // 
+            // form1BindingSource
+            // 
+            this.form1BindingSource.DataSource = typeof(DellPartPicker.Form1);
+            // 
+            // form1BindingSource1
+            // 
+            this.form1BindingSource1.DataSource = typeof(DellPartPicker.Form1);
             // 
             // Form1
             // 
@@ -1307,8 +1312,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.shelfO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1350,7 +1357,7 @@
         
         private System.Windows.Forms.Label mapTitle;
         private System.Windows.Forms.Label maplistTitle;
-        private System.Windows.Forms.DataGridView dataGridList;
+        private System.Windows.Forms.DataGridView mapList;
         private System.Windows.Forms.PictureBox shelfN;
         private System.Windows.Forms.PictureBox shelfM;
         private System.Windows.Forms.PictureBox shelfX;
@@ -1404,6 +1411,8 @@
         private System.Windows.Forms.Label labelX;
         private System.Windows.Forms.Button removeSelected;
         protected internal System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.BindingSource form1BindingSource;
+        private System.Windows.Forms.BindingSource form1BindingSource1;
     }
 }
 
