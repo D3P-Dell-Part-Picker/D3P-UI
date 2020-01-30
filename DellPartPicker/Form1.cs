@@ -15,6 +15,8 @@ namespace DellPartPicker
         Loader loader = new Loader();
         public static Boolean isDark = false;
         Parser parser = new Parser();
+        public Color shelfColorNormal = Color.FromKnownColor(KnownColor.Gray);
+        public Color shelfColorHighlight = Color.FromKnownColor(KnownColor.ActiveCaption);
 
         public Form1()
         {
@@ -26,7 +28,7 @@ namespace DellPartPicker
 
             initMapList();
         }
-
+        
         private void initCollective()
         {
             collectiveTable.ColumnCount = 3;
@@ -40,6 +42,8 @@ namespace DellPartPicker
             mapList.Columns[0].Name = "Part Number";
             mapList.Columns[1].Name = "Description";
             mapList.Columns[2].Name = "Location";
+
+            // also init map
         }
         private void disableFunctions()
         {
@@ -63,21 +67,27 @@ namespace DellPartPicker
             parser.parse(searchBox.Text, Field.PartNumber, addSingletable, loader);
         }
 
+        // the options button in some tab
         private void pictureSettings_Click(object sender, EventArgs e)
         {
-            OptionsMenu form = new OptionsMenu(this);
-            this.Hide();
-            form.Show();
+            OpenOptions();
         }
 
+
+        // the other options button in some tab
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            OptionsMenu form = new OptionsMenu(this);
-            this.Hide();
-            form.Show();
+            OpenOptions();
         }
 
+        // another options button in some tab
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            OpenOptions();
+        }
+
+        // open the options menu and hide the main form
+        private void OpenOptions()
         {
             OptionsMenu form = new OptionsMenu(this);
             this.Hide();
@@ -98,10 +108,11 @@ namespace DellPartPicker
 
         private void bttnRemove_Click(object sender, EventArgs e)
         {
-            // remove the all selected items from the collected list
+            // remove all selected items from the collected list
             foreach (DataGridViewRow item in this.collectiveTable.SelectedRows)
             {
                 collectiveTable.Rows.RemoveAt(item.Index);
+                
             }
         }
 
@@ -115,6 +126,7 @@ namespace DellPartPicker
             
             DataTable dt = toTable(addListTable);
 
+            // prepare columns for the lists
             foreach (DataColumn dc in dt.Columns)
             {
 
@@ -122,6 +134,8 @@ namespace DellPartPicker
                 mapList.Columns.Add(new DataGridViewTextBoxColumn());
 
             }
+
+            // prepare rows for the lists
             foreach (DataRow dr in dt.Rows)
             {
                 collectiveTable.Rows.Add(dr.ItemArray);
@@ -135,18 +149,24 @@ namespace DellPartPicker
 
             for (int i = 0; i < addSingletable.SelectedRows.Count; i++)
             {
+                //add empty rows to table
                 int index = collectiveTable.Rows.Add();
+                int index2 = mapList.Rows.Add();
+
+                //add to collective list
                 collectiveTable.Rows[index].Cells[0].Value = addSingletable.SelectedRows[i].Cells[0].Value.ToString();
                 collectiveTable.Rows[index].Cells[1].Value = addSingletable.SelectedRows[i].Cells[1].Value.ToString();
                 collectiveTable.Rows[index].Cells[2].Value = addSingletable.SelectedRows[i].Cells[2].Value.ToString();
+
+                //add too map list
+                mapList.Rows[index2].Cells[0].Value = addSingletable.SelectedRows[i].Cells[0].Value.ToString();
+                mapList.Rows[index2].Cells[1].Value = addSingletable.SelectedRows[i].Cells[1].Value.ToString();
+                mapList.Rows[index2].Cells[2].Value = addSingletable.SelectedRows[i].Cells[2].Value.ToString();
             }
 
         }
 
-        private void CopyCollectiveTable()
-        {
-            foreach ()
-        }
+    
 
         private DataTable toTable(DataGridView dgv)
         {
@@ -211,6 +231,11 @@ namespace DellPartPicker
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void UpdateMap()
+        {
+            
         }
     }
 }

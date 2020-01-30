@@ -121,6 +121,7 @@
             this.mapBackground = new System.Windows.Forms.PictureBox();
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.form1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.form1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
@@ -165,6 +166,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.mapBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // d3pLogo1
@@ -1255,6 +1257,10 @@
             // 
             this.form1BindingSource1.DataSource = typeof(DellPartPicker.Form1);
             // 
+            // form1BindingSource2
+            // 
+            this.form1BindingSource2.DataSource = typeof(DellPartPicker.Form1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1316,6 +1322,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.mapBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1413,6 +1420,7 @@
         protected internal System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.BindingSource form1BindingSource;
         private System.Windows.Forms.BindingSource form1BindingSource1;
+        private System.Windows.Forms.BindingSource form1BindingSource2;
     }
 }
 
