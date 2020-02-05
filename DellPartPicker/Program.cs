@@ -14,13 +14,12 @@ namespace DellPartPicker
         [STAThread]
         static void Main()
         {
-            /*
+            
 	        Application.EnableVisualStyles();
 		    Application.SetCompatibleTextRenderingDefault(false);
 		    Application.Run(new Form1());
-            */
-            //MessageFormatter.sendMessage("thisisatest", "127.0.0.1", 3705, Destination.inputted);
-            MessageSender.sendMessage("hello owen", "10.0.0.4");
+            
+            //MessageSender.sendMessage("hello owen", "192.168.53.33");
         }
     }
 }
