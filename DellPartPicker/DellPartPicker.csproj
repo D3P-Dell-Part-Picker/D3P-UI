@@ -50,8 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FetchItem.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="MessageFormatter.cs" />
+    <Compile Include="MessageSender.cs" />
     <Compile Include="SocketComms.cs" />
     <Compile Include="DataDump.cs" />
     <Compile Include="Form1.cs">
