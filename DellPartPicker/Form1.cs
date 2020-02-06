@@ -239,6 +239,25 @@ namespace DellPartPicker
                     try
                     {
                         String loc = dataGridList.Rows[0].Cells[2].Value.ToString();
+                        if(loc == "not found")
+                        {
+                            int temp = 1;
+                            do
+                            {
+                                loc = dataGridList.Rows[temp].Cells[2].Value.ToString();
+                            } while (loc == "not found" && dataGridList.Rows.Count >= temp);
+                            if (loc == "not found")
+                            {
+
+                            }
+                            else
+                            {
+                                Shelf en = getShelf(loc);
+
+                                getBox(en).BackColor = Color.White;
+                            }
+
+                        }
                     }catch(Exception ex)
                     {
                         //nothing is in the table
@@ -249,9 +268,27 @@ namespace DellPartPicker
                     try
                     {
                         String loc = dataGridList.SelectedRows[0].Cells[2].Value.ToString();
-                        Shelf en = getShelf(loc);
 
-                        getBox(en).BackColor = Color.White;
+                        if (loc == "not found" && dataGridList.SelectedRows.Count != 1)
+                        {
+                            int temp = 1;
+                            do
+                            {
+                                loc = dataGridList.SelectedRows[temp].Cells[2].Value.ToString();
+                            } while (loc == "not found" && dataGridList.Rows.Count >= temp);
+                            
+                        }
+                        if(loc == "not found")
+                        {
+
+                        }
+                        else
+                        {
+                            Shelf en = getShelf(loc);
+
+                            getBox(en).BackColor = Color.White;
+                        }
+                        
                     }catch(Exception exc)
                     {
 

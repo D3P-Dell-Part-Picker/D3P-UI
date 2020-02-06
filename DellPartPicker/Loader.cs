@@ -69,6 +69,7 @@ namespace DellPartPicker
             
         }
 
+
         private void readToMemory()
         {
             StreamReader reader = new StreamReader(File.OpenRead(@"C:\Temp\Racks.csv"));

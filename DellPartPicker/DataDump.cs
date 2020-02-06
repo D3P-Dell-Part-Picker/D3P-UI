@@ -22,6 +22,12 @@ namespace DellPartPicker
             this.loader = l;
             String[] found = new string[3];
 
+            if (!loader.partnumList.Contains(find))
+            {
+                found = new string[] { "Part with ", "number " + find, " not found" };
+                return found;
+            }
+
             int index = loader.partnumList.IndexOf(find);
 
             if(index == null)
