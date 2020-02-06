@@ -206,11 +206,11 @@
             this.map.Controls.Add(this.dataGridList);
             this.map.Controls.Add(this.mapTitle);
             this.map.Controls.Add(this.mapBackground);
-            this.map.Location = new System.Drawing.Point(29, 4);
+            this.map.Location = new System.Drawing.Point(305, 4);
             this.map.Margin = new System.Windows.Forms.Padding(4);
             this.map.Name = "map";
             this.map.Padding = new System.Windows.Forms.Padding(4);
-            this.map.Size = new System.Drawing.Size(1632, 718);
+            this.map.Size = new System.Drawing.Size(1356, 718);
             this.map.TabIndex = 3;
             this.map.Text = "Map";
             this.map.UseVisualStyleBackColor = true;
@@ -914,11 +914,11 @@
             this.listTab.Controls.Add(this.addListTable);
             this.listTab.Controls.Add(this.listSearchBttn);
             this.listTab.Controls.Add(this.listTextBox);
-            this.listTab.Location = new System.Drawing.Point(29, 4);
+            this.listTab.Location = new System.Drawing.Point(230, 4);
             this.listTab.Margin = new System.Windows.Forms.Padding(4);
             this.listTab.Name = "listTab";
             this.listTab.Padding = new System.Windows.Forms.Padding(4);
-            this.listTab.Size = new System.Drawing.Size(1632, 718);
+            this.listTab.Size = new System.Drawing.Size(1431, 718);
             this.listTab.TabIndex = 1;
             this.listTab.Text = "List Dump";
             this.listTab.UseVisualStyleBackColor = true;
@@ -939,7 +939,7 @@
             this.pictureSettings2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureSettings2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureSettings2.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings2.Image")));
-            this.pictureSettings2.Location = new System.Drawing.Point(1542, 0);
+            this.pictureSettings2.Location = new System.Drawing.Point(1341, 0);
             this.pictureSettings2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureSettings2.Name = "pictureSettings2";
             this.pictureSettings2.Size = new System.Drawing.Size(84, 69);
@@ -1048,12 +1048,12 @@
             this.singleItemTab.Controls.Add(this.searchID);
             this.singleItemTab.Controls.Add(this.Searchlbl);
             this.singleItemTab.Controls.Add(this.searchBox);
-            this.singleItemTab.Location = new System.Drawing.Point(29, 4);
+            this.singleItemTab.Location = new System.Drawing.Point(305, 4);
             this.singleItemTab.Margin = new System.Windows.Forms.Padding(4);
             this.singleItemTab.Name = "singleItemTab";
             this.singleItemTab.Padding = new System.Windows.Forms.Padding(4);
             this.singleItemTab.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.singleItemTab.Size = new System.Drawing.Size(1632, 718);
+            this.singleItemTab.Size = new System.Drawing.Size(1356, 718);
             this.singleItemTab.TabIndex = 0;
             this.singleItemTab.Text = "Add Single Item";
             this.singleItemTab.UseVisualStyleBackColor = true;
@@ -1062,7 +1062,7 @@
             // 
             this.searchLoc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchLoc.Location = new System.Drawing.Point(196, 349);
+            this.searchLoc.Location = new System.Drawing.Point(174, 349);
             this.searchLoc.Margin = new System.Windows.Forms.Padding(4);
             this.searchLoc.Name = "searchLoc";
             this.searchLoc.Size = new System.Drawing.Size(93, 54);
@@ -1075,7 +1075,7 @@
             // 
             this.searchName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchName.Location = new System.Drawing.Point(115, 349);
+            this.searchName.Location = new System.Drawing.Point(93, 349);
             this.searchName.Margin = new System.Windows.Forms.Padding(4);
             this.searchName.Name = "searchName";
             this.searchName.Size = new System.Drawing.Size(73, 54);
@@ -1090,7 +1090,7 @@
             this.error.AutoSize = true;
             this.error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.error.ForeColor = System.Drawing.Color.Maroon;
-            this.error.Location = new System.Drawing.Point(38, 297);
+            this.error.Location = new System.Drawing.Point(16, 297);
             this.error.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.error.Name = "error";
             this.error.Size = new System.Drawing.Size(143, 25);
@@ -1102,7 +1102,7 @@
             this.results.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.results.AutoSize = true;
             this.results.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.results.Location = new System.Drawing.Point(596, 109);
+            this.results.Location = new System.Drawing.Point(574, 109);
             this.results.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.results.Name = "results";
             this.results.Size = new System.Drawing.Size(72, 28);
@@ -1113,7 +1113,7 @@
             // 
             this.addSelectedBttn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.addSelectedBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addSelectedBttn.Location = new System.Drawing.Point(298, 348);
+            this.addSelectedBttn.Location = new System.Drawing.Point(276, 348);
             this.addSelectedBttn.Margin = new System.Windows.Forms.Padding(4);
             this.addSelectedBttn.Name = "addSelectedBttn";
             this.addSelectedBttn.Size = new System.Drawing.Size(263, 55);
@@ -1129,7 +1129,7 @@
             this.addSingletable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.addSingletable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.addSingletable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.addSingletable.Location = new System.Drawing.Point(602, 139);
+            this.addSingletable.Location = new System.Drawing.Point(580, 139);
             this.addSingletable.Margin = new System.Windows.Forms.Padding(4);
             this.addSingletable.Name = "addSingletable";
             this.addSingletable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
@@ -1140,7 +1140,7 @@
             // 
             this.pictureSettings1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureSettings1.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings1.Image")));
-            this.pictureSettings1.Location = new System.Drawing.Point(1540, 0);
+            this.pictureSettings1.Location = new System.Drawing.Point(1264, 0);
             this.pictureSettings1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureSettings1.Name = "pictureSettings1";
             this.pictureSettings1.Size = new System.Drawing.Size(84, 69);
@@ -1156,7 +1156,7 @@
             this.d3pTitle1.BackColor = System.Drawing.Color.Transparent;
             this.d3pTitle1.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d3pTitle1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.d3pTitle1.Location = new System.Drawing.Point(26, 52);
+            this.d3pTitle1.Location = new System.Drawing.Point(4, 52);
             this.d3pTitle1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.d3pTitle1.Name = "d3pTitle1";
             this.d3pTitle1.Size = new System.Drawing.Size(370, 54);
@@ -1167,7 +1167,7 @@
             // 
             this.d3pLogo1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.d3pLogo1.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.d3pLogo1.Location = new System.Drawing.Point(31, 110);
+            this.d3pLogo1.Location = new System.Drawing.Point(9, 110);
             this.d3pLogo1.Margin = new System.Windows.Forms.Padding(4);
             this.d3pLogo1.Name = "d3pLogo1";
             this.d3pLogo1.Size = new System.Drawing.Size(156, 138);
@@ -1180,7 +1180,7 @@
             // 
             this.searchID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchID.Location = new System.Drawing.Point(36, 349);
+            this.searchID.Location = new System.Drawing.Point(14, 349);
             this.searchID.Margin = new System.Windows.Forms.Padding(4);
             this.searchID.Name = "searchID";
             this.searchID.Size = new System.Drawing.Size(71, 54);
@@ -1194,7 +1194,7 @@
             this.Searchlbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Searchlbl.AutoSize = true;
             this.Searchlbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Searchlbl.Location = new System.Drawing.Point(31, 265);
+            this.Searchlbl.Location = new System.Drawing.Point(9, 265);
             this.Searchlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Searchlbl.Name = "Searchlbl";
             this.Searchlbl.Size = new System.Drawing.Size(79, 28);
@@ -1206,7 +1206,7 @@
             this.searchBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(36, 295);
+            this.searchBox.Location = new System.Drawing.Point(14, 295);
             this.searchBox.Margin = new System.Windows.Forms.Padding(4);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(523, 30);
@@ -1219,11 +1219,13 @@
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
             this.tabControl1.Controls.Add(this.singleItemTab);
             this.tabControl1.Controls.Add(this.listTab);
             this.tabControl1.Controls.Add(this.map);
-            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(-5, 1);
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.HotTrack = true;
+            this.tabControl1.Location = new System.Drawing.Point(7, 13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
