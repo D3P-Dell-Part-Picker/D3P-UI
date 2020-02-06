@@ -80,14 +80,18 @@ namespace DellPartPicker
 
         private void listSearchBttn_Click(object sender, EventArgs e)
         {
+            search();
+        }
+
+        private void search()
+        {
             addListTable.Rows.Clear();
             String data = listTextBox.Text;
             String[] dataArray = data.Split(
                 new[] { Environment.NewLine }
-                ,StringSplitOptions.None);
+                , StringSplitOptions.None);
             ParseList pl = new ParseList();
             pl.searchList(dataArray, addListTable, loader);
-
         }
 
         private void bttnRemove_Click(object sender, EventArgs e)
@@ -106,7 +110,7 @@ namespace DellPartPicker
         }
 
         private void button2_Click(object sender, EventArgs e) {
-            
+            search();
             DataTable dt = toTable(addListTable);
 
             foreach (DataColumn dc in dt.Columns)
@@ -209,6 +213,7 @@ namespace DellPartPicker
             // remove the all selected items from the collected list
             foreach (DataGridViewRow item in this.dataGridList.SelectedRows)
             {
+                Console.WriteLine("item index" + item.Index);
                 dataGridList.Rows.RemoveAt(item.Index);
             }
         }
