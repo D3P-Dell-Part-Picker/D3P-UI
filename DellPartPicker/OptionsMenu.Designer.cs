@@ -38,21 +38,21 @@
             // optionsLbl
             // 
             this.optionsLbl.AutoSize = true;
-            this.optionsLbl.Font = new System.Drawing.Font("Lato", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsLbl.ForeColor = System.Drawing.SystemColors.Highlight;
             this.optionsLbl.Location = new System.Drawing.Point(12, 9);
             this.optionsLbl.Name = "optionsLbl";
-            this.optionsLbl.Size = new System.Drawing.Size(132, 39);
+            this.optionsLbl.Size = new System.Drawing.Size(135, 37);
             this.optionsLbl.TabIndex = 0;
             this.optionsLbl.Text = "Options";
             // 
             // radioLt
             // 
             this.radioLt.AutoSize = true;
-            this.radioLt.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioLt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioLt.Location = new System.Drawing.Point(12, 68);
             this.radioLt.Name = "radioLt";
-            this.radioLt.Size = new System.Drawing.Size(182, 23);
+            this.radioLt.Size = new System.Drawing.Size(202, 24);
             this.radioLt.TabIndex = 1;
             this.radioLt.TabStop = true;
             this.radioLt.Text = "Light Theme (Default)";
@@ -62,10 +62,10 @@
             // radioDrk
             // 
             this.radioDrk.AutoSize = true;
-            this.radioDrk.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioDrk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioDrk.Location = new System.Drawing.Point(12, 118);
             this.radioDrk.Name = "radioDrk";
-            this.radioDrk.Size = new System.Drawing.Size(116, 23);
+            this.radioDrk.Size = new System.Drawing.Size(124, 24);
             this.radioDrk.TabIndex = 2;
             this.radioDrk.TabStop = true;
             this.radioDrk.Text = "Dark Theme";
@@ -76,7 +76,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.White;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonBack.Location = new System.Drawing.Point(12, 370);
             this.buttonBack.Name = "buttonBack";
@@ -90,7 +90,7 @@
             // 
             this.buttonApply.BackColor = System.Drawing.Color.White;
             this.buttonApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonApply.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonApply.Location = new System.Drawing.Point(12, 296);
             this.buttonApply.Name = "buttonApply";
             this.buttonApply.Size = new System.Drawing.Size(202, 68);
@@ -103,6 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonApply);
