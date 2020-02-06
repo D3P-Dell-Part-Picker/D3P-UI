@@ -29,6 +29,7 @@ namespace DellPartPicker
         private void initCollective()
         {
             dataGridList.ColumnCount = 3;
+
             dataGridList.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //select the whole row
             dataGridList.Columns[0].Name = "Part Number";
             dataGridList.Columns[1].Name = "Description";
@@ -245,7 +246,7 @@ namespace DellPartPicker
                         String loc = dataGridList.SelectedRows[0].Cells[2].Value.ToString();
                         Shelf en = getShelf(loc);
 
-                        getBox(en);
+                        getBox(en).BackColor = Color.White;
                     }catch(Exception exc)
                     {
 
@@ -463,9 +464,6 @@ namespace DellPartPicker
                 throw new Exception("something went wrong with location " + loc);
             }
 
-
-
-            return shelfA;
         }
 
         
