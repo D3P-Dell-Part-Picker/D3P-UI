@@ -109,6 +109,7 @@
             this.Searchlbl = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.maperrorLabel = new System.Windows.Forms.Label();
             this.map.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shelfL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfK)).BeginInit();
@@ -149,6 +150,7 @@
             // 
             // map
             // 
+            this.map.Controls.Add(this.maperrorLabel);
             this.map.Controls.Add(this.findbtn);
             this.map.Controls.Add(this.bttnClear);
             this.map.Controls.Add(this.bttnRemove);
@@ -212,6 +214,7 @@
             this.map.TabIndex = 3;
             this.map.Text = "Map";
             this.map.UseVisualStyleBackColor = true;
+            this.map.Click += new System.EventHandler(this.map_Click);
             // 
             // findbtn
             // 
@@ -1229,6 +1232,18 @@
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 14;
             // 
+            // maperrorLabel
+            // 
+            this.maperrorLabel.AutoSize = true;
+            this.maperrorLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maperrorLabel.ForeColor = System.Drawing.Color.Red;
+            this.maperrorLabel.Location = new System.Drawing.Point(885, 7);
+            this.maperrorLabel.Name = "maperrorLabel";
+            this.maperrorLabel.Size = new System.Drawing.Size(43, 23);
+            this.maperrorLabel.TabIndex = 55;
+            this.maperrorLabel.Text = "eror";
+            this.maperrorLabel.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1370,6 +1385,7 @@
         public System.Windows.Forms.TextBox searchBox;
         protected internal System.Windows.Forms.TabControl tabControl1;
         public System.Windows.Forms.Button findbtn;
+        private System.Windows.Forms.Label maperrorLabel;
     }
 }
 

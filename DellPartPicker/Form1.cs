@@ -231,6 +231,7 @@ namespace DellPartPicker
 
         private void findbtn_Click(object sender, EventArgs e)
         {
+            clearAll();
             Int32 selectedCellCount = dataGridList.GetCellCount(DataGridViewElementStates.Selected);
             if(selectedCellCount > 0)
             {
@@ -255,12 +256,15 @@ namespace DellPartPicker
                                 Shelf en = getShelf(loc);
 
                                 getBox(en).BackColor = Color.White;
+                                maperrorLabel.Visible = false;
                             }
 
                         }
                     }catch(Exception ex)
                     {
                         //nothing is in the table
+                        maperrorLabel.Visible = true;
+                        maperrorLabel.Text = "This item does not exist.";
                     }
                 }
                 else
@@ -287,14 +291,45 @@ namespace DellPartPicker
                             Shelf en = getShelf(loc);
 
                             getBox(en).BackColor = Color.White;
+
+                            maperrorLabel.Visible = false;
                         }
                         
                     }catch(Exception exc)
                     {
-
+                        maperrorLabel.Visible = true;
+                        maperrorLabel.Text = "This item does not exist.";
                     }
                 }
             }
+        }
+
+        private void clearAll()
+        {
+            shelfA.BackColor = Color.Gray;
+            shelfB.BackColor = Color.Gray;
+            shelfC.BackColor = Color.Gray;
+            shelfD.BackColor = Color.Gray;
+            shelfE.BackColor = Color.Gray;
+            shelfF.BackColor = Color.Gray;
+            shelfG.BackColor = Color.Gray;
+            shelfH.BackColor = Color.Gray;
+            shelfI.BackColor = Color.Gray;
+            shelfJ.BackColor = Color.Gray;
+            shelfK.BackColor = Color.Gray;
+            shelfL.BackColor = Color.Gray;
+            shelfM.BackColor = Color.Gray;
+            shelfN.BackColor = Color.Gray;
+            shelfO.BackColor = Color.Gray;
+            shelfP.BackColor = Color.Gray;
+            shelfQ.BackColor = Color.Gray;
+            shelfR.BackColor = Color.Gray;
+            shelfS.BackColor = Color.Gray;
+            shelfT.BackColor = Color.Gray;
+            shelfU.BackColor = Color.Gray;
+            shelfV.BackColor = Color.Gray;
+            shelfW.BackColor = Color.Gray;
+            shelfX.BackColor = Color.Gray;
         }
 
         private PictureBox getBox(Shelf shelf)
@@ -508,7 +543,10 @@ namespace DellPartPicker
 
         }
 
-        
+        private void map_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     public enum Shelf
     {
