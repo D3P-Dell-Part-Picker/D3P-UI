@@ -54,12 +54,16 @@ namespace DellPartPicker
             {
                 Directory.CreateDirectory(@"C:\Temp");
             }
-            try{
-                Client.DownloadFile("http://" + ip + "/hosted/Racks.csv", @"C:\Temp\Racks.csv");
-            }catch(WebException e){
-                //check for existing backups
-                if(!File.Exists(@"C:\Temp\Racks.csv")){
-                    throw new WebException("unable to update, and there are now local backups");
+            if (!File.Exists(@"C:\Temp\Racks.csv")) //if the file does not exist currently
+            {
+                try
+                {
+                    Client.DownloadFile("http://" + ip + "/hosted/Racks.csv", @"C:\Temp\Racks.csv");
+                }
+                catch (Exception e)
+                {
+                    //check for existing backups
+
                 }
             }
             
