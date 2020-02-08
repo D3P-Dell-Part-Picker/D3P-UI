@@ -109,7 +109,7 @@
             this.searchID = new System.Windows.Forms.Button();
             this.Searchlbl = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.map.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shelfL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfK)).BeginInit();
@@ -145,7 +145,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            this.tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // map
@@ -951,7 +951,7 @@
             this.pictureSettings2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureSettings2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureSettings2.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings2.Image")));
-            this.pictureSettings2.Location = new System.Drawing.Point(1642, 0);
+            this.pictureSettings2.Location = new System.Drawing.Point(1399, 0);
             this.pictureSettings2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureSettings2.Name = "pictureSettings2";
             this.pictureSettings2.Size = new System.Drawing.Size(84, 69);
@@ -1074,7 +1074,7 @@
             // 
             this.searchLoc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchLoc.Location = new System.Drawing.Point(218, 336);
+            this.searchLoc.Location = new System.Drawing.Point(178, 348);
             this.searchLoc.Margin = new System.Windows.Forms.Padding(4);
             this.searchLoc.Name = "searchLoc";
             this.searchLoc.Size = new System.Drawing.Size(93, 54);
@@ -1087,7 +1087,7 @@
             // 
             this.searchName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchName.Location = new System.Drawing.Point(137, 336);
+            this.searchName.Location = new System.Drawing.Point(97, 348);
             this.searchName.Margin = new System.Windows.Forms.Padding(4);
             this.searchName.Name = "searchName";
             this.searchName.Size = new System.Drawing.Size(73, 54);
@@ -1102,7 +1102,7 @@
             this.error.AutoSize = true;
             this.error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.error.ForeColor = System.Drawing.Color.Maroon;
-            this.error.Location = new System.Drawing.Point(60, 284);
+            this.error.Location = new System.Drawing.Point(20, 296);
             this.error.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.error.Name = "error";
             this.error.Size = new System.Drawing.Size(143, 25);
@@ -1114,7 +1114,7 @@
             this.results.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.results.AutoSize = true;
             this.results.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.results.Location = new System.Drawing.Point(618, 96);
+            this.results.Location = new System.Drawing.Point(578, 108);
             this.results.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.results.Name = "results";
             this.results.Size = new System.Drawing.Size(72, 28);
@@ -1125,7 +1125,7 @@
             // 
             this.addSelectedBttn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.addSelectedBttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addSelectedBttn.Location = new System.Drawing.Point(320, 335);
+            this.addSelectedBttn.Location = new System.Drawing.Point(280, 347);
             this.addSelectedBttn.Margin = new System.Windows.Forms.Padding(4);
             this.addSelectedBttn.Name = "addSelectedBttn";
             this.addSelectedBttn.Size = new System.Drawing.Size(263, 55);
@@ -1141,7 +1141,7 @@
             this.addSingletable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.addSingletable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.addSingletable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.addSingletable.Location = new System.Drawing.Point(624, 126);
+            this.addSingletable.Location = new System.Drawing.Point(584, 138);
             this.addSingletable.Margin = new System.Windows.Forms.Padding(4);
             this.addSingletable.Name = "addSingletable";
             this.addSingletable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
@@ -1152,7 +1152,7 @@
             // 
             this.pictureSettings1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureSettings1.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings1.Image")));
-            this.pictureSettings1.Location = new System.Drawing.Point(1565, 0);
+            this.pictureSettings1.Location = new System.Drawing.Point(1342, -4);
             this.pictureSettings1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureSettings1.Name = "pictureSettings1";
             this.pictureSettings1.Size = new System.Drawing.Size(84, 69);
@@ -1168,7 +1168,7 @@
             this.d3pTitle1.BackColor = System.Drawing.Color.Transparent;
             this.d3pTitle1.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d3pTitle1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.d3pTitle1.Location = new System.Drawing.Point(48, 39);
+            this.d3pTitle1.Location = new System.Drawing.Point(8, 51);
             this.d3pTitle1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.d3pTitle1.Name = "d3pTitle1";
             this.d3pTitle1.Size = new System.Drawing.Size(370, 54);
@@ -1179,7 +1179,7 @@
             // 
             this.d3pLogo1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.d3pLogo1.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.d3pLogo1.Location = new System.Drawing.Point(53, 97);
+            this.d3pLogo1.Location = new System.Drawing.Point(13, 109);
             this.d3pLogo1.Margin = new System.Windows.Forms.Padding(4);
             this.d3pLogo1.Name = "d3pLogo1";
             this.d3pLogo1.Size = new System.Drawing.Size(156, 138);
@@ -1192,7 +1192,7 @@
             // 
             this.searchID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchID.Location = new System.Drawing.Point(58, 336);
+            this.searchID.Location = new System.Drawing.Point(18, 348);
             this.searchID.Margin = new System.Windows.Forms.Padding(4);
             this.searchID.Name = "searchID";
             this.searchID.Size = new System.Drawing.Size(71, 54);
@@ -1206,7 +1206,7 @@
             this.Searchlbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Searchlbl.AutoSize = true;
             this.Searchlbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Searchlbl.Location = new System.Drawing.Point(53, 252);
+            this.Searchlbl.Location = new System.Drawing.Point(13, 264);
             this.Searchlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Searchlbl.Name = "Searchlbl";
             this.Searchlbl.Size = new System.Drawing.Size(79, 28);
@@ -1218,32 +1218,30 @@
             this.searchBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(58, 282);
+            this.searchBox.Location = new System.Drawing.Point(18, 294);
             this.searchBox.Margin = new System.Windows.Forms.Padding(4);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(523, 30);
             this.searchBox.TabIndex = 8;
             this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
-            // tabControl1
+            // tabControl
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
-            this.tabControl1.Controls.Add(this.singleItemTab);
-            this.tabControl1.Controls.Add(this.listTab);
-            this.tabControl1.Controls.Add(this.map);
-            this.tabControl1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.HotTrack = true;
-            this.tabControl1.Location = new System.Drawing.Point(7, 13);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1665, 726);
-            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl1.TabIndex = 14;
+            this.tabControl.Appearance = System.Windows.Forms.TabAppearance.Buttons;
+            this.tabControl.Controls.Add(this.singleItemTab);
+            this.tabControl.Controls.Add(this.listTab);
+            this.tabControl.Controls.Add(this.map);
+            this.tabControl.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl.HotTrack = true;
+            this.tabControl.Location = new System.Drawing.Point(7, 13);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(1665, 726);
+            this.tabControl.TabIndex = 14;
             // 
             // Form1
             // 
@@ -1253,7 +1251,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1685, 688);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1703, 735);
@@ -1299,7 +1297,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1384,7 +1382,7 @@
         public System.Windows.Forms.Button searchID;
         public System.Windows.Forms.Label Searchlbl;
         public System.Windows.Forms.TextBox searchBox;
-        protected internal System.Windows.Forms.TabControl tabControl1;
+        protected internal System.Windows.Forms.TabControl tabControl;
         public System.Windows.Forms.Button findbtn;
         private System.Windows.Forms.Label maperrorLabel;
     }
