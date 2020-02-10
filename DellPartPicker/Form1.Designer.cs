@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.map = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.findSelected = new System.Windows.Forms.Button();
+            this.next = new System.Windows.Forms.Button();
             this.maperrorLabel = new System.Windows.Forms.Label();
-            this.findbtn = new System.Windows.Forms.Button();
+            this.previous = new System.Windows.Forms.Button();
             this.bttnClear = new System.Windows.Forms.Button();
             this.bttnRemove = new System.Windows.Forms.Button();
             this.labelX = new System.Windows.Forms.Label();
@@ -151,9 +152,10 @@
             // 
             // map
             // 
-            this.map.Controls.Add(this.button1);
+            this.map.Controls.Add(this.findSelected);
+            this.map.Controls.Add(this.next);
             this.map.Controls.Add(this.maperrorLabel);
-            this.map.Controls.Add(this.findbtn);
+            this.map.Controls.Add(this.previous);
             this.map.Controls.Add(this.bttnClear);
             this.map.Controls.Add(this.bttnRemove);
             this.map.Controls.Add(this.labelX);
@@ -218,17 +220,31 @@
             this.map.UseVisualStyleBackColor = true;
             this.map.Click += new System.EventHandler(this.map_Click);
             // 
-            // button1
+            // findSelected
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1261, 450);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(373, 78);
-            this.button1.TabIndex = 56;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
+            this.findSelected.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.findSelected.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findSelected.Location = new System.Drawing.Point(1064, 553);
+            this.findSelected.Margin = new System.Windows.Forms.Padding(4);
+            this.findSelected.Name = "findSelected";
+            this.findSelected.Size = new System.Drawing.Size(373, 78);
+            this.findSelected.TabIndex = 57;
+            this.findSelected.Text = "Find Selected";
+            this.findSelected.UseVisualStyleBackColor = true;
+            this.findSelected.Click += new System.EventHandler(this.findSelected_Click);
+            // 
+            // next
+            // 
+            this.next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.next.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.next.Location = new System.Drawing.Point(1261, 385);
+            this.next.Margin = new System.Windows.Forms.Padding(4);
+            this.next.Name = "next";
+            this.next.Size = new System.Drawing.Size(373, 78);
+            this.next.TabIndex = 56;
+            this.next.Text = "Next";
+            this.next.UseVisualStyleBackColor = true;
+            this.next.Click += new System.EventHandler(this.next_Click);
             // 
             // maperrorLabel
             // 
@@ -242,27 +258,27 @@
             this.maperrorLabel.Text = "eror";
             this.maperrorLabel.Visible = false;
             // 
-            // findbtn
+            // previous
             // 
-            this.findbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.findbtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findbtn.Location = new System.Drawing.Point(1261, 537);
-            this.findbtn.Margin = new System.Windows.Forms.Padding(4);
-            this.findbtn.Name = "findbtn";
-            this.findbtn.Size = new System.Drawing.Size(373, 73);
-            this.findbtn.TabIndex = 54;
-            this.findbtn.Text = "Previous";
-            this.findbtn.UseVisualStyleBackColor = true;
-            this.findbtn.Click += new System.EventHandler(this.findbtn_Click);
+            this.previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.previous.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.previous.Location = new System.Drawing.Point(1261, 467);
+            this.previous.Margin = new System.Windows.Forms.Padding(4);
+            this.previous.Name = "previous";
+            this.previous.Size = new System.Drawing.Size(373, 78);
+            this.previous.TabIndex = 54;
+            this.previous.Text = "Previous";
+            this.previous.UseVisualStyleBackColor = true;
+            this.previous.Click += new System.EventHandler(this.findbtn_Click);
             // 
             // bttnClear
             // 
             this.bttnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnClear.Location = new System.Drawing.Point(875, 455);
+            this.bttnClear.Location = new System.Drawing.Point(875, 385);
             this.bttnClear.Margin = new System.Windows.Forms.Padding(4);
             this.bttnClear.Name = "bttnClear";
-            this.bttnClear.Size = new System.Drawing.Size(373, 73);
+            this.bttnClear.Size = new System.Drawing.Size(373, 78);
             this.bttnClear.TabIndex = 53;
             this.bttnClear.Text = "Clear";
             this.bttnClear.UseVisualStyleBackColor = true;
@@ -272,7 +288,7 @@
             // 
             this.bttnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnRemove.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnRemove.Location = new System.Drawing.Point(875, 532);
+            this.bttnRemove.Location = new System.Drawing.Point(875, 467);
             this.bttnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.bttnRemove.Name = "bttnRemove";
             this.bttnRemove.Size = new System.Drawing.Size(373, 78);
@@ -904,7 +920,7 @@
             this.dataGridList.Location = new System.Drawing.Point(875, 42);
             this.dataGridList.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridList.Name = "dataGridList";
-            this.dataGridList.Size = new System.Drawing.Size(755, 406);
+            this.dataGridList.Size = new System.Drawing.Size(755, 318);
             this.dataGridList.TabIndex = 1;
             // 
             // mapTitle
@@ -1398,9 +1414,10 @@
         public System.Windows.Forms.Label Searchlbl;
         public System.Windows.Forms.TextBox searchBox;
         protected internal System.Windows.Forms.TabControl tabControl;
-        public System.Windows.Forms.Button findbtn;
+        public System.Windows.Forms.Button previous;
         private System.Windows.Forms.Label maperrorLabel;
-        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button next;
+        public System.Windows.Forms.Button findSelected;
     }
 }
 

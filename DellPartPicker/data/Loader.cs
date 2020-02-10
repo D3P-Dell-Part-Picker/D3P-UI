@@ -157,7 +157,7 @@ namespace DellPartPicker
             return data;
         }
 
-        public int getLineNumber(String partnum, String name)
+        public static int getLineNumber(String partnum, String name)
         {
             int index = 0;
             if(!(Loader.partnumList.IndexOf(partnum) == -1)) // check if the partnum is in the list

@@ -22,22 +22,22 @@ namespace DellPartPicker
             this.loader = l;
             String[] found = new string[3];
 
-            if (!loader.partnumList.Contains(find))
+            if (!Loader.partnumList.Contains(find))
             {
                 found = new string[] { "Part with ", "number " + find, " not found" };
                 return found;
             }
 
-            int index = loader.partnumList.IndexOf(find);
+            int index = Loader.partnumList.IndexOf(find);
 
             if(index == null)
             {
                 return null;
             }
 
-            found[0] = loader.partnumList[index];
-            found[1] = loader.descList[index];
-            found[2] = loader.locList[index];
+            found[0] = Loader.partnumList[index];
+            found[1] = Loader.descList[index];
+            found[2] = Loader.locList[index];
 
             return found;
         }

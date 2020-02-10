@@ -15,6 +15,7 @@ namespace DellPartPicker
         Loader loader = new Loader();
         public static Boolean isDark = false;
         Parser parser = new Parser();
+        public static int selectedRow = 0;
 
         public Form1()
         {
@@ -231,204 +232,263 @@ namespace DellPartPicker
 
         private void findbtn_Click(object sender, EventArgs e)
         {
-            clearAll();
-            Int32 selectedCellCount = dataGridList.GetCellCount(DataGridViewElementStates.Selected);
-            if(selectedCellCount > 0)
+            TestingUtils.clearAll(this);
+            if(selectedRow <= 0)
             {
-                if (dataGridList.AreAllCellsSelected(true))
+                selectedRow = 0;
+                select();
+            }
+            selectedRow--;
+            select();
+        }
+
+        private bool select()
+        {
+            TestingUtils.clearAll(this);
+            if (selectedRow >= (dataGridList.Rows.Count)) //if the selected row is out of bounds
+            {
+                
+                selectedRow = 0;
+                return false;
+            }
+            try
+            {
+                String loc = dataGridList.Rows[selectedRow].Cells[2].Value.ToString();
+                if (loc == "not found")
                 {
-                    try
-                    {
-                        String loc = dataGridList.Rows[0].Cells[2].Value.ToString();
-                        if(loc == "not found")
-                        {
-                            int temp = 1;
-                            do
-                            {
-                                loc = dataGridList.Rows[temp].Cells[2].Value.ToString();
-                            } while (loc == "not found" && dataGridList.Rows.Count >= temp);
-                            if (loc == "not found")
-                            {
-
-                            }
-                            else
-                            {
-                                Shelf en = getShelf(loc);
-
-                                getBox(en).BackColor = Color.White;
-                                maperrorLabel.Visible = false;
-                            }
-
-                        }
-                    }catch(Exception ex)
-                    {
-                        //nothing is in the table
-                        maperrorLabel.Visible = true;
-                        maperrorLabel.Text = "This item does not exist.";
-                    }
+                    maperrorLabel.Text = "This item does not exist.";
+                    maperrorLabel.Visible = true;
+                    return false;
                 }
-                else
+                Shelf en = TestingUtils.getShelf(loc);
+
+                TestingUtils.getBox(en, this).BackColor = Color.White;
+
+                
+
+                foreach (DataGridViewRow r in dataGridList.Rows)
                 {
-                    try
-                    {
-                        String loc = dataGridList.SelectedRows[0].Cells[2].Value.ToString();
-
-                        if (loc == "not found" && dataGridList.SelectedRows.Count != 1)
-                        {
-                            int temp = 1;
-                            do
-                            {
-                                loc = dataGridList.SelectedRows[temp].Cells[2].Value.ToString();
-                            } while (loc == "not found" && dataGridList.Rows.Count >= temp);
-                            
-                        }
-                        if(loc == "not found")
-                        {
-
-                        }
-                        else
-                        {
-                            Shelf en = getShelf(loc);
-
-                            getBox(en).BackColor = Color.White;
-
-                            maperrorLabel.Visible = false;
-                        }
-                        
-                    }catch(Exception exc)
-                    {
-                        maperrorLabel.Visible = true;
-                        maperrorLabel.Text = "This item does not exist.";
-                    }
+                    r.Selected = false;
                 }
+
+                dataGridList.Rows[selectedRow].Selected = true;
+
+                maperrorLabel.Visible = false;
+
+                int linenum = Loader.getLineNumber(
+                    dataGridList.Rows[selectedRow].Cells[0].Value.ToString(),
+                    dataGridList.Rows[selectedRow].Cells[1].Value.ToString());
+
+                // TODO
+                // do something with the line number
+
+                return true;
+            }
+            catch(ArgumentOutOfRangeException e)
+            {
+                maperrorLabel.Visible = true;
+                maperrorLabel.Text = "nothing was selected";
+                return false;
             }
         }
 
-        private void clearAll()
+        
+
+        private void map_Click(object sender, EventArgs e)
         {
-            shelfA.BackColor = Color.Gray;
-            shelfB.BackColor = Color.Gray;
-            shelfC.BackColor = Color.Gray;
-            shelfD.BackColor = Color.Gray;
-            shelfE.BackColor = Color.Gray;
-            shelfF.BackColor = Color.Gray;
-            shelfG.BackColor = Color.Gray;
-            shelfH.BackColor = Color.Gray;
-            shelfI.BackColor = Color.Gray;
-            shelfJ.BackColor = Color.Gray;
-            shelfK.BackColor = Color.Gray;
-            shelfL.BackColor = Color.Gray;
-            shelfM.BackColor = Color.Gray;
-            shelfN.BackColor = Color.Gray;
-            shelfO.BackColor = Color.Gray;
-            shelfP.BackColor = Color.Gray;
-            shelfQ.BackColor = Color.Gray;
-            shelfR.BackColor = Color.Gray;
-            shelfS.BackColor = Color.Gray;
-            shelfT.BackColor = Color.Gray;
-            shelfU.BackColor = Color.Gray;
-            shelfV.BackColor = Color.Gray;
-            shelfW.BackColor = Color.Gray;
-            shelfX.BackColor = Color.Gray;
+
         }
 
-        private PictureBox getBox(Shelf shelf)
+        private void findSelected_Click(object sender, EventArgs e)
+        {
+            TestingUtils.clearAll(this);
+            select(dataGridList.SelectedRows);
+            try
+            {
+                selectedRow = dataGridList.SelectedRows[0].Index;
+            }catch
+            {
+                maperrorLabel.Visible = true;
+                maperrorLabel.Text = "please select something before using this button";
+            }
+        }
+        private bool select(DataGridViewSelectedRowCollection sel)
+        {
+            
+            try
+            {
+                String loc = sel[0].Cells[2].Value.ToString();
+                if (loc == "not found")
+                {
+                    maperrorLabel.Text = "This item does not exist.";
+                    maperrorLabel.Visible = true;
+                    return false;
+                }
+                Shelf en = TestingUtils.getShelf(loc);
+
+                TestingUtils.getBox(en, this).BackColor = Color.White;
+
+                maperrorLabel.Visible = false;
+
+                int linenum = Loader.getLineNumber(
+                    sel[0].Cells[0].Value.ToString(),
+                    sel[0].Cells[1].Value.ToString());
+
+                // TODO
+                // do something with the line number
+
+                return true;
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                return false;
+            }
+        }
+
+        private void next_Click(object sender, EventArgs e)
+        {
+            TestingUtils.clearAll(this);
+            if (selectedRow >= dataGridList.Rows.Count - 1)
+            {
+                selectedRow = dataGridList.Rows.Count - 1;
+                select();
+            }
+            selectedRow++;
+            select();
+        }
+    }
+    public enum Shelf
+    {
+        A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X
+    }
+
+    public class TestingUtils
+    {
+        public static void clearAll(Form1 form)
+        {
+            form.shelfA.BackColor = Color.Gray;
+            form.shelfB.BackColor = Color.Gray;
+            form.shelfC.BackColor = Color.Gray;
+            form.shelfD.BackColor = Color.Gray;
+            form.shelfE.BackColor = Color.Gray;
+            form.shelfF.BackColor = Color.Gray;
+            form.shelfG.BackColor = Color.Gray;
+            form.shelfH.BackColor = Color.Gray;
+            form.shelfI.BackColor = Color.Gray;
+            form.shelfJ.BackColor = Color.Gray;
+            form.shelfK.BackColor = Color.Gray;
+            form.shelfL.BackColor = Color.Gray;
+            form.shelfM.BackColor = Color.Gray;
+            form.shelfN.BackColor = Color.Gray;
+            form.shelfO.BackColor = Color.Gray;
+            form.shelfP.BackColor = Color.Gray;
+            form.shelfQ.BackColor = Color.Gray;
+            form.shelfR.BackColor = Color.Gray;
+            form.shelfS.BackColor = Color.Gray;
+            form.shelfT.BackColor = Color.Gray;
+            form.shelfU.BackColor = Color.Gray;
+            form.shelfV.BackColor = Color.Gray;
+            form.shelfW.BackColor = Color.Gray;
+            form.shelfX.BackColor = Color.Gray;
+        }
+
+        public static PictureBox getBox(Shelf shelf, Form1 form)
         {
             if (shelf == Shelf.A)
             {
-                return shelfA;
+                return form.shelfA;
             }
             else if (shelf == Shelf.B)
             {
-                return shelfB;
+                return form.shelfB;
             }
             else if (shelf == Shelf.C)
             {
-                return shelfC;
+                return form.shelfC;
             }
             else if (shelf == Shelf.D)
             {
-                return shelfD;
+                return form.shelfD;
             }
             else if (shelf == Shelf.E)
             {
-                return shelfE;
+                return form.shelfE;
             }
             else if (shelf == Shelf.F)
             {
-                return shelfF;
+                return form.shelfF;
             }
             else if (shelf == Shelf.G)
             {
-                return shelfG;
+                return form.shelfG;
             }
             else if (shelf == Shelf.H)
             {
-                return shelfH;
+                return form.shelfH;
             }
             else if (shelf == Shelf.I)
             {
-                return shelfI;
+                return form.shelfI;
             }
             else if (shelf == Shelf.J)
             {
-                return shelfJ;
+                return form.shelfJ;
             }
             else if (shelf == Shelf.K)
             {
-                return shelfK;
+                return form.shelfK;
             }
             else if (shelf == Shelf.L)
             {
-                return shelfL;
+                return form.shelfL;
             }
             else if (shelf == Shelf.M)
             {
-                return shelfM;
+                return form.shelfM;
             }
             else if (shelf == Shelf.N)
             {
-                return shelfN;
+                return form.shelfN;
             }
             else if (shelf == Shelf.O)
             {
-                return shelfO;
+                return form.shelfO;
             }
             else if (shelf == Shelf.P)
             {
-                return shelfP;
+                return form.shelfP;
             }
             else if (shelf == Shelf.Q)
             {
-                return shelfQ;
+                return form.shelfQ;
             }
             else if (shelf == Shelf.R)
             {
-                return shelfR;
+                return form.shelfR;
             }
             else if (shelf == Shelf.S)
             {
-                return shelfS;
+                return form.shelfS;
             }
             else if (shelf == Shelf.T)
             {
-                return shelfT;
+                return form.shelfT;
             }
             else if (shelf == Shelf.U)
             {
-                return shelfU;
+                return form.shelfU;
             }
             else if (shelf == Shelf.V)
             {
-                return shelfV;
+                return form.shelfV;
             }
             else if (shelf == Shelf.W)
             {
-                return shelfW;
+                return form.shelfW;
             }
             else if (shelf == Shelf.X)
             {
-                return shelfX;
+                return form.shelfX;
             }
             else
             {
@@ -436,7 +496,7 @@ namespace DellPartPicker
             }
         }
 
-        private Shelf getShelf(String loc)
+        public static Shelf getShelf(String loc)
         {
             char locLetter = loc.ToCharArray()[0];
 
@@ -542,14 +602,5 @@ namespace DellPartPicker
             }
 
         }
-
-        private void map_Click(object sender, EventArgs e)
-        {
-
-        }
-    }
-    public enum Shelf
-    {
-        A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X
     }
 }
