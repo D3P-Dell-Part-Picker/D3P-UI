@@ -9,9 +9,9 @@ namespace DellPartPicker
 {
     public class Loader
     {
-        public List<String> partnumList;
-        public List<String> descList;
-        public List<String> locList;
+        public static List<String> partnumList;
+        public static List<String> descList;
+        public static List<String> locList;
         private String[] partnum, desc, loc;
         String ip = Constants.REMOTE_SERVER;
 
@@ -157,8 +157,25 @@ namespace DellPartPicker
             return data;
         }
 
-        
+        public int getLineNumber(String partnum, String name)
+        {
+            int index = 0;
+            if(!(Loader.partnumList.IndexOf(partnum) == -1)) // check if the partnum is in the list
+            {
+                index = Loader.partnumList.IndexOf(partnum);
+            }else if(!(Loader.descList.IndexOf(name) == -1)) //check for the item name existing
+            {
+                index = Loader.descList.IndexOf(name);
+            }
+            else //no item found, return -1
+            {
+                index = -1;
+            }
+            
 
+            //return the line number
+            return index;
+        }
     }
 }
 
