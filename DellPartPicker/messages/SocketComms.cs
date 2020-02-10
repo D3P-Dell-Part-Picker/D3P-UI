@@ -54,11 +54,11 @@ namespace DellPartPicker
 
                 try
                 {
-
+                    sender.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, 1);
                     // Connect Socket to the remote  
                     // endpoint using method Connect() 
                     sender.Connect(localEndPoint);
-
+                    
                     // We print EndPoint information  
                     // that we are connected 
                     Console.WriteLine("Socket connected to -> {0} ",
@@ -66,8 +66,19 @@ namespace DellPartPicker
 
                     // Creation of messagge that 
                     // we will send to Server 
+                    Console.WriteLine(message);
+                    
                     byte[] messageSent = Encoding.ASCII.GetBytes(message);
-                    int byteSent = sender.Send(messageSent);
+
+                    byte[] newValues = new byte[messageSent.Length + 3];
+                    newValues[0] = 0x00;
+                    newValues[1] = 0x00;
+                    newValues[2] = 0x00;
+                    
+                    // set the prepended value
+                    Array.Copy(messageSent, 0, newValues, 3, messageSent.Length);
+
+                    int byteSent = sender.Send(newValues);
 
                     // Data buffer 
 
