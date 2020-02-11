@@ -29,8 +29,10 @@ namespace DellPartPicker
 
         private void initCollective()
         {
+            //the column count
             dataGridList.ColumnCount = 3;
 
+            //set the column headers
             dataGridList.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //select the whole row
             dataGridList.Columns[0].Name = "Part Number";
             dataGridList.Columns[1].Name = "Description";
@@ -38,10 +40,12 @@ namespace DellPartPicker
         }
         private void disableFunctions()
         {
+            //disable some functions
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             addSingletable.AllowUserToResizeColumns = false;
             addSingletable.AllowUserToResizeRows = false;
             addSingletable.ReadOnly = true;
+            dataGridList.ReadOnly = true;
             this.MaximizeBox = true;
             this.MinimizeBox = true;
             error.Hide();
@@ -49,17 +53,21 @@ namespace DellPartPicker
 
         private void search_Click(object sender, EventArgs e)
         {
+            //clear the table
             addSingletable.Rows.Clear();
 
+            //test for null input
             if(searchBox.Text == null || searchBox.Text == "")
             {
                 error.Show();
             }           
+            //search
             parser.parse(searchBox.Text, Field.PartNumber, addSingletable, loader);
         }
 
         private void pictureSettings_Click(object sender, EventArgs e)
         {
+            //show the options menu
             OptionsMenu form = new OptionsMenu(this);
             this.Hide();
             form.Show();
@@ -67,6 +75,7 @@ namespace DellPartPicker
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            //show the options menu
             OptionsMenu form = new OptionsMenu(this);
             this.Hide();
             form.Show();
@@ -74,6 +83,7 @@ namespace DellPartPicker
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            //show the options menue
             OptionsMenu form = new OptionsMenu(this);
             this.Hide();
             form.Show();
@@ -81,17 +91,26 @@ namespace DellPartPicker
 
         private void listSearchBttn_Click(object sender, EventArgs e)
         {
+            //just search
             search();
         }
 
         private void search()
         {
+            //clear the table
             addListTable.Rows.Clear();
+
+            //get the data in teh textbox
             String data = listTextBox.Text;
+            //make an array splitting on a newline
             String[] dataArray = data.Split(
                 new[] { Environment.NewLine }
                 , StringSplitOptions.None);
+
+            //parse the list
             ParseList pl = new ParseList();
+
+            //search and add
             pl.searchList(dataArray, addListTable, loader);
         }
 
@@ -110,7 +129,7 @@ namespace DellPartPicker
             dataGridList.Rows.Clear();
         }
 
-        private void button2_Click(object sender, EventArgs e) {
+        private void addAll_click(object sender, EventArgs e) {
             search();
             DataTable dt = toTable(addListTable);
 
@@ -148,22 +167,33 @@ namespace DellPartPicker
 
         private DataTable toTable(DataGridView dgv)
         {
+            //convert the datagridview to a table
 
+            //make a new datatable
             DataTable dt = new DataTable();
+
+            //iterate through the columns
             foreach (DataGridViewColumn col in dgv.Columns)
             {
+                //add the column names to the table
                 dt.Columns.Add(col.Name);
             }
 
+            //iterate through the rows
             foreach (DataGridViewRow row in dgv.Rows)
             {
+                //make a new row
                 DataRow dRow = dt.NewRow();
+                //iterate through the cells
                 foreach (DataGridViewCell cell in row.Cells)
                 {
+                    //add the cells to the datatable
                     dRow[cell.ColumnIndex] = cell.Value;
                 }
+                //add the row
                 dt.Rows.Add(dRow);
             }
+            //return the datatable
             return dt;
         }
 
@@ -174,28 +204,37 @@ namespace DellPartPicker
 
         private void searchBox_TextChanged(object sender, EventArgs e)
         {
+            //hide the error
             error.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //clear the table
             addSingletable.Rows.Clear();
 
+            //test for null or empty input
             if (searchBox.Text == null || searchBox.Text == "")
             {
+                //show the error
                 error.Show();
             }
+            //search
             parser.parse(searchBox.Text, Field.Desc, addSingletable, loader);
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            //clear the table
             addSingletable.Rows.Clear();
 
+            //test for null or empty input
             if (searchBox.Text == null || searchBox.Text == "")
             {
+                //show the error
                 error.Show();
             }
+            //search for the items
             parser.parse(searchBox.Text, Field.Location, addSingletable, loader);
         }
 
@@ -219,7 +258,7 @@ namespace DellPartPicker
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void clearbttn_click(object sender, EventArgs e)
         {
             // clear the list
             dataGridList.Rows.Clear();
@@ -232,12 +271,20 @@ namespace DellPartPicker
 
         private void findbtn_Click(object sender, EventArgs e)
         {
+            //reset the picture boxes
             TestingUtils.clearAll(this);
+
+            //if the selected row is the last one
             if(selectedRow <= 0)
             {
+                //reset to 0
                 selectedRow = 0;
+
+                //try to select it
                 select();
             }
+
+            //it is not the last one so deincrement and select
             selectedRow--;
             select();
         }
@@ -247,34 +294,48 @@ namespace DellPartPicker
             TestingUtils.clearAll(this);
             if (selectedRow >= (dataGridList.Rows.Count)) //if the selected row is out of bounds
             {
-                
+                //reset the selected row to 0
                 selectedRow = 0;
+
+                //set the error message
+                maperrorLabel.Text = "can't select any further";
+                maperrorLabel.Visible = true;
+
+                //return false, there is no more previous items
                 return false;
             }
             try
             {
+                //try to get the location
                 String loc = dataGridList.Rows[selectedRow].Cells[2].Value.ToString();
-                if (loc == "not found")
+                if (loc == "not found") //if the location does not exist
                 {
+                    //set the error accordingly
                     maperrorLabel.Text = "This item does not exist.";
                     maperrorLabel.Visible = true;
+
+                    //return false, as it didn't work out
                     return false;
                 }
+                //turn the location into a shelf enum
                 Shelf en = TestingUtils.getShelf(loc);
 
+                //get the picturebox that corresponds to that enum and set its color to white
                 TestingUtils.getBox(en, this).BackColor = Color.White;
 
-                
-
+                //go through all of the rows and deselect them
                 foreach (DataGridViewRow r in dataGridList.Rows)
                 {
                     r.Selected = false;
                 }
 
+                //select the current row
                 dataGridList.Rows[selectedRow].Selected = true;
 
+                //any error now disappears
                 maperrorLabel.Visible = false;
 
+                //get the linumber for whatever the selected item is
                 int linenum = Loader.getLineNumber(
                     dataGridList.Rows[selectedRow].Cells[0].Value.ToString(),
                     dataGridList.Rows[selectedRow].Cells[1].Value.ToString());
@@ -286,50 +347,70 @@ namespace DellPartPicker
             }
             catch(ArgumentOutOfRangeException e)
             {
+                //assume that there is nothing in the table and set the error accordingly
                 maperrorLabel.Visible = true;
-                maperrorLabel.Text = "nothing was selected";
+                maperrorLabel.Text = "nothing is in that table";
+
+                //return false because something failed
                 return false;
             }
         }
 
         
-
+        // TODO
+        // remove this function as it serves no purpose
         private void map_Click(object sender, EventArgs e)
         {
 
         }
 
+        //find the selected stuff in the table
         private void findSelected_Click(object sender, EventArgs e)
         {
+            //clear all the picture boxes
             TestingUtils.clearAll(this);
+
+            //turn the selected row a white
             select(dataGridList.SelectedRows);
             try
             {
+                //try to set selectedRow to the current selected Row's index
                 selectedRow = dataGridList.SelectedRows[0].Index;
             }catch
             {
+                //if you did not select this message should display
                 maperrorLabel.Visible = true;
                 maperrorLabel.Text = "please select something before using this button";
             }
         }
+        //this is the picture finder method for selected files
         private bool select(DataGridViewSelectedRowCollection sel)
         {
             
             try
             {
+                //try to get the location
                 String loc = sel[0].Cells[2].Value.ToString();
                 if (loc == "not found")
                 {
+                    //not found then set the error to correspond
                     maperrorLabel.Text = "This item does not exist.";
                     maperrorLabel.Visible = true;
+
+                    //return false because it failed
                     return false;
                 }
+                //get the enum for the location
                 Shelf en = TestingUtils.getShelf(loc);
 
+                //enum -> picturebox; picturebox.color = white
+                //enum to picturebox then change the color to white
                 TestingUtils.getBox(en, this).BackColor = Color.White;
 
+                //any error disappears
                 maperrorLabel.Visible = false;
 
+                //get the line number of that selected item
                 int linenum = Loader.getLineNumber(
                     sel[0].Cells[0].Value.ToString(),
                     sel[0].Cells[1].Value.ToString());
@@ -341,29 +422,46 @@ namespace DellPartPicker
             }
             catch (ArgumentOutOfRangeException e)
             {
+                //assume that there is nothing in the table and set the error accordingly
+                maperrorLabel.Visible = true;
+                maperrorLabel.Text = "nothing is selected";
+
+                //return false because it failed
                 return false;
             }
         }
 
+        //this is the function for clicking onto the next selection
         private void next_Click(object sender, EventArgs e)
         {
+            //set all the pictureboxes to white
             TestingUtils.clearAll(this);
+
+            //test to see if out of bounds
             if (selectedRow >= dataGridList.Rows.Count - 1)
             {
+                //set to the very last row
                 selectedRow = dataGridList.Rows.Count - 1;
+
+                //call select
                 select();
             }
+            //if the selected row is not the last
             selectedRow++;
             select();
         }
     }
+
+    //this is the enum with all the shelf names
     public enum Shelf
     {
         A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X
     }
 
+    //class that we use to help determine what each thing is equal to
     public class TestingUtils
     {
+        //this resets the color of all the picture boxes
         public static void clearAll(Form1 form)
         {
             form.shelfA.BackColor = Color.Gray;
@@ -392,8 +490,10 @@ namespace DellPartPicker
             form.shelfX.BackColor = Color.Gray;
         }
 
+        //picture box getting function
         public static PictureBox getBox(Shelf shelf, Form1 form)
         {
+            //all of the functions to cycle through
             if (shelf == Shelf.A)
             {
                 return form.shelfA;
@@ -492,14 +592,18 @@ namespace DellPartPicker
             }
             else
             {
+                //if something happened do something
                 throw new Exception("something went wrong with location " + shelf.ToString());
             }
         }
 
+        //get the enum
         public static Shelf getShelf(String loc)
         {
+            //get the location letter
             char locLetter = loc.ToCharArray()[0];
 
+            //tests
             if (locLetter == (Shelf.A.ToString().ToCharArray()[0]))
             {
                 return Shelf.A;
@@ -598,6 +702,7 @@ namespace DellPartPicker
             }
             else
             {
+                //something went wrong!
                 throw new Exception("something went wrong with location " + loc);
             }
 

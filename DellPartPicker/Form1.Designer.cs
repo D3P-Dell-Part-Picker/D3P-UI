@@ -282,7 +282,7 @@
             this.bttnClear.TabIndex = 53;
             this.bttnClear.Text = "Clear";
             this.bttnClear.UseVisualStyleBackColor = true;
-            this.bttnClear.Click += new System.EventHandler(this.button1_Click_1);
+            this.bttnClear.Click += new System.EventHandler(this.clearbttn_click);
             // 
             // bttnRemove
             // 
@@ -1001,7 +1001,7 @@
             this.addAll.TabIndex = 19;
             this.addAll.Text = "Add All";
             this.addAll.UseVisualStyleBackColor = true;
-            this.addAll.Click += new System.EventHandler(this.button2_Click);
+            this.addAll.Click += new System.EventHandler(this.addAll_click);
             // 
             // dumpLbl
             // 
