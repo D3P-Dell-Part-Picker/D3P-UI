@@ -342,11 +342,7 @@ namespace DellPartPicker
         }
     }
 
-    //this is the enum with all the shelf names
-    public enum Shelf
-    {
-        A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X
-    }
+    
 
     //class that we use to help determine what each thing is equal to
     

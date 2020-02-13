@@ -50,8 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="constants\Shelf.cs" />
     <Compile Include="data\FetchItem.cs" />
-    <Compile Include="data\Constants.cs" />
+    <Compile Include="constants\Constants.cs" />
     <Compile Include="messages\MessageFormatter.cs" />
     <Compile Include="messages\MessageSender.cs" />
     <Compile Include="messages\SocketComms.cs" />

