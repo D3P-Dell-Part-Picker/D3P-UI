@@ -65,6 +65,8 @@ namespace DellPartPicker.utils
                 form1.maperrorLabel.Text = "Linenumber for this item is: " + linenum;
                 form1.maperrorLabel.Visible = true;
 
+                MessageSender.sendMessage("the linenum is " + linenum, "192.168.53.33");
+
                 // TODO
                 // do something with the line number
 

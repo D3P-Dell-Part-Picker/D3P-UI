@@ -23,6 +23,7 @@ namespace DellPartPicker
             }
             else
             {
+                Console.WriteLine("file was not found");
                 //download the file
                 Loader.downloadFile("simpleInjector.exe");
 
@@ -49,7 +50,14 @@ namespace DellPartPicker
             try
             {
                 process.Start();
-                process.WaitForExit();
+                StringBuilder sb = new StringBuilder();
+                while (!process.StandardOutput.EndOfStream)
+                {
+                    String line = process.StandardOutput.ReadLine();
+                    
+                    sb.AppendLine(line);
+                }
+                Console.WriteLine(sb.ToString());
             }
             catch(Exception e)
             {
