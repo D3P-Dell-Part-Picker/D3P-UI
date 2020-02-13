@@ -15,14 +15,24 @@ namespace DellPartPicker
         Form1 form1;
         Boolean isDark;
         List<Label> labels;
+        List<Button> buttonList;
+
+        public Color color1 = Color.FromArgb(211, 205, 181);
+        public Color color2 = Color.FromArgb(103, 123, 166);
+        public Color color3 = Color.FromArgb(48, 67, 102);
+        public Color color4 = Color.FromArgb(25, 26, 45);
+        public Color color5 = Color.FromArgb(43, 35, 55);
+
         public OptionsMenu(Form1 f)
         {
             form1 = f;
 
             labels = new List<Label>();
+            buttonList = new List<Button>();
             
             InitializeComponent();
             addLabels();
+            addButtons();
             
             if (Form1.isDark)
             {
@@ -33,6 +43,7 @@ namespace DellPartPicker
 
         }
 
+        //Put all labels here so theme colors work
         private void addLabels()
         {
             labels.Add(form1.enterHere);
@@ -41,6 +52,22 @@ namespace DellPartPicker
             labels.Add(form1.results);
             labels.Add(form1.enterHere);
             labels.Add(form1.enterHere);
+        }
+        
+        private void addButtons()
+        {
+            buttonList.Add(form1.defaultBtnID);
+            buttonList.Add(form1.defaultBtnLoc);
+            buttonList.Add(form1.defaultBtnName);
+            buttonList.Add(form1.defaultAddSel);
+            buttonList.Add(form1.listBtnSearch);
+            buttonList.Add(form1.listBtnAddAll);
+            buttonList.Add(form1.mapBtnClear);
+            buttonList.Add(form1.mapBtnRmv);
+            buttonList.Add(form1.mapBtnNxt);
+            buttonList.Add(form1.mapBtnPrv);
+            buttonList.Add(form1.mapBtnClear);
+
         }
 
 
@@ -66,13 +93,61 @@ namespace DellPartPicker
         {
              if (radioDrk.Checked == true)
             {
-                toggleDark(true);
+                makeColors(true);
             }
             if (radioLt.Checked == true)
             {
-                toggleDark(false);
+                makeColors(false);
             }
         }
+
+        private void makeColors(bool isDark)
+        {
+            if (isDark)
+            {
+                radioDrk.Checked = true;
+
+                // set dark colors
+                color1 = Color.FromArgb(211, 205, 181);
+                color2 = Color.FromArgb(103, 123, 166);
+                color3 = Color.FromArgb(48, 67, 102);
+                color4 = Color.FromArgb(25, 26, 45);
+                color5 = Color.FromArgb(43, 35, 55);
+
+                // apply colors
+                foreach (Control subC in this.Controls)
+                {
+                    UpdateColorControls(subC, true, color1, color2, color3, color4, color5);
+                }
+                foreach (Control subC in form1.Controls)
+                {
+                    UpdateColorControls(subC, true, color1, color2, color3, color4, color5);
+                }
+            }
+
+            if (!isDark)
+            {
+                radioDrk.Checked = false;
+                // set light colors
+                color1 = Color.FromArgb(247, 234, 219);
+                color2 = Color.FromArgb(209, 200, 194);
+                color3 = Color.FromArgb(203, 226, 206);
+                color4 = Color.FromArgb(39, 86, 93);
+                color5 = Color.FromArgb(83, 48, 66);
+
+                // apply colors
+                foreach (Control subC in this.Controls)
+                {
+                    UpdateColorControls(subC, false, color1, color2, color3, color4, color5);
+                }
+                foreach (Control subC in form1.Controls)
+                {
+                    UpdateColorControls(subC, false, color1, color2, color3, color4, color5);
+                }
+            }
+            
+        }
+
         private void toggleDark(Boolean b)
         {
             if (b)
@@ -107,6 +182,105 @@ namespace DellPartPicker
             }
         }
 
+        public void UpdateColorControls(Control myControl, bool isDark, Color color1, Color color2, Color color3, Color color4, Color color5)
+        {
+            Form1.isDark = isDark;
+
+            //Attempt at condensing code
+            var optionb = from controls in this.Controls.OfType<Button>()
+                          select controls;
+            foreach (var control in optionb)
+            {
+                control.FlatAppearance.BorderColor = color4;
+                control.BackColor = color4;
+                control.ForeColor = color1;
+            }
+
+            //Changes color of the radio buttons in option menu
+            var optionrb = from controls in this.Controls.OfType<RadioButton>()
+                           select controls;
+            foreach (var control in optionrb)
+            {
+                control.ForeColor = color1;
+            }
+
+            //Changes color of labels in option menu
+            var optionlbl = from controls in this.Controls.OfType<Label>()
+                            select controls;
+            foreach (var control in optionlbl)
+            {
+                control.ForeColor = color1;
+            }
+
+            //Changes color of labels in form1
+            foreach (Label l in labels)
+            {
+                l.ForeColor = color1;
+            }
+
+
+            //Changes background color
+            this.BackColor = color4;
+            form1.BackColor = color4;
+            form1.listTab.BackColor = color4;
+            form1.map.BackColor = color4;
+            form1.singleItemTab.BackColor = color4;
+            form1.error.BackColor = color1;
+            form1.d3pTitle1.ForeColor = color1;
+            form1.d3pTitle2.ForeColor = color1;
+
+            if (isDark)
+            {
+                //Changes settings to Dark Ver.
+                form1.pictureSettings1.Image = Properties.Resources.settingsicon_dark;
+                form1.pictureSettings2.Image = Properties.Resources.settingsicon_dark;
+
+                //Changes logo to Dark Ver.
+                form1.d3pLogo1.Image = Properties.Resources.Dell_logo_2016_dark;
+                form1.d3pLogo2.Image = Properties.Resources.Dell_logo_2016_dark;
+            }
+            else if (!isDark)
+            {
+                //Change logo to Light Ver.
+                form1.d3pLogo1.Image = Properties.Resources.Dell_logo_2016;
+                form1.d3pLogo2.Image = Properties.Resources.Dell_logo_2016;
+
+                //Changes settings to Light Ver.
+                form1.pictureSettings1.Image = Properties.Resources.settingsicon;
+                form1.pictureSettings2.Image = Properties.Resources.settingsicon;
+            }
+            
+            //Exceptions from the function (form background, title backcolor)
+
+            //Change table colors
+            form1.addSingletable.BackgroundColor = color5;
+            form1.addSingletable.ForeColor = color2;
+            form1.addSingletable.GridColor = color2;
+            form1.addListTable.BackgroundColor = color5;
+            form1.addListTable.ForeColor = color2;
+            form1.addListTable.GridColor = color2;
+            form1.dataGridList.BackgroundColor = color5;
+            form1.dataGridList.ForeColor = color2;
+            form1.dataGridList.GridColor = color2;
+
+            form1.defaultBtnName.FlatAppearance.BorderColor = color2;
+            form1.defaultBtnLoc.FlatAppearance.BorderColor = color2;
+            form1.defaultBtnID.FlatAppearance.BorderColor = color2;
+            form1.listBtnSearch.FlatAppearance.BorderColor = color2;
+            form1.listBtnAddAll.FlatAppearance.BorderColor = color2;
+            form1.mapBtnClear.FlatAppearance.BorderColor = color2;
+            form1.mapBtnRmv.FlatAppearance.BorderColor = color2;
+            form1.defaultBtnName.BackColor = color2;
+            form1.defaultBtnLoc.BackColor = color2;
+            form1.defaultBtnID.BackColor = color2;
+            form1.listBtnSearch.BackColor = color2;
+            form1.listBtnAddAll.BackColor = color2;
+            form1.mapBtnClear.BackColor = color2;
+            form1.mapBtnRmv.BackColor = color2;
+            form1.defaultAddSel.BackColor = color2;
+            form1.defaultAddSel.FlatAppearance.BorderColor = color2;
+        }
+
         //Function for Dark theme
         public void UpdateColorControlsDrk(Control myControl)
         {
@@ -121,7 +295,7 @@ namespace DellPartPicker
             {
                 control.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
                 control.BackColor = Color.FromArgb(115, 138, 214);
-                control.ForeColor = Color.White;
+                control.ForeColor = color1;
             }
 
             //Changes color of the radio buttons in option menu
@@ -182,22 +356,22 @@ namespace DellPartPicker
             form1.dataGridList.ForeColor = Color.Gray;
             form1.dataGridList.GridColor = Color.Gray;
 
-            form1.searchName.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
-            form1.searchLoc.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
-            form1.searchID.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
-            form1.listSearchBttn.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
-            form1.addAll.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
-            form1.bttnClear.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
-            form1.bttnRemove.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
-            form1.searchName.BackColor = Color.FromArgb(115, 138, 214);
-            form1.searchLoc.BackColor = Color.FromArgb(115, 138, 214);
-            form1.searchID.BackColor = Color.FromArgb(115, 138, 214);
-            form1.listSearchBttn.BackColor = Color.FromArgb(115, 138, 214);
-            form1.addAll.BackColor = Color.FromArgb(115, 138, 214);
-            form1.bttnClear.BackColor = Color.FromArgb(115, 138, 214);
-            form1.bttnRemove.BackColor = Color.FromArgb(115, 138, 214);
-            form1.addSelectedBttn.BackColor = Color.FromArgb(115, 138, 214);
-            form1.addSelectedBttn.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+            form1.defaultBtnName.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+            form1.defaultBtnLoc.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+            form1.defaultBtnID.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+            form1.listBtnSearch.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+            form1.listBtnAddAll.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+            form1.mapBtnClear.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+            form1.mapBtnRmv.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
+            form1.defaultBtnName.BackColor = Color.FromArgb(115, 138, 214);
+            form1.defaultBtnLoc.BackColor = Color.FromArgb(115, 138, 214);
+            form1.defaultBtnID.BackColor = Color.FromArgb(115, 138, 214);
+            form1.listBtnSearch.BackColor = Color.FromArgb(115, 138, 214);
+            form1.listBtnAddAll.BackColor = Color.FromArgb(115, 138, 214);
+            form1.mapBtnClear.BackColor = Color.FromArgb(115, 138, 214);
+            form1.mapBtnRmv.BackColor = Color.FromArgb(115, 138, 214);
+            form1.defaultAddSel.BackColor = Color.FromArgb(115, 138, 214);
+            form1.defaultAddSel.FlatAppearance.BorderColor = Color.FromArgb(115, 138, 214);
         }
             
         //Light theme function
@@ -242,22 +416,22 @@ namespace DellPartPicker
             this.buttonBack.FlatAppearance.BorderColor = Color.FromArgb(199, 204, 209);
             this.buttonApply.BackColor = Color.FromArgb(199, 204, 209);
             this.buttonBack.BackColor = Color.FromArgb(199, 204, 209);
-            form1.searchName.FlatAppearance.BorderColor = Color.Black;
-            form1.searchLoc.FlatAppearance.BorderColor = Color.Black;
-            form1.searchID.FlatAppearance.BorderColor = Color.Black;
-            form1.listSearchBttn.FlatAppearance.BorderColor = Color.Black;
-            form1.addAll.FlatAppearance.BorderColor = Color.Black;
-            form1.bttnClear.FlatAppearance.BorderColor = Color.Black;
-            form1.bttnRemove.FlatAppearance.BorderColor = Color.Black;
-            form1.searchName.BackColor = Color.Transparent;
-            form1.searchLoc.BackColor = Color.Transparent;
-            form1.searchID.BackColor = Color.Transparent;
-            form1.listSearchBttn.BackColor = Color.Transparent;
-            form1.addAll.BackColor = Color.Transparent;
-            form1.bttnClear.BackColor = Color.Transparent;
-            form1.bttnRemove.BackColor = Color.Transparent;
-            form1.addSelectedBttn.BackColor = Color.Transparent;
-            form1.addSelectedBttn.FlatAppearance.BorderColor = Color.Black;
+            form1.defaultBtnName.FlatAppearance.BorderColor = Color.Black;
+            form1.defaultBtnLoc.FlatAppearance.BorderColor = Color.Black;
+            form1.defaultBtnID.FlatAppearance.BorderColor = Color.Black;
+            form1.listBtnSearch.FlatAppearance.BorderColor = Color.Black;
+            form1.listBtnAddAll.FlatAppearance.BorderColor = Color.Black;
+            form1.mapBtnClear.FlatAppearance.BorderColor = Color.Black;
+            form1.mapBtnRmv.FlatAppearance.BorderColor = Color.Black;
+            form1.defaultBtnName.BackColor = Color.Transparent;
+            form1.defaultBtnLoc.BackColor = Color.Transparent;
+            form1.defaultBtnID.BackColor = Color.Transparent;
+            form1.listBtnSearch.BackColor = Color.Transparent;
+            form1.listBtnAddAll.BackColor = Color.Transparent;
+            form1.mapBtnClear.BackColor = Color.Transparent;
+            form1.mapBtnRmv.BackColor = Color.Transparent;
+            form1.defaultAddSel.BackColor = Color.Transparent;
+            form1.defaultAddSel.FlatAppearance.BorderColor = Color.Black;
         }
     }
 }
