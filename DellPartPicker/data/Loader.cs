@@ -13,7 +13,7 @@ namespace DellPartPicker
         public static List<String> descList;
         public static List<String> locList;
         private String[] partnum, desc, loc;
-        String ip = Constants.REMOTE_SERVER;
+        static String ip = Constants.REMOTE_SERVER;
 
 
 
@@ -22,17 +22,12 @@ namespace DellPartPicker
         public Loader()
         {
             partnumList = new List<String>();
-            string externalip = new WebClient().DownloadString("http://icanhazip.com");
-
-            if (externalip.Equals(Constants.REMOTE_SERVER))
-            {
-                ip = Constants.LOCAL_SERVER;
-            }
+           
             
 
             descList = new List<String>();
             locList = new List<String>();
-            downloadFile();
+            downloadFile("Racks.csv");
             readToMemory();
 
             // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -44,8 +39,14 @@ namespace DellPartPicker
             Console.WriteLine(temp[0][0]);
         }
 
-        private void downloadFile()
+        public static void downloadFile(String file)
         {
+            string externalip = new WebClient().DownloadString("http://icanhazip.com");
+
+            if (externalip.Equals(Constants.REMOTE_SERVER))
+            {
+                ip = Constants.LOCAL_SERVER;
+            }
             string userName = Environment.UserName;
             Console.WriteLine(userName);
             WebClient Client = new WebClient();
@@ -54,11 +55,11 @@ namespace DellPartPicker
             {
                 Directory.CreateDirectory(@"C:\Temp");
             }
-            if (!File.Exists(@"C:\Temp\Racks.csv")) //if the file does not exist currently
+            if (!File.Exists(@"C:\Temp\" + file)) //if the file does not exist currently
             {
                 try
                 {
-                    Client.DownloadFile("http://" + ip + "/hosted/Racks.csv", @"C:\Temp\Racks.csv");
+                    Client.DownloadFile("http://" + ip + "/hosted/" + file, @"C:\Temp\" + file);
                 }
                 catch (Exception e)
                 {

