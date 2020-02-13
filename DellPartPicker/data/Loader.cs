@@ -174,7 +174,7 @@ namespace DellPartPicker
             
 
             //return the line number
-            return index;
+            return index + 1;
         }
     }
 }

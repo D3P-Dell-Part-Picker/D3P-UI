@@ -1415,7 +1415,7 @@
         public System.Windows.Forms.TextBox searchBox;
         protected internal System.Windows.Forms.TabControl tabControl;
         public System.Windows.Forms.Button previous;
-        private System.Windows.Forms.Label maperrorLabel;
+        public System.Windows.Forms.Label maperrorLabel;
         public System.Windows.Forms.Button next;
         public System.Windows.Forms.Button findSelected;
     }

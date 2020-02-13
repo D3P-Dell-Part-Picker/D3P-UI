@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="data\FetchItem.cs" />
-    <Compile Include="Constants.cs" />
+    <Compile Include="data\Constants.cs" />
     <Compile Include="messages\MessageFormatter.cs" />
     <Compile Include="messages\MessageSender.cs" />
     <Compile Include="messages\SocketComms.cs" />
@@ -71,6 +71,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\Selectors.cs" />
+    <Compile Include="utils\TestingUtils.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
