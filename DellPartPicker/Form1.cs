@@ -24,9 +24,10 @@ namespace DellPartPicker
             disableFunctions();
 
             initCollective();
-            
-        }
 
+            initMapList();
+        }
+        
         private void initCollective()
         {
             //the column count
@@ -37,6 +38,15 @@ namespace DellPartPicker
             dataGridList.Columns[0].Name = "Part Number";
             dataGridList.Columns[1].Name = "Description";
             dataGridList.Columns[2].Name = "Location";
+        }
+        private void initMapList()
+        {
+            mapList.ColumnCount = 3;
+            mapList.Columns[0].Name = "Part Number";
+            mapList.Columns[1].Name = "Description";
+            mapList.Columns[2].Name = "Location";
+
+            // also init map
         }
         private void disableFunctions()
         {
@@ -53,7 +63,6 @@ namespace DellPartPicker
 
         private void search_Click(object sender, EventArgs e)
         {
-            //clear the table
             addSingletable.Rows.Clear();
 
             //test for null input
@@ -61,10 +70,10 @@ namespace DellPartPicker
             {
                 error.Show();
             }           
-            //search
             parser.parse(searchBox.Text, Field.PartNumber, addSingletable, loader);
         }
 
+        // the options button in some tab
         private void pictureSettings_Click(object sender, EventArgs e)
         {
             //show the options menu
@@ -73,6 +82,8 @@ namespace DellPartPicker
             form.Show();
         }
 
+
+        // the other options button in some tab
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             //show the options menu
@@ -81,6 +92,7 @@ namespace DellPartPicker
             form.Show();
         }
 
+        // another options button in some tab
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             //show the options menue
@@ -100,7 +112,7 @@ namespace DellPartPicker
             //clear the table
             addListTable.Rows.Clear();
 
-            //get the data in teh textbox
+            //get the data in the textbox
             String data = listTextBox.Text;
             //make an array splitting on a newline
             String[] dataArray = data.Split(
@@ -133,22 +145,21 @@ namespace DellPartPicker
             search();
             DataTable dt = toTable(addListTable);
 
+            // prepare columns for the lists
             foreach (DataColumn dc in dt.Columns)
             {
 
                 dataGridList.Columns.Add(new DataGridViewTextBoxColumn());
 
             }
+
+            // prepare rows for the lists
             foreach (DataRow dr in dt.Rows)
             {
 
                 dataGridList.Rows.Add(dr.ItemArray);
 
             }
-            
-            
-
-
         }
 
         private void addSelectedBttn_Click(object sender, EventArgs e)
@@ -164,6 +175,8 @@ namespace DellPartPicker
             }
 
         }
+
+    
 
         private DataTable toTable(DataGridView dgv)
         {
@@ -237,6 +250,8 @@ namespace DellPartPicker
             //search for the items
             parser.parse(searchBox.Text, Field.Location, addSingletable, loader);
         }
+
+
 
         private void pictureBox29_Click(object sender, EventArgs e)
         {

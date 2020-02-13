@@ -87,6 +87,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\Constants.datasource" />
+    <None Include="Properties\DataSources\DataDump.datasource" />
+    <None Include="Properties\DataSources\DellPartPicker.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\DellPartPicker.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\Loader.datasource" />
+    <None Include="Properties\DataSources\MessageFormatter.datasource" />
+    <None Include="Properties\DataSources\OptionsMenu.datasource" />
+    <None Include="Properties\DataSources\ParseList.datasource" />
+    <None Include="Properties\DataSources\Parser.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\SocketComms.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

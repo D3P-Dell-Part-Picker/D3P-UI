@@ -85,7 +85,7 @@
             this.shelfN = new System.Windows.Forms.PictureBox();
             this.shelfM = new System.Windows.Forms.PictureBox();
             this.maplistTitle = new System.Windows.Forms.Label();
-            this.dataGridList = new System.Windows.Forms.DataGridView();
+            this.mapList = new System.Windows.Forms.DataGridView();
             this.mapTitle = new System.Windows.Forms.Label();
             this.mapBackground = new System.Windows.Forms.PictureBox();
             this.listTab = new System.Windows.Forms.TabPage();
@@ -137,7 +137,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.shelfO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapBackground)).BeginInit();
             this.listTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings2)).BeginInit();
@@ -1274,6 +1274,18 @@
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl.TabIndex = 14;
             // 
+            // form1BindingSource
+            // 
+            this.form1BindingSource.DataSource = typeof(DellPartPicker.Form1);
+            // 
+            // form1BindingSource1
+            // 
+            this.form1BindingSource1.DataSource = typeof(DellPartPicker.Form1);
+            // 
+            // form1BindingSource2
+            // 
+            this.form1BindingSource2.DataSource = typeof(DellPartPicker.Form1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1316,7 +1328,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.shelfO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapBackground)).EndInit();
             this.listTab.ResumeLayout(false);
             this.listTab.PerformLayout();
