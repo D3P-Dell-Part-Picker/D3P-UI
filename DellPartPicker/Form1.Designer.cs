@@ -112,6 +112,7 @@
             this.Searchlbl = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.defaultHeader = new System.Windows.Forms.PictureBox();
             this.map.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shelfL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfK)).BeginInit();
@@ -148,6 +149,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             this.tabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.defaultHeader)).BeginInit();
             this.SuspendLayout();
             // 
             // map
@@ -212,7 +214,7 @@
             this.map.Controls.Add(this.mapBackground);
             this.map.Location = new System.Drawing.Point(4, 31);
             this.map.Name = "map";
-            this.map.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.map.Padding = new System.Windows.Forms.Padding(3);
             this.map.Size = new System.Drawing.Size(1241, 555);
             this.map.TabIndex = 3;
             this.map.Text = "Map";
@@ -901,7 +903,7 @@
             this.listTab.Controls.Add(this.listTextBox);
             this.listTab.Location = new System.Drawing.Point(4, 31);
             this.listTab.Name = "listTab";
-            this.listTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.listTab.Padding = new System.Windows.Forms.Padding(3);
             this.listTab.Size = new System.Drawing.Size(1241, 555);
             this.listTab.TabIndex = 1;
             this.listTab.Text = "List Dump";
@@ -1018,14 +1020,15 @@
             this.singleItemTab.Controls.Add(this.defaultAddSel);
             this.singleItemTab.Controls.Add(this.addSingletable);
             this.singleItemTab.Controls.Add(this.pictureSettings1);
-            this.singleItemTab.Controls.Add(this.d3pTitle1);
             this.singleItemTab.Controls.Add(this.d3pLogo1);
             this.singleItemTab.Controls.Add(this.defaultBtnID);
             this.singleItemTab.Controls.Add(this.Searchlbl);
             this.singleItemTab.Controls.Add(this.searchBox);
+            this.singleItemTab.Controls.Add(this.d3pTitle1);
+            this.singleItemTab.Controls.Add(this.defaultHeader);
             this.singleItemTab.Location = new System.Drawing.Point(4, 31);
             this.singleItemTab.Name = "singleItemTab";
-            this.singleItemTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.singleItemTab.Padding = new System.Windows.Forms.Padding(3);
             this.singleItemTab.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.singleItemTab.Size = new System.Drawing.Size(1241, 555);
             this.singleItemTab.TabIndex = 0;
@@ -1036,11 +1039,11 @@
             // 
             this.defaultBtnLoc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.defaultBtnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.defaultBtnLoc.Location = new System.Drawing.Point(134, 283);
+            this.defaultBtnLoc.Location = new System.Drawing.Point(7, 288);
             this.defaultBtnLoc.Name = "defaultBtnLoc";
-            this.defaultBtnLoc.Size = new System.Drawing.Size(70, 44);
+            this.defaultBtnLoc.Size = new System.Drawing.Size(190, 66);
             this.defaultBtnLoc.TabIndex = 21;
-            this.defaultBtnLoc.Text = "Loc";
+            this.defaultBtnLoc.Text = "Search by Location";
             this.defaultBtnLoc.UseVisualStyleBackColor = true;
             this.defaultBtnLoc.Click += new System.EventHandler(this.button2_Click_1);
             // 
@@ -1048,11 +1051,11 @@
             // 
             this.defaultBtnName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.defaultBtnName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.defaultBtnName.Location = new System.Drawing.Point(73, 283);
+            this.defaultBtnName.Location = new System.Drawing.Point(7, 216);
             this.defaultBtnName.Name = "defaultBtnName";
-            this.defaultBtnName.Size = new System.Drawing.Size(55, 44);
+            this.defaultBtnName.Size = new System.Drawing.Size(190, 66);
             this.defaultBtnName.TabIndex = 20;
-            this.defaultBtnName.Text = "Nm";
+            this.defaultBtnName.Text = "Search by Name";
             this.defaultBtnName.UseVisualStyleBackColor = true;
             this.defaultBtnName.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -1062,7 +1065,7 @@
             this.error.AutoSize = true;
             this.error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.error.ForeColor = System.Drawing.Color.Maroon;
-            this.error.Location = new System.Drawing.Point(15, 240);
+            this.error.Location = new System.Drawing.Point(69, 89);
             this.error.Name = "error";
             this.error.Size = new System.Drawing.Size(115, 20);
             this.error.TabIndex = 7;
@@ -1083,9 +1086,9 @@
             // 
             this.defaultAddSel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.defaultAddSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.defaultAddSel.Location = new System.Drawing.Point(210, 282);
+            this.defaultAddSel.Location = new System.Drawing.Point(203, 144);
             this.defaultAddSel.Name = "defaultAddSel";
-            this.defaultAddSel.Size = new System.Drawing.Size(197, 45);
+            this.defaultAddSel.Size = new System.Drawing.Size(197, 210);
             this.defaultAddSel.TabIndex = 11;
             this.defaultAddSel.Text = "Add Selected";
             this.defaultAddSel.UseVisualStyleBackColor = false;
@@ -1101,14 +1104,14 @@
             this.addSingletable.Location = new System.Drawing.Point(438, 112);
             this.addSingletable.Name = "addSingletable";
             this.addSingletable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.addSingletable.Size = new System.Drawing.Size(538, 215);
+            this.addSingletable.Size = new System.Drawing.Size(538, 242);
             this.addSingletable.TabIndex = 5;
             // 
             // pictureSettings1
             // 
             this.pictureSettings1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureSettings1.Image = ((System.Drawing.Image)(resources.GetObject("pictureSettings1.Image")));
-            this.pictureSettings1.Location = new System.Drawing.Point(1006, -3);
+            this.pictureSettings1.Location = new System.Drawing.Point(944, 6);
             this.pictureSettings1.Name = "pictureSettings1";
             this.pictureSettings1.Size = new System.Drawing.Size(63, 56);
             this.pictureSettings1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1118,24 +1121,23 @@
             // 
             // d3pTitle1
             // 
-            this.d3pTitle1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.d3pTitle1.AutoSize = true;
             this.d3pTitle1.BackColor = System.Drawing.Color.Transparent;
             this.d3pTitle1.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d3pTitle1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.d3pTitle1.Location = new System.Drawing.Point(6, 41);
+            this.d3pTitle1.Location = new System.Drawing.Point(67, 10);
             this.d3pTitle1.Name = "d3pTitle1";
-            this.d3pTitle1.Size = new System.Drawing.Size(298, 45);
+            this.d3pTitle1.Size = new System.Drawing.Size(228, 45);
             this.d3pTitle1.TabIndex = 6;
-            this.d3pTitle1.Text = "Dell Part Picker UI";
+            this.d3pTitle1.Text = "Part Picker UI";
+            this.d3pTitle1.Click += new System.EventHandler(this.d3pTitle1_Click);
             // 
             // d3pLogo1
             // 
-            this.d3pLogo1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.d3pLogo1.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.d3pLogo1.Location = new System.Drawing.Point(10, 89);
+            this.d3pLogo1.Location = new System.Drawing.Point(7, 3);
             this.d3pLogo1.Name = "d3pLogo1";
-            this.d3pLogo1.Size = new System.Drawing.Size(117, 112);
+            this.d3pLogo1.Size = new System.Drawing.Size(64, 64);
             this.d3pLogo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.d3pLogo1.TabIndex = 3;
             this.d3pLogo1.TabStop = false;
@@ -1145,11 +1147,11 @@
             // 
             this.defaultBtnID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.defaultBtnID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.defaultBtnID.Location = new System.Drawing.Point(14, 283);
+            this.defaultBtnID.Location = new System.Drawing.Point(7, 144);
             this.defaultBtnID.Name = "defaultBtnID";
-            this.defaultBtnID.Size = new System.Drawing.Size(53, 44);
+            this.defaultBtnID.Size = new System.Drawing.Size(190, 66);
             this.defaultBtnID.TabIndex = 4;
-            this.defaultBtnID.Text = "ID";
+            this.defaultBtnID.Text = "Search by ID";
             this.defaultBtnID.UseVisualStyleBackColor = true;
             this.defaultBtnID.Click += new System.EventHandler(this.search_Click);
             // 
@@ -1158,7 +1160,7 @@
             this.Searchlbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Searchlbl.AutoSize = true;
             this.Searchlbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Searchlbl.Location = new System.Drawing.Point(10, 214);
+            this.Searchlbl.Location = new System.Drawing.Point(3, 88);
             this.Searchlbl.Name = "Searchlbl";
             this.Searchlbl.Size = new System.Drawing.Size(64, 21);
             this.Searchlbl.TabIndex = 9;
@@ -1169,7 +1171,7 @@
             this.searchBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(14, 239);
+            this.searchBox.Location = new System.Drawing.Point(7, 112);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(393, 26);
             this.searchBox.TabIndex = 8;
@@ -1192,6 +1194,15 @@
             this.tabControl.Size = new System.Drawing.Size(1249, 590);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl.TabIndex = 14;
+            // 
+            // defaultHeader
+            // 
+            this.defaultHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.defaultHeader.Location = new System.Drawing.Point(-17, 71);
+            this.defaultHeader.Name = "defaultHeader";
+            this.defaultHeader.Size = new System.Drawing.Size(1043, 2);
+            this.defaultHeader.TabIndex = 22;
+            this.defaultHeader.TabStop = false;
             // 
             // Form1
             // 
@@ -1247,6 +1258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).EndInit();
             this.tabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.defaultHeader)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1336,6 +1348,7 @@
         private System.Windows.Forms.Label maperrorLabel;
         public System.Windows.Forms.Button mapBtnNxt;
         public System.Windows.Forms.Button mapFndSlt;
+        public System.Windows.Forms.PictureBox defaultHeader;
     }
 }
 

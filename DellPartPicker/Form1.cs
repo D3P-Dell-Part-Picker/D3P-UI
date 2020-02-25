@@ -450,6 +450,11 @@ namespace DellPartPicker
             selectedRow++;
             select();
         }
+
+        private void d3pTitle1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     //this is the enum with all the shelf names
