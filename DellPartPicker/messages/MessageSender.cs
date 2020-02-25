@@ -12,7 +12,7 @@ namespace DellPartPicker
     class MessageSender
     {
 
-        public static bool sendMessage(String message, String ip)
+        public static String sendMessage(String message, String ip)
         {
             String url;
 
@@ -32,7 +32,7 @@ namespace DellPartPicker
             }          
         }
 
-        private static bool run(String message, String ip)
+        private static String run(String message, String ip)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\Temp\simpleInjector.exe", ip + " \"" + message + "\"");
             startInfo.CreateNoWindow = false;
@@ -58,13 +58,14 @@ namespace DellPartPicker
                     sb.AppendLine(line);
                 }
                 Console.WriteLine(sb.ToString());
+                return sb.ToString();
             }
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);
-                return false;
+                return null;
             }
-            return true;
+            
             
         }
 

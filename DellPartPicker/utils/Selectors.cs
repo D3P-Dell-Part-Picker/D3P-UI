@@ -1,4 +1,5 @@
 ﻿using DellPartPicker.constants;
+using DellPartPicker.messages;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -11,6 +12,9 @@ namespace DellPartPicker.utils
 {
     public class Selectors
     {
+
+        public static int last_line = 0;
+
         public static bool select(Form1 form1)
         {
             TestingUtils.clearAll(form1);
@@ -63,16 +67,24 @@ namespace DellPartPicker.utils
                     form1.dataGridList.Rows[Form1.selectedRow].Cells[1].Value.ToString());
 
                 form1.maperrorLabel.Text = "Linenumber for this item is: " + linenum;
-                form1.maperrorLabel.Visible = true;
 
-                MessageSender.sendMessage("the linenum is " + linenum, "192.168.53.33");
+                if (last_line != 0) //make sure that it is not in the startup config
+                {
+                    //dispose the previous line
+                    MessageSimplifier.sendMessage(last_line, Constants.PIMESH, CommandType.DISPOSE);
+                }
+
+                //set lastline to currentline
+                last_line = linenum;
+
+                MessageSimplifier.sendMessage(linenum, Constants.PIMESH, CommandType.FIND);
 
                 // TODO
                 // do something with the line number
 
                 return true;
             }
-            catch (ArgumentOutOfRangeException e)
+            catch
             {
                 //assume that there is nothing in the table and set the error accordingly
                 form1.maperrorLabel.Visible = true;
@@ -118,12 +130,21 @@ namespace DellPartPicker.utils
                 form1.maperrorLabel.Text = "Linenumber for this item is: " + linenum;
                 form1.maperrorLabel.Visible = true;
 
+                if (last_line != 0) //make sure that it is not in the startup config
+                {
+                    //dispose the previous line
+                    MessageSimplifier.sendMessage(last_line, Constants.PIMESH, CommandType.DISPOSE);
+                }
+
+                //set lastline to currentline
+                last_line = linenum;
+
                 // TODO
                 // do something with the line number
 
                 return true;
             }
-            catch (ArgumentOutOfRangeException e)
+            catch
             {
                 //assume that there is nothing in the table and set the error accordingly
                 form1.maperrorLabel.Visible = true;

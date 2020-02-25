@@ -10,6 +10,8 @@ namespace DellPartPicker
     {
         public const String LOCAL_SERVER = "10.0.0.4";
         public const String REMOTE_SERVER = "73.17.34.121";
+
+        public static String PIMESH = "192.168.53.33";
     }
 
     public enum Destination
