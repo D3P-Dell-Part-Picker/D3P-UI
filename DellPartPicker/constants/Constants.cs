@@ -12,6 +12,8 @@ namespace DellPartPicker
         public const String REMOTE_SERVER = "73.17.34.121";
 
         public static String PIMESH = "192.168.53.33";
+
+        public static String CONFIG_FILE = @"%APPDATA%\D3P\config.json";
     }
 
     public enum Destination
