@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DellPartPicker.utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,18 @@ namespace DellPartPicker
 {
     class Constants
     {
-        public const String LOCAL_SERVER = "10.0.0.4";
-        public const String REMOTE_SERVER = "73.17.34.121";
+        public static String LOCAL_SERVER = "10.0.0.4";
+        public static String REMOTE_SERVER = "73.17.34.121";
 
         public static String PIMESH = "192.168.53.33";
 
-        public static String CONFIG_FILE = @"%APPDATA%\D3P\config.json";
+
+        static String appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        public static String CONFIG_FILE = appdata + @"\D3P\config.json";
+        
+        public static String CONFIG_LOC = appdata + @"\D3P";
+
+        public static D3PConfig config;
     }
 
     public enum Destination
