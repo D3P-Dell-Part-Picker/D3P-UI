@@ -455,6 +455,11 @@ namespace DellPartPicker
         {
 
         }
+
+        private void listTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     //this is the enum with all the shelf names

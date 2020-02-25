@@ -33,9 +33,15 @@
             this.radioDrk = new System.Windows.Forms.RadioButton();
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonApply = new System.Windows.Forms.Button();
-            this.buttonAdvanced = new System.Windows.Forms.Button();
             this.headerBar = new System.Windows.Forms.PictureBox();
             this.headerBar2 = new System.Windows.Forms.PictureBox();
+            this.piIP = new System.Windows.Forms.TextBox();
+            this.remoteserverIP = new System.Windows.Forms.TextBox();
+            this.localserverIP = new System.Windows.Forms.TextBox();
+            this.labelPiIP = new System.Windows.Forms.Label();
+            this.labelRSIP = new System.Windows.Forms.Label();
+            this.labelLSIP = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.headerBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.headerBar2)).BeginInit();
             this.SuspendLayout();
@@ -107,20 +113,6 @@
             this.buttonApply.UseVisualStyleBackColor = false;
             this.buttonApply.Click += new System.EventHandler(this.buttonApply_Click);
             // 
-            // buttonAdvanced
-            // 
-            this.buttonAdvanced.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdvanced.BackColor = System.Drawing.Color.White;
-            this.buttonAdvanced.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdvanced.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdvanced.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonAdvanced.Location = new System.Drawing.Point(639, 404);
-            this.buttonAdvanced.Name = "buttonAdvanced";
-            this.buttonAdvanced.Size = new System.Drawing.Size(149, 34);
-            this.buttonAdvanced.TabIndex = 5;
-            this.buttonAdvanced.Text = "Advanced";
-            this.buttonAdvanced.UseVisualStyleBackColor = false;
-            // 
             // headerBar
             // 
             this.headerBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -140,6 +132,72 @@
             this.headerBar2.TabIndex = 7;
             this.headerBar2.TabStop = false;
             // 
+            // piIP
+            // 
+            this.piIP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.piIP.Location = new System.Drawing.Point(526, 126);
+            this.piIP.Name = "piIP";
+            this.piIP.Size = new System.Drawing.Size(262, 22);
+            this.piIP.TabIndex = 8;
+            // 
+            // remoteserverIP
+            // 
+            this.remoteserverIP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remoteserverIP.Location = new System.Drawing.Point(526, 194);
+            this.remoteserverIP.Name = "remoteserverIP";
+            this.remoteserverIP.Size = new System.Drawing.Size(262, 22);
+            this.remoteserverIP.TabIndex = 9;
+            // 
+            // localserverIP
+            // 
+            this.localserverIP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.localserverIP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.localserverIP.Location = new System.Drawing.Point(526, 263);
+            this.localserverIP.Name = "localserverIP";
+            this.localserverIP.Size = new System.Drawing.Size(262, 22);
+            this.localserverIP.TabIndex = 10;
+            // 
+            // labelPiIP
+            // 
+            this.labelPiIP.AutoSize = true;
+            this.labelPiIP.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPiIP.Location = new System.Drawing.Point(522, 103);
+            this.labelPiIP.Name = "labelPiIP";
+            this.labelPiIP.Size = new System.Drawing.Size(39, 20);
+            this.labelPiIP.TabIndex = 11;
+            this.labelPiIP.Text = "Pi IP";
+            // 
+            // labelRSIP
+            // 
+            this.labelRSIP.AutoSize = true;
+            this.labelRSIP.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRSIP.Location = new System.Drawing.Point(522, 171);
+            this.labelRSIP.Name = "labelRSIP";
+            this.labelRSIP.Size = new System.Drawing.Size(127, 20);
+            this.labelRSIP.TabIndex = 12;
+            this.labelRSIP.Text = "Remote Server IP";
+            // 
+            // labelLSIP
+            // 
+            this.labelLSIP.AutoSize = true;
+            this.labelLSIP.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLSIP.Location = new System.Drawing.Point(522, 240);
+            this.labelLSIP.Name = "labelLSIP";
+            this.labelLSIP.Size = new System.Drawing.Size(110, 20);
+            this.labelLSIP.TabIndex = 13;
+            this.labelLSIP.Text = "Local Server IP";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(526, 315);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(262, 48);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "CONFIRM";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // OptionsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,8 +205,14 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelLSIP);
+            this.Controls.Add(this.labelRSIP);
+            this.Controls.Add(this.labelPiIP);
+            this.Controls.Add(this.localserverIP);
+            this.Controls.Add(this.remoteserverIP);
+            this.Controls.Add(this.piIP);
             this.Controls.Add(this.headerBar2);
-            this.Controls.Add(this.buttonAdvanced);
             this.Controls.Add(this.buttonApply);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.radioDrk);
@@ -171,8 +235,14 @@
         private System.Windows.Forms.RadioButton radioDrk;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonApply;
-        private System.Windows.Forms.Button buttonAdvanced;
         private System.Windows.Forms.PictureBox headerBar;
         private System.Windows.Forms.PictureBox headerBar2;
+        private System.Windows.Forms.TextBox piIP;
+        private System.Windows.Forms.TextBox remoteserverIP;
+        private System.Windows.Forms.TextBox localserverIP;
+        private System.Windows.Forms.Label labelPiIP;
+        private System.Windows.Forms.Label labelRSIP;
+        private System.Windows.Forms.Label labelLSIP;
+        private System.Windows.Forms.Button button1;
     }
 }

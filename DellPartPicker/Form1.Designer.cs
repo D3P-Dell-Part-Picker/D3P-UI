@@ -93,8 +93,6 @@
             this.pictureSettings2 = new System.Windows.Forms.PictureBox();
             this.listBtnAddAll = new System.Windows.Forms.Button();
             this.dumpLbl = new System.Windows.Forms.Label();
-            this.d3pTitle2 = new System.Windows.Forms.Label();
-            this.d3pLogo2 = new System.Windows.Forms.PictureBox();
             this.addListTable = new System.Windows.Forms.DataGridView();
             this.listBtnSearch = new System.Windows.Forms.Button();
             this.listTextBox = new System.Windows.Forms.TextBox();
@@ -106,13 +104,16 @@
             this.defaultAddSel = new System.Windows.Forms.Button();
             this.addSingletable = new System.Windows.Forms.DataGridView();
             this.pictureSettings1 = new System.Windows.Forms.PictureBox();
-            this.d3pTitle1 = new System.Windows.Forms.Label();
             this.d3pLogo1 = new System.Windows.Forms.PictureBox();
             this.defaultBtnID = new System.Windows.Forms.Button();
             this.Searchlbl = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
-            this.tabControl = new System.Windows.Forms.TabControl();
+            this.d3pTitle1 = new System.Windows.Forms.Label();
             this.defaultHeader = new System.Windows.Forms.PictureBox();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.d3pLogo2 = new System.Windows.Forms.PictureBox();
+            this.d3pTitle2 = new System.Windows.Forms.Label();
+            this.listdumpHeader = new System.Windows.Forms.PictureBox();
             this.map.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shelfL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfK)).BeginInit();
@@ -142,14 +143,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.mapBackground)).BeginInit();
             this.listTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addListTable)).BeginInit();
             this.singleItemTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
-            this.tabControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.defaultHeader)).BeginInit();
+            this.tabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listdumpHeader)).BeginInit();
             this.SuspendLayout();
             // 
             // map
@@ -892,12 +894,13 @@
             // 
             // listTab
             // 
+            this.listTab.Controls.Add(this.listdumpHeader);
+            this.listTab.Controls.Add(this.d3pLogo2);
+            this.listTab.Controls.Add(this.d3pTitle2);
             this.listTab.Controls.Add(this.enterHere);
             this.listTab.Controls.Add(this.pictureSettings2);
             this.listTab.Controls.Add(this.listBtnAddAll);
             this.listTab.Controls.Add(this.dumpLbl);
-            this.listTab.Controls.Add(this.d3pTitle2);
-            this.listTab.Controls.Add(this.d3pLogo2);
             this.listTab.Controls.Add(this.addListTable);
             this.listTab.Controls.Add(this.listBtnSearch);
             this.listTab.Controls.Add(this.listTextBox);
@@ -911,11 +914,12 @@
             // 
             // enterHere
             // 
+            this.enterHere.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.enterHere.AutoSize = true;
-            this.enterHere.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enterHere.Location = new System.Drawing.Point(10, 164);
+            this.enterHere.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterHere.Location = new System.Drawing.Point(9, 91);
             this.enterHere.Name = "enterHere";
-            this.enterHere.Size = new System.Drawing.Size(403, 17);
+            this.enterHere.Size = new System.Drawing.Size(452, 20);
             this.enterHere.TabIndex = 21;
             this.enterHere.Text = "Enter part number below.  Put each part number on a separate line.";
             // 
@@ -934,11 +938,12 @@
             // 
             // listBtnAddAll
             // 
+            this.listBtnAddAll.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.listBtnAddAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.listBtnAddAll.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBtnAddAll.Location = new System.Drawing.Point(220, 419);
+            this.listBtnAddAll.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBtnAddAll.Location = new System.Drawing.Point(13, 349);
             this.listBtnAddAll.Name = "listBtnAddAll";
-            this.listBtnAddAll.Size = new System.Drawing.Size(195, 76);
+            this.listBtnAddAll.Size = new System.Drawing.Size(446, 73);
             this.listBtnAddAll.TabIndex = 19;
             this.listBtnAddAll.Text = "Add All";
             this.listBtnAddAll.UseVisualStyleBackColor = true;
@@ -946,57 +951,38 @@
             // 
             // dumpLbl
             // 
+            this.dumpLbl.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.dumpLbl.AutoSize = true;
-            this.dumpLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dumpLbl.Location = new System.Drawing.Point(430, 114);
+            this.dumpLbl.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dumpLbl.Location = new System.Drawing.Point(571, 90);
             this.dumpLbl.Name = "dumpLbl";
-            this.dumpLbl.Size = new System.Drawing.Size(60, 21);
+            this.dumpLbl.Size = new System.Drawing.Size(55, 20);
             this.dumpLbl.TabIndex = 18;
             this.dumpLbl.Text = "Results";
-            // 
-            // d3pTitle2
-            // 
-            this.d3pTitle2.AutoSize = true;
-            this.d3pTitle2.BackColor = System.Drawing.Color.Transparent;
-            this.d3pTitle2.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.d3pTitle2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.d3pTitle2.Location = new System.Drawing.Point(3, 0);
-            this.d3pTitle2.Name = "d3pTitle2";
-            this.d3pTitle2.Size = new System.Drawing.Size(298, 45);
-            this.d3pTitle2.TabIndex = 15;
-            this.d3pTitle2.Text = "Dell Part Picker UI";
-            // 
-            // d3pLogo2
-            // 
-            this.d3pLogo2.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
-            this.d3pLogo2.Location = new System.Drawing.Point(3, 48);
-            this.d3pLogo2.Name = "d3pLogo2";
-            this.d3pLogo2.Size = new System.Drawing.Size(117, 112);
-            this.d3pLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.d3pLogo2.TabIndex = 14;
-            this.d3pLogo2.TabStop = false;
             // 
             // addListTable
             // 
             this.addListTable.AllowUserToAddRows = false;
             this.addListTable.AllowUserToDeleteRows = false;
+            this.addListTable.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.addListTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.addListTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.addListTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.addListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.addListTable.Location = new System.Drawing.Point(434, 138);
+            this.addListTable.Location = new System.Drawing.Point(575, 114);
             this.addListTable.Name = "addListTable";
             this.addListTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.addListTable.Size = new System.Drawing.Size(779, 357);
+            this.addListTable.Size = new System.Drawing.Size(432, 391);
             this.addListTable.TabIndex = 11;
             // 
             // listBtnSearch
             // 
+            this.listBtnSearch.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.listBtnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.listBtnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBtnSearch.Location = new System.Drawing.Point(13, 419);
+            this.listBtnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBtnSearch.Location = new System.Drawing.Point(13, 428);
             this.listBtnSearch.Name = "listBtnSearch";
-            this.listBtnSearch.Size = new System.Drawing.Size(201, 76);
+            this.listBtnSearch.Size = new System.Drawing.Size(446, 77);
             this.listBtnSearch.TabIndex = 13;
             this.listBtnSearch.Text = "Search";
             this.listBtnSearch.UseVisualStyleBackColor = true;
@@ -1004,12 +990,14 @@
             // 
             // listTextBox
             // 
-            this.listTextBox.Location = new System.Drawing.Point(13, 184);
+            this.listTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.listTextBox.Location = new System.Drawing.Point(13, 114);
             this.listTextBox.Multiline = true;
             this.listTextBox.Name = "listTextBox";
             this.listTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.listTextBox.Size = new System.Drawing.Size(402, 229);
+            this.listTextBox.Size = new System.Drawing.Size(448, 229);
             this.listTextBox.TabIndex = 12;
+            this.listTextBox.TextChanged += new System.EventHandler(this.listTextBox_TextChanged);
             // 
             // singleItemTab
             // 
@@ -1037,11 +1025,12 @@
             // 
             // defaultBtnLoc
             // 
-            this.defaultBtnLoc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultBtnLoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.defaultBtnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.defaultBtnLoc.Location = new System.Drawing.Point(7, 288);
+            this.defaultBtnLoc.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.defaultBtnLoc.Location = new System.Drawing.Point(9, 288);
             this.defaultBtnLoc.Name = "defaultBtnLoc";
-            this.defaultBtnLoc.Size = new System.Drawing.Size(190, 66);
+            this.defaultBtnLoc.Size = new System.Drawing.Size(393, 66);
             this.defaultBtnLoc.TabIndex = 21;
             this.defaultBtnLoc.Text = "Search by Location";
             this.defaultBtnLoc.UseVisualStyleBackColor = true;
@@ -1049,11 +1038,12 @@
             // 
             // defaultBtnName
             // 
-            this.defaultBtnName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultBtnName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.defaultBtnName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.defaultBtnName.Location = new System.Drawing.Point(7, 216);
+            this.defaultBtnName.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.defaultBtnName.Location = new System.Drawing.Point(9, 216);
             this.defaultBtnName.Name = "defaultBtnName";
-            this.defaultBtnName.Size = new System.Drawing.Size(190, 66);
+            this.defaultBtnName.Size = new System.Drawing.Size(393, 66);
             this.defaultBtnName.TabIndex = 20;
             this.defaultBtnName.Text = "Search by Name";
             this.defaultBtnName.UseVisualStyleBackColor = true;
@@ -1061,34 +1051,35 @@
             // 
             // error
             // 
-            this.error.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.error.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.error.AutoSize = true;
-            this.error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.error.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.error.ForeColor = System.Drawing.Color.Maroon;
-            this.error.Location = new System.Drawing.Point(69, 89);
+            this.error.Location = new System.Drawing.Point(63, 89);
             this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(115, 20);
+            this.error.Size = new System.Drawing.Size(120, 20);
             this.error.TabIndex = 7;
             this.error.Text = "Error: No input!";
             // 
             // results
             // 
-            this.results.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.results.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.results.AutoSize = true;
-            this.results.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.results.Location = new System.Drawing.Point(434, 88);
+            this.results.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.results.Location = new System.Drawing.Point(523, 89);
             this.results.Name = "results";
-            this.results.Size = new System.Drawing.Size(60, 21);
+            this.results.Size = new System.Drawing.Size(55, 20);
             this.results.TabIndex = 19;
             this.results.Text = "Results";
             // 
             // defaultAddSel
             // 
-            this.defaultAddSel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultAddSel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.defaultAddSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.defaultAddSel.Location = new System.Drawing.Point(202, 144);
+            this.defaultAddSel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.defaultAddSel.Location = new System.Drawing.Point(9, 360);
             this.defaultAddSel.Name = "defaultAddSel";
-            this.defaultAddSel.Size = new System.Drawing.Size(197, 210);
+            this.defaultAddSel.Size = new System.Drawing.Size(393, 66);
             this.defaultAddSel.TabIndex = 11;
             this.defaultAddSel.Text = "Add Selected";
             this.defaultAddSel.UseVisualStyleBackColor = false;
@@ -1098,13 +1089,13 @@
             // 
             this.addSingletable.AllowUserToAddRows = false;
             this.addSingletable.AllowUserToDeleteRows = false;
-            this.addSingletable.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addSingletable.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.addSingletable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.addSingletable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.addSingletable.Location = new System.Drawing.Point(438, 112);
+            this.addSingletable.Location = new System.Drawing.Point(527, 112);
             this.addSingletable.Name = "addSingletable";
             this.addSingletable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.addSingletable.Size = new System.Drawing.Size(538, 242);
+            this.addSingletable.Size = new System.Drawing.Size(480, 314);
             this.addSingletable.TabIndex = 5;
             // 
             // pictureSettings1
@@ -1119,19 +1110,6 @@
             this.pictureSettings1.TabStop = false;
             this.pictureSettings1.Click += new System.EventHandler(this.pictureSettings_Click);
             // 
-            // d3pTitle1
-            // 
-            this.d3pTitle1.AutoSize = true;
-            this.d3pTitle1.BackColor = System.Drawing.Color.Transparent;
-            this.d3pTitle1.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.d3pTitle1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.d3pTitle1.Location = new System.Drawing.Point(67, 10);
-            this.d3pTitle1.Name = "d3pTitle1";
-            this.d3pTitle1.Size = new System.Drawing.Size(228, 45);
-            this.d3pTitle1.TabIndex = 6;
-            this.d3pTitle1.Text = "Part Picker UI";
-            this.d3pTitle1.Click += new System.EventHandler(this.d3pTitle1_Click);
-            // 
             // d3pLogo1
             // 
             this.d3pLogo1.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
@@ -1145,11 +1123,12 @@
             // 
             // defaultBtnID
             // 
-            this.defaultBtnID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultBtnID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.defaultBtnID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.defaultBtnID.Location = new System.Drawing.Point(7, 144);
+            this.defaultBtnID.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.defaultBtnID.Location = new System.Drawing.Point(9, 144);
             this.defaultBtnID.Name = "defaultBtnID";
-            this.defaultBtnID.Size = new System.Drawing.Size(190, 66);
+            this.defaultBtnID.Size = new System.Drawing.Size(393, 66);
             this.defaultBtnID.TabIndex = 4;
             this.defaultBtnID.Text = "Search by ID";
             this.defaultBtnID.UseVisualStyleBackColor = true;
@@ -1157,25 +1136,47 @@
             // 
             // Searchlbl
             // 
-            this.Searchlbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Searchlbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Searchlbl.AutoSize = true;
-            this.Searchlbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Searchlbl.Location = new System.Drawing.Point(3, 88);
+            this.Searchlbl.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Searchlbl.Location = new System.Drawing.Point(7, 88);
             this.Searchlbl.Name = "Searchlbl";
-            this.Searchlbl.Size = new System.Drawing.Size(64, 21);
+            this.Searchlbl.Size = new System.Drawing.Size(60, 20);
             this.Searchlbl.TabIndex = 9;
             this.Searchlbl.Text = "Search: ";
             // 
             // searchBox
             // 
-            this.searchBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.searchBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(7, 112);
+            this.searchBox.Location = new System.Drawing.Point(9, 112);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(393, 26);
             this.searchBox.TabIndex = 8;
             this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
+            // 
+            // d3pTitle1
+            // 
+            this.d3pTitle1.AutoSize = true;
+            this.d3pTitle1.BackColor = System.Drawing.Color.Transparent;
+            this.d3pTitle1.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d3pTitle1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.d3pTitle1.Location = new System.Drawing.Point(67, 10);
+            this.d3pTitle1.Name = "d3pTitle1";
+            this.d3pTitle1.Size = new System.Drawing.Size(228, 45);
+            this.d3pTitle1.TabIndex = 6;
+            this.d3pTitle1.Text = "Part Picker UI";
+            this.d3pTitle1.Click += new System.EventHandler(this.d3pTitle1_Click);
+            // 
+            // defaultHeader
+            // 
+            this.defaultHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.defaultHeader.Location = new System.Drawing.Point(-17, 71);
+            this.defaultHeader.Name = "defaultHeader";
+            this.defaultHeader.Size = new System.Drawing.Size(1043, 2);
+            this.defaultHeader.TabIndex = 22;
+            this.defaultHeader.TabStop = false;
             // 
             // tabControl
             // 
@@ -1195,14 +1196,36 @@
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl.TabIndex = 14;
             // 
-            // defaultHeader
+            // d3pLogo2
             // 
-            this.defaultHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.defaultHeader.Location = new System.Drawing.Point(-17, 71);
-            this.defaultHeader.Name = "defaultHeader";
-            this.defaultHeader.Size = new System.Drawing.Size(1043, 2);
-            this.defaultHeader.TabIndex = 22;
-            this.defaultHeader.TabStop = false;
+            this.d3pLogo2.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
+            this.d3pLogo2.Location = new System.Drawing.Point(7, 3);
+            this.d3pLogo2.Name = "d3pLogo2";
+            this.d3pLogo2.Size = new System.Drawing.Size(64, 64);
+            this.d3pLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.d3pLogo2.TabIndex = 22;
+            this.d3pLogo2.TabStop = false;
+            // 
+            // d3pTitle2
+            // 
+            this.d3pTitle2.AutoSize = true;
+            this.d3pTitle2.BackColor = System.Drawing.Color.Transparent;
+            this.d3pTitle2.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d3pTitle2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.d3pTitle2.Location = new System.Drawing.Point(67, 10);
+            this.d3pTitle2.Name = "d3pTitle2";
+            this.d3pTitle2.Size = new System.Drawing.Size(228, 45);
+            this.d3pTitle2.TabIndex = 23;
+            this.d3pTitle2.Text = "Part Picker UI";
+            // 
+            // listdumpHeader
+            // 
+            this.listdumpHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.listdumpHeader.Location = new System.Drawing.Point(-10, 71);
+            this.listdumpHeader.Name = "listdumpHeader";
+            this.listdumpHeader.Size = new System.Drawing.Size(1043, 2);
+            this.listdumpHeader.TabIndex = 24;
+            this.listdumpHeader.TabStop = false;
             // 
             // Form1
             // 
@@ -1250,15 +1273,16 @@
             this.listTab.ResumeLayout(false);
             this.listTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addListTable)).EndInit();
             this.singleItemTab.ResumeLayout(false);
             this.singleItemTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addSingletable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSettings1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).EndInit();
-            this.tabControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.defaultHeader)).EndInit();
+            this.tabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.d3pLogo2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listdumpHeader)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1325,8 +1349,6 @@
         public System.Windows.Forms.PictureBox pictureSettings2;
         public System.Windows.Forms.Button listBtnAddAll;
         public System.Windows.Forms.Label dumpLbl;
-        public System.Windows.Forms.Label d3pTitle2;
-        public System.Windows.Forms.PictureBox d3pLogo2;
         public System.Windows.Forms.DataGridView addListTable;
         public System.Windows.Forms.Button listBtnSearch;
         public System.Windows.Forms.TextBox listTextBox;
@@ -1349,6 +1371,9 @@
         public System.Windows.Forms.Button mapBtnNxt;
         public System.Windows.Forms.Button mapFndSlt;
         public System.Windows.Forms.PictureBox defaultHeader;
+        public System.Windows.Forms.PictureBox d3pLogo2;
+        public System.Windows.Forms.Label d3pTitle2;
+        public System.Windows.Forms.PictureBox listdumpHeader;
     }
 }
 

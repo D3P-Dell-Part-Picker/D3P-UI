@@ -254,30 +254,36 @@ namespace DellPartPicker
                 form1.pictureSettings1.Image = Properties.Resources.settingsicon;
                 form1.pictureSettings2.Image = Properties.Resources.settingsicon;
             }
-            
+
             //Exceptions from the function (form background, title backcolor)
 
+            DataGridViewCellStyle tableColors = new DataGridViewCellStyle();
+            tableColors.BackColor = color4;
+
             //Change table colors
-            form1.addSingletable.BackgroundColor = color4;
-            form1.addSingletable.ForeColor = color1;
-            form1.addSingletable.GridColor = color2;
-            form1.addListTable.BackgroundColor = color4;
-            form1.addListTable.ForeColor = color1;
+            form1.addSingletable.BackgroundColor = color3;
+            form1.addSingletable.ForeColor = Color.Black;
+            form1.addSingletable.GridColor = color4;
+            form1.addListTable.BackgroundColor = color3;
+            form1.addListTable.ForeColor = Color.Black;
             form1.addListTable.GridColor = color2;
-            form1.dataGridList.BackgroundColor = color4;
-            form1.dataGridList.ForeColor = color1;
+            form1.dataGridList.BackgroundColor = color3;
+            form1.dataGridList.ForeColor = Color.Black;
             form1.dataGridList.GridColor = color2;
 
             // change header colors
             headerBar.BackColor = color3;
-            headerBar2.BackColor = color5;
+            headerBar2.BackColor = color4;
             optionsLbl.BackColor = headerBar.BackColor;
             form1.defaultHeader.BackColor = color5;
+            form1.listdumpHeader.BackColor = color5;
             form1.d3pTitle1.BackColor = Color.Transparent;
             form1.d3pLogo1.BackColor = Color.Transparent;
             form1.pictureSettings1.BackColor = Color.Transparent;
+            
 
             // change button colors
+            // default tab
             form1.defaultBtnID.BackColor = color3;
             form1.defaultAddSel.BackColor = color3;
             form1.defaultBtnLoc.BackColor = color3;
@@ -289,7 +295,14 @@ namespace DellPartPicker
             form1.defaultBtnName.FlatAppearance.BorderColor = color3;
             form1.defaultBtnID.FlatAppearance.BorderColor = color3;
             form1.defaultBtnLoc.FlatAppearance.BorderColor = color3;
-            form1.defaultAddSel.FlatAppearance.BorderColor = color3;
+            form1.defaultAddSel.FlatAppearance.BorderColor = color5;
+            // list-dump tab
+            form1.listBtnAddAll.BackColor = color3;
+            form1.listBtnSearch.BackColor = color3;
+            form1.listBtnAddAll.ForeColor = color1;
+            form1.listBtnSearch.ForeColor = color1;
+            form1.listBtnAddAll.FlatAppearance.BorderColor = color3;
+            form1.listBtnSearch.FlatAppearance.BorderColor = color3;
             /*
             form1.defaultBtnName.FlatAppearance.BorderColor = color5;
             form1.defaultBtnLoc.FlatAppearance.BorderColor = color5;
@@ -308,6 +321,18 @@ namespace DellPartPicker
             form1.defaultAddSel.BackColor = color3;
             form1.defaultAddSel.FlatAppearance.BorderColor = color5;
             */
-        }      
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string RSIP, PiIP, LSIP;
+            // RSIP = Remote Server IP
+            // PiIP = Raspberry Pi IP
+            // LSIP = Local Server IP
+
+            RSIP = remoteserverIP.Text;
+            PiIP = piIP.Text;
+            LSIP = localserverIP.Text;
+        }
     }
 }
