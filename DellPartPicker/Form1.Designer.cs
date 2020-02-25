@@ -1086,7 +1086,7 @@
             // 
             this.defaultAddSel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.defaultAddSel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.defaultAddSel.Location = new System.Drawing.Point(203, 144);
+            this.defaultAddSel.Location = new System.Drawing.Point(202, 144);
             this.defaultAddSel.Name = "defaultAddSel";
             this.defaultAddSel.Size = new System.Drawing.Size(197, 210);
             this.defaultAddSel.TabIndex = 11;
