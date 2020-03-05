@@ -23,8 +23,12 @@ namespace DellPartPicker
         public Color color4 = Color.FromArgb(25, 26, 45);
         public Color color5 = Color.FromArgb(43, 35, 55);
 
+        
+
         public OptionsMenu(Form1 f)
         {
+            checkboxTheme.Appearance = System.Windows.Forms.Appearance.Button;
+
             form1 = f;
 
             labels = new List<Label>();
@@ -334,5 +338,12 @@ namespace DellPartPicker
             PiIP = piIP.Text;
             LSIP = localserverIP.Text;
         }
+
+        private void labelPiIP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

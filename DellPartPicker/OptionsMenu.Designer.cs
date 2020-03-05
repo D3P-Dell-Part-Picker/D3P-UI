@@ -42,6 +42,8 @@
             this.labelRSIP = new System.Windows.Forms.Label();
             this.labelLSIP = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkboxTheme = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.headerBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.headerBar2)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +64,7 @@
             // 
             this.radioLt.AutoSize = true;
             this.radioLt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioLt.Location = new System.Drawing.Point(12, 92);
+            this.radioLt.Location = new System.Drawing.Point(12, 266);
             this.radioLt.Name = "radioLt";
             this.radioLt.Size = new System.Drawing.Size(202, 24);
             this.radioLt.TabIndex = 1;
@@ -75,7 +77,7 @@
             // 
             this.radioDrk.AutoSize = true;
             this.radioDrk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioDrk.Location = new System.Drawing.Point(12, 137);
+            this.radioDrk.Location = new System.Drawing.Point(12, 235);
             this.radioDrk.Name = "radioDrk";
             this.radioDrk.Size = new System.Drawing.Size(124, 24);
             this.radioDrk.TabIndex = 2;
@@ -166,6 +168,7 @@
             this.labelPiIP.Size = new System.Drawing.Size(39, 20);
             this.labelPiIP.TabIndex = 11;
             this.labelPiIP.Text = "Pi IP";
+            this.labelPiIP.Click += new System.EventHandler(this.labelPiIP_Click);
             // 
             // labelRSIP
             // 
@@ -198,6 +201,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 19);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Themes";
+            // 
+            // checkboxTheme
+            // 
+            this.checkboxTheme.AutoSize = true;
+            this.checkboxTheme.Location = new System.Drawing.Point(12, 97);
+            this.checkboxTheme.Name = "checkboxTheme";
+            this.checkboxTheme.Size = new System.Drawing.Size(80, 17);
+            this.checkboxTheme.TabIndex = 18;
+            this.checkboxTheme.Text = "checkBox1";
+            this.checkboxTheme.UseVisualStyleBackColor = true;
+            // 
             // OptionsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +228,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkboxTheme);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelLSIP);
             this.Controls.Add(this.labelRSIP);
@@ -244,5 +269,7 @@
         private System.Windows.Forms.Label labelRSIP;
         private System.Windows.Forms.Label labelLSIP;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkboxTheme;
     }
 }
