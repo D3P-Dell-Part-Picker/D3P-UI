@@ -14,11 +14,11 @@ namespace DellPartPicker
 
         public static String sendMessage(String message, String ip)
         {
-            String url;
 
             bool exists = File.Exists(@"C:\Temp\simpleInjector.exe");
             if (exists)
             {
+                Console.WriteLine("running");
                 return run(message, ip);
             }
             else

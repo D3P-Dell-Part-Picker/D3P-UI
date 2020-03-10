@@ -77,6 +77,8 @@ namespace DellPartPicker.utils
                 //set lastline to currentline
                 last_line = linenum;
 
+
+
                 MessageSimplifier.sendMessage(linenum, Constants.PIMESH, CommandType.FIND);
 
                 // TODO
@@ -139,8 +141,7 @@ namespace DellPartPicker.utils
                 //set lastline to currentline
                 last_line = linenum;
 
-                // TODO
-                // do something with the line number
+                MessageSimplifier.sendMessage(linenum, Constants.PIMESH, CommandType.FIND);
 
                 return true;
             }

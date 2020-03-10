@@ -8,7 +8,7 @@ namespace DellPartPicker.constants
 {
     public class Commands
     {
-        public const String FIND = "find";
+        public const String FIND = "find:";
         public const String DISPOSE = "dispose";
     }
 

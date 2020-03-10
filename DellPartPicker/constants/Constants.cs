@@ -21,6 +21,17 @@ namespace DellPartPicker
         public static String CONFIG_LOC = appdata + @"\D3P";
 
         public static D3PConfig config;
+
+        public static void renewConf()
+        {
+            config = new D3PConfig
+            {
+                LocalServerIP = LOCAL_SERVER,
+                PiMeshIP = PIMESH,
+                RemoteServerIP = REMOTE_SERVER
+                
+            };
+        }
     }
 
     public enum Destination

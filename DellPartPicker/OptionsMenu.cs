@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DellPartPicker.utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,7 +34,13 @@ namespace DellPartPicker
             InitializeComponent();
             addLabels();
             addButtons();
-            
+
+
+            remoteserverIP.Text = Constants.REMOTE_SERVER;
+            piIP.Text = Constants.PIMESH;
+            localserverIP.Text = Constants.LOCAL_SERVER;
+
+
             if (Form1.isDark)
             {
                 isDark = true;
@@ -333,6 +340,12 @@ namespace DellPartPicker
             RSIP = remoteserverIP.Text;
             PiIP = piIP.Text;
             LSIP = localserverIP.Text;
+
+            Constants.REMOTE_SERVER = RSIP;
+            Constants.PIMESH = PiIP;
+            Constants.LOCAL_SERVER = LSIP;
+            Constants.renewConf();
+            Json.writeJson(Constants.config);
         }
     }
 }
