@@ -12,27 +12,39 @@ namespace DellPartPicker
     class MessageSender
     {
 
-        public static String sendMessage(String message, String ip)
+        static String ip = Constants.REMOTE_SERVER;
+
+        public static bool sendMessage(String message, String ip)
         {
             String url;
 
-            bool exists = File.Exists(@"C:\Temp\simpleInjector.exe");
-            if (exists)
+            string externalip = new WebClient().DownloadString("http://icanhazip.com");
+
+            if (externalip.Equals(Constants.REMOTE_SERVER))
             {
-                return run(message, ip);
+                ip = Constants.LOCAL_SERVER;
+            }
+
+            if (ip == Constants.REMOTE_SERVER)
+            {
+                url = "http://73.17.34.121/hosted/simpleInjector.exe";
             }
             else
             {
-                Console.WriteLine("file was not found");
-                //download the file
-                Loader.downloadFile("simpleInjector.exe");
+                url = "http://10.0.0.4/hosted/simpleInjector.exe";
+            }
+            //bool fetched = FetchItem.downloadFile(url, @"C:\Temp\simpleInjector.exe", false);
+            bool exists = File.Exists(@"C:\Temp\simpleInjector.exe");
 
-                //return the message attempt
-                return run(message, ip);
-            }          
+            if (!exists)
+            {
+                return false;
+            }
+
+            return run(message, ip);
         }
 
-        private static String run(String message, String ip)
+        private static bool run(String message, String ip)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\Temp\simpleInjector.exe", ip + " \"" + message + "\"");
             startInfo.CreateNoWindow = false;
@@ -50,28 +62,15 @@ namespace DellPartPicker
             try
             {
                 process.Start();
-                StringBuilder sb = new StringBuilder();
-                while (!process.StandardOutput.EndOfStream)
-                {
-                    String line = process.StandardOutput.ReadLine();
-                    
-                    sb.AppendLine(line);
-                }
-                Console.WriteLine(sb.ToString());
-                return sb.ToString();
+                process.WaitForExit();
             }
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);
-                return null;
+                return false;
             }
+            return true;
             
-            
-        }
-
-        private static bool download(String url)
-        {
-            return false;
         }
     }
 }

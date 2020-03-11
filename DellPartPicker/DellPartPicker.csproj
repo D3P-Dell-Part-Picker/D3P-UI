@@ -53,11 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="constants\Commands.cs" />
-    <Compile Include="constants\Shelf.cs" />
     <Compile Include="data\FetchItem.cs" />
-    <Compile Include="constants\Constants.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="messages\MessageFormatter.cs" />
     <Compile Include="messages\MessageSender.cs" />
+    <Compile Include="messages\SocketComms.cs" />
     <Compile Include="data\DataDump.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -66,7 +66,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="data\Loader.cs" />
-    <Compile Include="messages\MessageSimplifier.cs" />
     <Compile Include="OptionsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,9 +74,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="utils\Json.cs" />
-    <Compile Include="utils\Selectors.cs" />
-    <Compile Include="utils\TestingUtils.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
