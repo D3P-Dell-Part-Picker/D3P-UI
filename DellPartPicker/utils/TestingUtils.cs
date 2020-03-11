@@ -11,33 +11,34 @@ namespace DellPartPicker.utils
 {
     public class TestingUtils
     {
+        private static Color color1 = Color.Gray;
         //this resets the color of all the picture boxes
         public static void clearAll(Form1 form)
         {
-            form.shelfA.BackColor = Color.Gray;
-            form.shelfB.BackColor = Color.Gray;
-            form.shelfC.BackColor = Color.Gray;
-            form.shelfD.BackColor = Color.Gray;
-            form.shelfE.BackColor = Color.Gray;
-            form.shelfF.BackColor = Color.Gray;
-            form.shelfG.BackColor = Color.Gray;
-            form.shelfH.BackColor = Color.Gray;
-            form.shelfI.BackColor = Color.Gray;
-            form.shelfJ.BackColor = Color.Gray;
-            form.shelfK.BackColor = Color.Gray;
-            form.shelfL.BackColor = Color.Gray;
-            form.shelfM.BackColor = Color.Gray;
-            form.shelfN.BackColor = Color.Gray;
-            form.shelfO.BackColor = Color.Gray;
-            form.shelfP.BackColor = Color.Gray;
-            form.shelfQ.BackColor = Color.Gray;
-            form.shelfR.BackColor = Color.Gray;
-            form.shelfS.BackColor = Color.Gray;
-            form.shelfT.BackColor = Color.Gray;
-            form.shelfU.BackColor = Color.Gray;
-            form.shelfV.BackColor = Color.Gray;
-            form.shelfW.BackColor = Color.Gray;
-            form.shelfX.BackColor = Color.Gray;
+            form.shelfA.BackColor = color1;
+            form.shelfB.BackColor = color1;
+            form.shelfC.BackColor = color1;
+            form.shelfD.BackColor = color1;
+            form.shelfE.BackColor = color1;
+            form.shelfF.BackColor = color1;
+            form.shelfG.BackColor = color1;
+            form.shelfH.BackColor = color1;
+            form.shelfI.BackColor = color1;
+            form.shelfJ.BackColor = color1;
+            form.shelfK.BackColor = color1;
+            form.shelfL.BackColor = color1;
+            form.shelfM.BackColor = color1;
+            form.shelfN.BackColor = color1;
+            form.shelfO.BackColor = color1;
+            form.shelfP.BackColor = color1;
+            form.shelfQ.BackColor = color1;
+            form.shelfR.BackColor = color1;
+            form.shelfS.BackColor = color1;
+            form.shelfT.BackColor = color1;
+            form.shelfU.BackColor = color1;
+            form.shelfV.BackColor = color1;
+            form.shelfW.BackColor = color1;
+            form.shelfX.BackColor = color1;
         }
 
         //picture box getting function

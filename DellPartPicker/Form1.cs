@@ -21,6 +21,8 @@ namespace DellPartPicker
 
         public Form1()
         {
+            
+
             InitializeComponent();
             
             disableFunctions();
@@ -316,7 +318,7 @@ namespace DellPartPicker
             {
                 //if you did not select this message should display
                 maperrorLabel.Visible = true;
-                maperrorLabel.Text = "please select something before using this button";
+                maperrorLabel.Text = "Please select something";
             }
         }
 

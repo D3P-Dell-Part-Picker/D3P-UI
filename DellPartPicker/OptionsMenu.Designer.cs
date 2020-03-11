@@ -30,7 +30,6 @@
         {
             this.optionsLbl = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.buttonApply = new System.Windows.Forms.Button();
             this.headerBar = new System.Windows.Forms.PictureBox();
             this.headerBar2 = new System.Windows.Forms.PictureBox();
             this.piIP = new System.Windows.Forms.TextBox();
@@ -51,12 +50,12 @@
             // optionsLbl
             // 
             this.optionsLbl.AutoSize = true;
-            this.optionsLbl.BackColor = System.Drawing.Color.Transparent;
-            this.optionsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionsLbl.BackColor = System.Drawing.Color.Silver;
+            this.optionsLbl.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsLbl.ForeColor = System.Drawing.SystemColors.Highlight;
             this.optionsLbl.Location = new System.Drawing.Point(12, 9);
             this.optionsLbl.Name = "optionsLbl";
-            this.optionsLbl.Size = new System.Drawing.Size(135, 37);
+            this.optionsLbl.Size = new System.Drawing.Size(138, 45);
             this.optionsLbl.TabIndex = 0;
             this.optionsLbl.Text = "Options";
             // 
@@ -65,29 +64,15 @@
             this.buttonBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonBack.BackColor = System.Drawing.Color.White;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonBack.Location = new System.Drawing.Point(180, 370);
+            this.buttonBack.Location = new System.Drawing.Point(12, 478);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(162, 68);
             this.buttonBack.TabIndex = 3;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
-            // buttonApply
-            // 
-            this.buttonApply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonApply.BackColor = System.Drawing.Color.White;
-            this.buttonApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonApply.Location = new System.Drawing.Point(12, 370);
-            this.buttonApply.Name = "buttonApply";
-            this.buttonApply.Size = new System.Drawing.Size(162, 68);
-            this.buttonApply.TabIndex = 4;
-            this.buttonApply.Text = "Apply Changes";
-            this.buttonApply.UseVisualStyleBackColor = false;
-            this.buttonApply.Click += new System.EventHandler(this.buttonApply_Click);
             // 
             // headerBar
             // 
@@ -96,7 +81,7 @@
             this.headerBar.BackColor = System.Drawing.Color.Silver;
             this.headerBar.Location = new System.Drawing.Point(-1, -11);
             this.headerBar.Name = "headerBar";
-            this.headerBar.Size = new System.Drawing.Size(812, 82);
+            this.headerBar.Size = new System.Drawing.Size(1023, 82);
             this.headerBar.TabIndex = 6;
             this.headerBar.TabStop = false;
             // 
@@ -166,7 +151,7 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(526, 270);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(262, 48);
@@ -178,19 +163,19 @@
             // buttonLightThm
             // 
             this.buttonLightThm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLightThm.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLightThm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLightThm.Location = new System.Drawing.Point(12, 88);
             this.buttonLightThm.Name = "buttonLightThm";
             this.buttonLightThm.Size = new System.Drawing.Size(135, 60);
             this.buttonLightThm.TabIndex = 15;
-            this.buttonLightThm.Text = "Light Theme (Defualt)";
+            this.buttonLightThm.Text = "Light Theme (Default)";
             this.buttonLightThm.UseVisualStyleBackColor = true;
             this.buttonLightThm.Click += new System.EventHandler(this.buttonLightThm_Click);
             // 
             // buttonDrkThm
             // 
             this.buttonDrkThm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDrkThm.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrkThm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDrkThm.Location = new System.Drawing.Point(153, 88);
             this.buttonDrkThm.Name = "buttonDrkThm";
             this.buttonDrkThm.Size = new System.Drawing.Size(135, 60);
@@ -206,7 +191,7 @@
             this.footerBar.BackColor = System.Drawing.Color.Silver;
             this.footerBar.Location = new System.Drawing.Point(-1, 353);
             this.footerBar.Name = "footerBar";
-            this.footerBar.Size = new System.Drawing.Size(812, 99);
+            this.footerBar.Size = new System.Drawing.Size(1023, 99);
             this.footerBar.TabIndex = 17;
             this.footerBar.TabStop = false;
             // 
@@ -216,7 +201,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1011, 558);
+            this.Controls.Add(this.optionsLbl);
             this.Controls.Add(this.buttonDrkThm);
             this.Controls.Add(this.buttonLightThm);
             this.Controls.Add(this.button1);
@@ -227,11 +213,11 @@
             this.Controls.Add(this.remoteserverIP);
             this.Controls.Add(this.piIP);
             this.Controls.Add(this.headerBar2);
-            this.Controls.Add(this.buttonApply);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.optionsLbl);
             this.Controls.Add(this.headerBar);
             this.Controls.Add(this.footerBar);
+            this.MaximumSize = new System.Drawing.Size(1281, 605);
+            this.MinimumSize = new System.Drawing.Size(1027, 597);
             this.Name = "OptionsMenu";
             this.Text = "OptionsMenu";
             ((System.ComponentModel.ISupportInitialize)(this.headerBar)).EndInit();
@@ -246,7 +232,6 @@
 
         private System.Windows.Forms.Label optionsLbl;
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.Button buttonApply;
         private System.Windows.Forms.PictureBox headerBar;
         private System.Windows.Forms.PictureBox headerBar2;
         private System.Windows.Forms.TextBox piIP;

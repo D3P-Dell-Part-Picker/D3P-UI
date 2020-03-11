@@ -13,6 +13,7 @@ namespace DellPartPicker.utils
     public class Selectors
     {
 
+        private static Color color2 = Color.White;
         public static int last_line = 0;
 
         public static bool select(Form1 form1)
@@ -47,7 +48,7 @@ namespace DellPartPicker.utils
                 Shelf en = TestingUtils.getShelf(loc);
 
                 //get the picturebox that corresponds to that enum and set its color to white
-                TestingUtils.getBox(en, form1).BackColor = Color.White;
+                TestingUtils.getBox(en, form1).BackColor = color2;
 
                 //go through all of the rows and deselect them
                 foreach (DataGridViewRow r in form1.dataGridList.Rows)
@@ -119,7 +120,7 @@ namespace DellPartPicker.utils
 
                 //enum -> picturebox; picturebox.color = white
                 //enum to picturebox then change the color to white
-                TestingUtils.getBox(en, form1).BackColor = Color.White;
+                TestingUtils.getBox(en, form1).BackColor = color2;
 
                 //any error disappears
                 form1.maperrorLabel.Visible = false;
