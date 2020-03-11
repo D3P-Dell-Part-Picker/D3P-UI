@@ -53,11 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="constants\Commands.cs" />
+    <Compile Include="constants\Shelf.cs" />
     <Compile Include="data\FetchItem.cs" />
-    <Compile Include="Constants.cs" />
-    <Compile Include="messages\MessageFormatter.cs" />
+    <Compile Include="constants\Constants.cs" />
     <Compile Include="messages\MessageSender.cs" />
-    <Compile Include="messages\SocketComms.cs" />
     <Compile Include="data\DataDump.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -66,6 +66,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="data\Loader.cs" />
+    <Compile Include="messages\MessageSimplifier.cs" />
     <Compile Include="OptionsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
