@@ -66,6 +66,12 @@ namespace DellPartPicker
                 return null;
             }
             
+            
+        }
+
+        private static bool download(String url)
+        {
+            return false;
         }
     }
 }

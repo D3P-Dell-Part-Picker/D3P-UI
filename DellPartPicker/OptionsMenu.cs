@@ -31,7 +31,11 @@ namespace DellPartPicker
             InitializeComponent();
             buttonLightThm.Enabled = false;
             makeColors(false);
-            
+
+            remoteserverIP.Text = Constants.REMOTE_SERVER;
+            piIP.Text = Constants.PIMESH;
+            localserverIP.Text = Constants.LOCAL_SERVER;
+
             if (Form1.isDark)
             {
                 isDark = true;
