@@ -44,7 +44,7 @@ namespace DellPartPicker
             Console.WriteLine(temp[0][0]);
         }
 
-        private void downloadFile()
+        public void downloadFile()
         {
             string userName = Environment.UserName;
             Console.WriteLine(userName);
