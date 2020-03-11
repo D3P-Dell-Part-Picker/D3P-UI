@@ -1367,7 +1367,7 @@
         public System.Windows.Forms.TextBox searchBox;
         protected internal System.Windows.Forms.TabControl tabControl;
         public System.Windows.Forms.Button mapBtnPrv;
-        public System.Windows.Forms.Label maperrorLabel;
+        private System.Windows.Forms.Label maperrorLabel;
         public System.Windows.Forms.Button mapBtnNxt;
         public System.Windows.Forms.Button mapFndSlt;
         public System.Windows.Forms.PictureBox defaultHeader;

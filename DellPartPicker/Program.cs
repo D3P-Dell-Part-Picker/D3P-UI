@@ -1,5 +1,4 @@
-﻿using DellPartPicker.utils;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,15 +14,6 @@ namespace DellPartPicker
         [STAThread]
         static void Main()
         {
-
-            //read configuration
-            Constants.config = Json.getConfig();
-
-
-            Constants.PIMESH = Constants.config.PiMeshIP;
-            Constants.LOCAL_SERVER = Constants.config.LocalServerIP;
-            Constants.REMOTE_SERVER = Constants.config.RemoteServerIP;
-
             
 	        Application.EnableVisualStyles();
 		    Application.SetCompatibleTextRenderingDefault(false);
