@@ -27,15 +27,16 @@ namespace DellPartPicker.messages
 
         private static void dispose(int linenum, String ip)
         {
+            Console.WriteLine("Sending the reset message");
+            String command = Commands.DISPOSE + linenum.ToString();
+            MessageSender.sendMessage(command, ip);
 
-            String command = Commands.DISPOSE + " " + linenum.ToString();
-            
         }
 
         private static void find(Int32 linenum, String ip)
         {
             Console.WriteLine("Sending find message");
-           String command = Commands.FIND + linenum.ToString() + ":" + linenum.ToString();
+            String command = Commands.FIND + linenum.ToString() + ":" + linenum.ToString();
             MessageSender.sendMessage(command, ip);
         }
     }
