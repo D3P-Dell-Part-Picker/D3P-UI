@@ -50,15 +50,14 @@ namespace DellPartPicker
 
         public void makeColors(bool isDark)
         {
-            //DARK THEME COLORS
             if (isDark)
             {
                 // Lightest to darkest color
                 buttoncolor1 = Color.FromArgb(60, 60, 60); //Normal button color
                 buttoncolor2 = Color.FromArgb(87, 87, 87); //Lighter button color
                 buttoncolor3 = Color.FromArgb(40, 40, 40); //Disabled button
-                color1 = Color.FromArgb(60,60,60); //Lighter color
-                color2 = Color.FromArgb(21,21,21); //Darker color
+                color1 = Color.FromArgb(60, 60, 60); //Lighter color
+                color2 = Color.FromArgb(21, 21, 21); //Darker color
                 accentcolor = Color.FromArgb(108, 230, 255); //Accent color
                 textcolor = Color.White;
 
@@ -86,12 +85,12 @@ namespace DellPartPicker
             if (!isDark)
             {
                 //Darkest to lightest color
-                buttoncolor1 = Color.FromArgb(202,202,202); //Normal button color
-                buttoncolor2 = Color.FromArgb(172,172,172); //Lighter button color
-                buttoncolor3 = Color.FromArgb(164,164,164); //Disabled button
-                color1 = Color.FromArgb(202,202,202); //Darker color
-                color2 = Color.FromArgb(255,255,255); //Lighter color
-                accentcolor = Color.FromArgb(50, 135, 193); //Accent color
+                buttoncolor1 = Color.FromArgb(202, 202, 202); //Normal button color
+                buttoncolor2 = Color.FromArgb(172, 172, 172); //Lighter button color
+                buttoncolor3 = Color.FromArgb(164, 164, 164); //Disabled button
+                color1 = Color.FromArgb(202, 202, 202); //Darker color
+                color2 = Color.FromArgb(255, 255, 255); //Lighter color
+                accentcolor = Color.FromArgb(253, 156, 91); //Accent color
                 textcolor = Color.FromArgb(0, 0, 0);
 
                 buttonLightThm.Enabled = false;
@@ -102,7 +101,7 @@ namespace DellPartPicker
                 buttonDrkThm.BackColor = buttoncolor1;
                 buttonDrkThm.ForeColor = textcolor;
                 buttonDrkThm.FlatAppearance.BorderColor = buttoncolor1;
-                
+
 
                 //Apply colors
                 foreach (Control subC in this.Controls)
@@ -114,7 +113,7 @@ namespace DellPartPicker
                     UpdateColorControls(subC, false, color1, color2, accentcolor, textcolor, buttoncolor1, buttoncolor2, buttoncolor3);
                 }
             }
-            
+
         }
 
         // Function to change colors depending if dark or light theme is pressed
@@ -172,7 +171,6 @@ namespace DellPartPicker
             form1.map.BackColor = color2;
             form1.singleItemTab.BackColor = color2;
             form1.error.BackColor = color1;
-            
 
             //Change logo color
             if (isDark)
@@ -223,12 +221,10 @@ namespace DellPartPicker
             form1.listdumpHeader.BackColor = accentcolor;
             form1.d3pTitle1.BackColor = Color.Transparent;
             form1.d3pLogo1.BackColor = Color.Transparent;
-            form1.mapD3pTitle.BackColor = Color.Transparent;
             form1.d3pTitle1.ForeColor = accentcolor;
             form1.d3pTitle2.ForeColor = accentcolor;
             form1.d3pLogo1.ForeColor = accentcolor;
             form1.d3pLogo2.ForeColor = accentcolor;
-            form1.mapD3pTitle.ForeColor = accentcolor;
             form1.pictureSettings1.BackColor = Color.Transparent;
 
             // change label colors (options tab)
