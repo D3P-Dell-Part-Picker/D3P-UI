@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DellPartPicker.utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,7 +47,6 @@ namespace DellPartPicker
             form1.Show();
         }
 
-        //Probably won't need this anymore
         private void buttonApply_Click(object sender, EventArgs e)
         {
             if (buttonDrkThm.Enabled == true)
@@ -268,6 +268,12 @@ namespace DellPartPicker
             RSIP = remoteserverIP.Text;
             PiIP = piIP.Text;
             LSIP = localserverIP.Text;
+
+            Constants.REMOTE_SERVER = RSIP;
+            Constants.PIMESH = PiIP;
+            Constants.LOCAL_SERVER = LSIP;
+            Constants.renewConf();
+            Json.writeJson(Constants.config);
         }
     }
 }
