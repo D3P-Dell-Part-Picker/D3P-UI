@@ -42,6 +42,7 @@
             this.buttonLightThm = new System.Windows.Forms.Button();
             this.buttonDrkThm = new System.Windows.Forms.Button();
             this.footerBar = new System.Windows.Forms.PictureBox();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.headerBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.headerBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.footerBar)).BeginInit();
@@ -53,78 +54,71 @@
             this.optionsLbl.BackColor = System.Drawing.Color.Silver;
             this.optionsLbl.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsLbl.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.optionsLbl.Location = new System.Drawing.Point(12, 9);
+            this.optionsLbl.Location = new System.Drawing.Point(16, 11);
+            this.optionsLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.optionsLbl.Name = "optionsLbl";
-            this.optionsLbl.Size = new System.Drawing.Size(138, 45);
+
             this.optionsLbl.TabIndex = 0;
             this.optionsLbl.Text = "Options";
             // 
-            // buttonBack
-            // 
-            this.buttonBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonBack.BackColor = System.Drawing.Color.White;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonBack.Location = new System.Drawing.Point(12, 478);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(162, 68);
-            this.buttonBack.TabIndex = 3;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = false;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
+
             // headerBar
             // 
             this.headerBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.headerBar.BackColor = System.Drawing.Color.Silver;
-            this.headerBar.Location = new System.Drawing.Point(-1, -11);
+            this.headerBar.Location = new System.Drawing.Point(-1, -14);
+            this.headerBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.headerBar.Name = "headerBar";
-            this.headerBar.Size = new System.Drawing.Size(1023, 82);
+
             this.headerBar.TabIndex = 6;
             this.headerBar.TabStop = false;
             // 
             // headerBar2
             // 
-            this.headerBar2.Location = new System.Drawing.Point(-1, 70);
+            this.headerBar2.Location = new System.Drawing.Point(-1, 86);
+            this.headerBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.headerBar2.Name = "headerBar2";
-            this.headerBar2.Size = new System.Drawing.Size(803, 2);
+            this.headerBar2.Size = new System.Drawing.Size(1071, 2);
             this.headerBar2.TabIndex = 7;
             this.headerBar2.TabStop = false;
             // 
             // piIP
             // 
             this.piIP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.piIP.Location = new System.Drawing.Point(526, 111);
+            this.piIP.Location = new System.Drawing.Point(701, 137);
+            this.piIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.piIP.Name = "piIP";
-            this.piIP.Size = new System.Drawing.Size(262, 22);
+            this.piIP.Size = new System.Drawing.Size(348, 26);
             this.piIP.TabIndex = 8;
             // 
             // remoteserverIP
             // 
             this.remoteserverIP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remoteserverIP.Location = new System.Drawing.Point(526, 173);
+            this.remoteserverIP.Location = new System.Drawing.Point(701, 213);
+            this.remoteserverIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.remoteserverIP.Name = "remoteserverIP";
-            this.remoteserverIP.Size = new System.Drawing.Size(262, 22);
+            this.remoteserverIP.Size = new System.Drawing.Size(348, 26);
             this.remoteserverIP.TabIndex = 9;
             // 
             // localserverIP
             // 
             this.localserverIP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.localserverIP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.localserverIP.Location = new System.Drawing.Point(526, 235);
+            this.localserverIP.Location = new System.Drawing.Point(701, 289);
+            this.localserverIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.localserverIP.Name = "localserverIP";
-            this.localserverIP.Size = new System.Drawing.Size(262, 22);
+            this.localserverIP.Size = new System.Drawing.Size(348, 26);
             this.localserverIP.TabIndex = 10;
             // 
             // labelPiIP
             // 
             this.labelPiIP.AutoSize = true;
             this.labelPiIP.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPiIP.Location = new System.Drawing.Point(522, 88);
+            this.labelPiIP.Location = new System.Drawing.Point(696, 108);
+            this.labelPiIP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPiIP.Name = "labelPiIP";
-            this.labelPiIP.Size = new System.Drawing.Size(39, 20);
+            this.labelPiIP.Size = new System.Drawing.Size(50, 25);
             this.labelPiIP.TabIndex = 11;
             this.labelPiIP.Text = "Pi IP";
             // 
@@ -132,9 +126,10 @@
             // 
             this.labelRSIP.AutoSize = true;
             this.labelRSIP.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRSIP.Location = new System.Drawing.Point(522, 150);
+            this.labelRSIP.Location = new System.Drawing.Point(696, 185);
+            this.labelRSIP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRSIP.Name = "labelRSIP";
-            this.labelRSIP.Size = new System.Drawing.Size(127, 20);
+            this.labelRSIP.Size = new System.Drawing.Size(160, 25);
             this.labelRSIP.TabIndex = 12;
             this.labelRSIP.Text = "Remote Server IP";
             // 
@@ -142,19 +137,19 @@
             // 
             this.labelLSIP.AutoSize = true;
             this.labelLSIP.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLSIP.Location = new System.Drawing.Point(522, 212);
+            this.labelLSIP.Location = new System.Drawing.Point(696, 261);
+            this.labelLSIP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLSIP.Name = "labelLSIP";
-            this.labelLSIP.Size = new System.Drawing.Size(110, 20);
+            this.labelLSIP.Size = new System.Drawing.Size(138, 25);
             this.labelLSIP.TabIndex = 13;
             this.labelLSIP.Text = "Local Server IP";
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(526, 270);
+
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(262, 48);
+            this.button1.Size = new System.Drawing.Size(349, 59);
             this.button1.TabIndex = 14;
             this.button1.Text = "Confirm";
             this.button1.UseVisualStyleBackColor = true;
@@ -163,10 +158,9 @@
             // buttonLightThm
             // 
             this.buttonLightThm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLightThm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLightThm.Location = new System.Drawing.Point(12, 88);
+
             this.buttonLightThm.Name = "buttonLightThm";
-            this.buttonLightThm.Size = new System.Drawing.Size(135, 60);
+            this.buttonLightThm.Size = new System.Drawing.Size(180, 74);
             this.buttonLightThm.TabIndex = 15;
             this.buttonLightThm.Text = "Light Theme (Default)";
             this.buttonLightThm.UseVisualStyleBackColor = true;
@@ -175,10 +169,9 @@
             // buttonDrkThm
             // 
             this.buttonDrkThm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDrkThm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrkThm.Location = new System.Drawing.Point(153, 88);
+
             this.buttonDrkThm.Name = "buttonDrkThm";
-            this.buttonDrkThm.Size = new System.Drawing.Size(135, 60);
+            this.buttonDrkThm.Size = new System.Drawing.Size(180, 74);
             this.buttonDrkThm.TabIndex = 16;
             this.buttonDrkThm.Text = "Dark Theme";
             this.buttonDrkThm.UseVisualStyleBackColor = true;
@@ -189,20 +182,35 @@
             this.footerBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.footerBar.BackColor = System.Drawing.Color.Silver;
-            this.footerBar.Location = new System.Drawing.Point(-1, 459);
+
             this.footerBar.Name = "footerBar";
-            this.footerBar.Size = new System.Drawing.Size(1023, 99);
+
             this.footerBar.TabIndex = 17;
             this.footerBar.TabStop = false;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonBack.BackColor = System.Drawing.Color.White;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonBack.Location = new System.Drawing.Point(24, 457);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(216, 84);
+            this.buttonBack.TabIndex = 3;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // OptionsMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1011, 558);
-            this.Controls.Add(this.optionsLbl);
+
             this.Controls.Add(this.buttonDrkThm);
             this.Controls.Add(this.buttonLightThm);
             this.Controls.Add(this.button1);
@@ -216,8 +224,7 @@
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.headerBar);
             this.Controls.Add(this.footerBar);
-            this.MaximumSize = new System.Drawing.Size(1281, 605);
-            this.MinimumSize = new System.Drawing.Size(1027, 597);
+
             this.Name = "OptionsMenu";
             this.Text = "OptionsMenu";
             ((System.ComponentModel.ISupportInitialize)(this.headerBar)).EndInit();
@@ -231,7 +238,7 @@
         #endregion
 
         private System.Windows.Forms.Label optionsLbl;
-        private System.Windows.Forms.Button buttonBack;
+
         private System.Windows.Forms.PictureBox headerBar;
         private System.Windows.Forms.PictureBox headerBar2;
         private System.Windows.Forms.TextBox piIP;
@@ -244,5 +251,6 @@
         private System.Windows.Forms.Button buttonLightThm;
         private System.Windows.Forms.Button buttonDrkThm;
         private System.Windows.Forms.PictureBox footerBar;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
