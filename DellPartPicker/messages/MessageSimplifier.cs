@@ -27,9 +27,10 @@ namespace DellPartPicker.messages
 
         private static void dispose(int linenum, String ip)
         {
-            Console.WriteLine("Sending DISPOSE message");
+            Console.WriteLine("Sending the reset message");
             String command = Commands.DISPOSE + linenum.ToString();
             MessageSender.sendMessage(command, ip);
+
         }
 
         private static void find(Int32 linenum, String ip)
