@@ -65,7 +65,7 @@ namespace DellPartPicker.utils
                 //get the linumber for whatever the selected item is
                 int linenum = Loader.getLineNumber(
                     form1.dataGridList.Rows[Form1.selectedRow].Cells[0].Value.ToString(),
-                    form1.dataGridList.Rows[Form1.selectedRow].Cells[1].Value.ToString());
+                    form1.dataGridList.Rows[Form1.selectedRow].Cells[1].Value.ToString()) - 1;
 
                 form1.maperrorLabel.Text = "Linenumber for this item is: " + linenum;
 
@@ -128,7 +128,7 @@ namespace DellPartPicker.utils
                 //get the line number of that selected item
                 int linenum = Loader.getLineNumber(
                     sel[0].Cells[0].Value.ToString(),
-                    sel[0].Cells[1].Value.ToString());
+                    sel[0].Cells[1].Value.ToString()) - 1;
 
                 form1.maperrorLabel.Text = "Linenumber for this item is: " + linenum;
                 form1.maperrorLabel.Visible = true;
@@ -137,12 +137,14 @@ namespace DellPartPicker.utils
                 {
                     //dispose the previous line
                     MessageSimplifier.sendMessage(last_line, Constants.PIMESH, CommandType.DISPOSE);
+                    form1.Focus();
                 }
 
                 //set lastline to currentline
                 last_line = linenum;
 
                 MessageSimplifier.sendMessage(linenum, Constants.PIMESH, CommandType.FIND);
+                form1.Focus();
 
                 return true;
             }

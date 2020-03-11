@@ -189,7 +189,7 @@
             this.footerBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.footerBar.BackColor = System.Drawing.Color.Silver;
-            this.footerBar.Location = new System.Drawing.Point(-1, 353);
+            this.footerBar.Location = new System.Drawing.Point(-1, 459);
             this.footerBar.Name = "footerBar";
             this.footerBar.Size = new System.Drawing.Size(1023, 99);
             this.footerBar.TabIndex = 17;
