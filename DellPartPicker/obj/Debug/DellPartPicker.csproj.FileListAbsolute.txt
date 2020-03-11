@@ -1,0 +1,13 @@
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\bin\Debug\DellPartPicker.exe.config
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\bin\Debug\DellPartPicker.exe
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\bin\Debug\DellPartPicker.pdb
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\obj\Debug\DellPartPicker.csprojAssemblyReference.cache
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\obj\Debug\DellPartPicker.Form1.resources
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\obj\Debug\DellPartPicker.OptionsMenu.resources
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\obj\Debug\DellPartPicker.Properties.Resources.resources
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\obj\Debug\DellPartPicker.csproj.GenerateResource.cache
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\obj\Debug\DellPartPicker.csproj.CopyComplete
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\obj\Debug\DellPartPicker.exe
+C:\Users\Aiden M\Desktop\D3P-UI-aidenlocal\DellPartPicker\obj\Debug\DellPartPicker.pdb

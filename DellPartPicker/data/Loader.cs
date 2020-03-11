@@ -13,7 +13,7 @@ namespace DellPartPicker
         public static List<String> descList;
         public static List<String> locList;
         private String[] partnum, desc, loc;
-        static String ip = Constants.REMOTE_SERVER;
+        String ip = Constants.REMOTE_SERVER;
 
 
 
@@ -22,12 +22,17 @@ namespace DellPartPicker
         public Loader()
         {
             partnumList = new List<String>();
-           
+            string externalip = new WebClient().DownloadString("http://icanhazip.com");
+
+            if (externalip.Equals(Constants.REMOTE_SERVER))
+            {
+                ip = Constants.LOCAL_SERVER;
+            }
             
 
             descList = new List<String>();
             locList = new List<String>();
-            downloadFile("Racks.csv");
+            downloadFile();
             readToMemory();
 
             // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -39,14 +44,8 @@ namespace DellPartPicker
             Console.WriteLine(temp[0][0]);
         }
 
-        public static void downloadFile(String file)
+        private void downloadFile()
         {
-            string externalip = new WebClient().DownloadString("http://icanhazip.com");
-
-            if (externalip.Equals(Constants.REMOTE_SERVER))
-            {
-                ip = Constants.LOCAL_SERVER;
-            }
             string userName = Environment.UserName;
             Console.WriteLine(userName);
             WebClient Client = new WebClient();
@@ -55,11 +54,11 @@ namespace DellPartPicker
             {
                 Directory.CreateDirectory(@"C:\Temp");
             }
-            if (!File.Exists(@"C:\Temp\" + file)) //if the file does not exist currently
+            if (!File.Exists(@"C:\Temp\Racks.csv")) //if the file does not exist currently
             {
                 try
                 {
-                    Client.DownloadFile("http://" + ip + "/hosted/" + file, @"C:\Temp\" + file);
+                    Client.DownloadFile("http://" + ip + "/hosted/Racks.csv", @"C:\Temp\Racks.csv");
                 }
                 catch (Exception e)
                 {
@@ -175,7 +174,7 @@ namespace DellPartPicker
             
 
             //return the line number
-            return index + 1;
+            return index;
         }
     }
 }
