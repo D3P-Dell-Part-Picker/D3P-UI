@@ -184,12 +184,14 @@ namespace DellPartPicker
                 //Changes logo to Dark Ver.
                 form1.d3pLogo1.Image = Properties.Resources.Dell_logo_2016_dark;
                 form1.d3pLogo2.Image = Properties.Resources.Dell_logo_2016_dark;
+                form1.mapLogo.Image = Properties.Resources.Dell_logo_2016_dark;
             }
             else if (!isDark)
             {
                 //Change logo to Light Ver.
                 form1.d3pLogo1.Image = Properties.Resources.Dell_logo_2016;
                 form1.d3pLogo2.Image = Properties.Resources.Dell_logo_2016;
+                form1.mapLogo.Image = Properties.Resources.Dell_logo_2016;
 
                 //Changes settings to Light Ver.
                 form1.pictureSettings1.Image = Properties.Resources.settingsicon;
@@ -221,10 +223,12 @@ namespace DellPartPicker
             form1.listdumpHeader.BackColor = accentcolor;
             form1.d3pTitle1.BackColor = Color.Transparent;
             form1.d3pLogo1.BackColor = Color.Transparent;
+            form1.mapD3pTitle.BackColor = Color.Transparent;
             form1.d3pTitle1.ForeColor = accentcolor;
             form1.d3pTitle2.ForeColor = accentcolor;
             form1.d3pLogo1.ForeColor = accentcolor;
             form1.d3pLogo2.ForeColor = accentcolor;
+            form1.mapD3pTitle.ForeColor = accentcolor;
             form1.pictureSettings1.BackColor = Color.Transparent;
 
             // change label colors (options tab)

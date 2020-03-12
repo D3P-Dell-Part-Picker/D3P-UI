@@ -114,6 +114,8 @@
             this.d3pTitle1 = new System.Windows.Forms.Label();
             this.defaultHeader = new System.Windows.Forms.PictureBox();
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.mapLogo = new System.Windows.Forms.PictureBox();
+            this.mapD3pTitle = new System.Windows.Forms.Label();
             this.map.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shelfL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shelfK)).BeginInit();
@@ -152,10 +154,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultHeader)).BeginInit();
             this.tabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mapLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // map
             // 
+            this.map.Controls.Add(this.mapLogo);
+            this.map.Controls.Add(this.mapD3pTitle);
             this.map.Controls.Add(this.mapFndSlt);
             this.map.Controls.Add(this.mapBtnNxt);
             this.map.Controls.Add(this.maperrorLabel);
@@ -252,7 +257,7 @@
             this.maperrorLabel.AutoSize = true;
             this.maperrorLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maperrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.maperrorLabel.Location = new System.Drawing.Point(652, 6);
+            this.maperrorLabel.Location = new System.Drawing.Point(1176, 10);
             this.maperrorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.maperrorLabel.Name = "maperrorLabel";
             this.maperrorLabel.Size = new System.Drawing.Size(46, 21);
@@ -854,7 +859,7 @@
             this.maplistTitle.AutoSize = true;
             this.maplistTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maplistTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.maplistTitle.Location = new System.Drawing.Point(1186, 10);
+            this.maplistTitle.Location = new System.Drawing.Point(652, 10);
             this.maplistTitle.Name = "maplistTitle";
             this.maplistTitle.Size = new System.Drawing.Size(36, 21);
             this.maplistTitle.TabIndex = 2;
@@ -876,7 +881,7 @@
             // 
             this.mapTitle.AutoSize = true;
             this.mapTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mapTitle.Location = new System.Drawing.Point(6, 10);
+            this.mapTitle.Location = new System.Drawing.Point(3, 72);
             this.mapTitle.Name = "mapTitle";
             this.mapTitle.Size = new System.Drawing.Size(44, 21);
             this.mapTitle.TabIndex = 0;
@@ -885,9 +890,9 @@
             // mapBackground
             // 
             this.mapBackground.BackColor = System.Drawing.Color.Gainsboro;
-            this.mapBackground.Location = new System.Drawing.Point(3, 34);
+            this.mapBackground.Location = new System.Drawing.Point(3, 96);
             this.mapBackground.Name = "mapBackground";
-            this.mapBackground.Size = new System.Drawing.Size(649, 465);
+            this.mapBackground.Size = new System.Drawing.Size(649, 403);
             this.mapBackground.TabIndex = 27;
             this.mapBackground.TabStop = false;
             this.mapBackground.Click += new System.EventHandler(this.pictureBox29_Click);
@@ -1228,6 +1233,28 @@
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl.TabIndex = 14;
             // 
+            // mapLogo
+            // 
+            this.mapLogo.Image = global::DellPartPicker.Properties.Resources.Dell_logo_2016;
+            this.mapLogo.Location = new System.Drawing.Point(7, 3);
+            this.mapLogo.Name = "mapLogo";
+            this.mapLogo.Size = new System.Drawing.Size(64, 64);
+            this.mapLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mapLogo.TabIndex = 58;
+            this.mapLogo.TabStop = false;
+            // 
+            // mapD3pTitle
+            // 
+            this.mapD3pTitle.AutoSize = true;
+            this.mapD3pTitle.BackColor = System.Drawing.Color.Transparent;
+            this.mapD3pTitle.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mapD3pTitle.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.mapD3pTitle.Location = new System.Drawing.Point(71, 10);
+            this.mapD3pTitle.Name = "mapD3pTitle";
+            this.mapD3pTitle.Size = new System.Drawing.Size(228, 45);
+            this.mapD3pTitle.TabIndex = 59;
+            this.mapD3pTitle.Text = "Part Picker UI";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1285,6 +1312,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.d3pLogo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultHeader)).EndInit();
             this.tabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mapLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1376,6 +1404,8 @@
         public System.Windows.Forms.PictureBox d3pLogo2;
         public System.Windows.Forms.Label d3pTitle2;
         public System.Windows.Forms.PictureBox listdumpHeader;
+        public System.Windows.Forms.PictureBox mapLogo;
+        public System.Windows.Forms.Label mapD3pTitle;
     }
 }
 
