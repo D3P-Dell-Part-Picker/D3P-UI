@@ -13,42 +13,37 @@ namespace DellPartPicker
 {
     public partial class OptionsMenu : Form
     {
-        Form1 form1;
-        Boolean isDark;
-        List<Label> labels;
-        List<Button> buttonList;
+        Form1 form1; 
+        Boolean isDark; // Don't delete this
 
+        // Color variables
         public Color buttoncolor2, buttoncolor1, buttoncolor3, textcolor, color1, color2, accentcolor;
 
+        //Startup
         public OptionsMenu(Form1 f)
         {
-
-            /*Form = new Main();
-            Form.*/
-            form1 = f;
-
-            labels = new List<Label>();
-            buttonList = new List<Button>();
             
+            form1 = f; // Variable to access Form1
             InitializeComponent();
-            buttonLightThm.Enabled = false;
-            makeColors(false);
 
+            // IP Address variables
             remoteserverIP.Text = Constants.REMOTE_SERVER;
             piIP.Text = Constants.PIMESH;
             localserverIP.Text = Constants.LOCAL_SERVER;
 
+            // Retain the current theme so it doesn't switch on the user
             if (Form1.isDark)
             {
-                isDark = true;
+                makeColors(true);
             }
-            toggleDark(isDark);
-
+            else
+            {
+                makeColors(false);
+            }
         }
-
+        // Go back to Form1
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            
             this.Hide();
             form1.Show();
         }
@@ -96,7 +91,7 @@ namespace DellPartPicker
                 buttoncolor3 = Color.FromArgb(164,164,164); //Disabled button
                 color1 = Color.FromArgb(202,202,202); //Darker color
                 color2 = Color.FromArgb(255,255,255); //Lighter color
-                accentcolor = Color.FromArgb(253,156,91); //Accent color
+                accentcolor = Color.FromArgb(50, 135, 193); //Accent color
                 textcolor = Color.FromArgb(0, 0, 0);
 
                 buttonLightThm.Enabled = false;
@@ -109,7 +104,7 @@ namespace DellPartPicker
                 buttonDrkThm.FlatAppearance.BorderColor = buttoncolor1;
                 
 
-                //Apply
+                //Apply colors
                 foreach (Control subC in this.Controls)
                 {
                     UpdateColorControls(subC, false, color1, color2, accentcolor, textcolor, buttoncolor1, buttoncolor2, buttoncolor3);
@@ -122,14 +117,13 @@ namespace DellPartPicker
             
         }
 
+        // Function to change colors depending if dark or light theme is pressed
+        // True = Dark
+        // False = Light
         private void toggleDark(Boolean b)
         {
             if (b)
             {
-                //If the user goes back into the options menu, the buttons are disabled/enabled accordingly
-                buttonDrkThm.Enabled = true;
-                buttonLightThm.Enabled = false;
-
                 foreach (Control subC in this.Controls)
                 {
                     makeColors(true);
@@ -142,10 +136,6 @@ namespace DellPartPicker
             }
             else
             {
-                //If the user goes back into the options menu, the buttons are disabled/enabled accordingly
-                buttonLightThm.Enabled = true;
-                buttonDrkThm.Enabled = false;
-
                 foreach (Control subC in this.Controls)
                 {
                     makeColors(false);
@@ -158,17 +148,19 @@ namespace DellPartPicker
             }
         }
 
+        //Changes to light theme
         private void buttonLightThm_Click(object sender, EventArgs e)
         {
             makeColors(false);
         }
 
+        // Changes to dark theme
         private void buttonDrkThm_Click(object sender, EventArgs e)
         {
-            
             makeColors(true);
         }
 
+        // Function to change all control colors
         public void UpdateColorControls(Control myControl, bool isDark, Color color1, Color color2, Color accentcolor, Color textcolor, Color buttoncolor1, Color buttoncolor2, Color buttoncolor3)
         {
             Form1.isDark = isDark;
@@ -307,6 +299,7 @@ namespace DellPartPicker
             form1.listBtnSearch.FlatAppearance.BorderColor = buttoncolor1;
         }
 
+        // Sets IP addresses
         private void button1_Click(object sender, EventArgs e)
         {
             string RSIP, PiIP, LSIP;

@@ -95,34 +95,38 @@
             // 
             // piIP
             // 
-            this.piIP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.piIP.Location = new System.Drawing.Point(526, 111);
+            this.piIP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.piIP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.piIP.Location = new System.Drawing.Point(737, 111);
             this.piIP.Name = "piIP";
-            this.piIP.Size = new System.Drawing.Size(262, 22);
+            this.piIP.Size = new System.Drawing.Size(262, 29);
             this.piIP.TabIndex = 8;
             // 
             // remoteserverIP
             // 
-            this.remoteserverIP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remoteserverIP.Location = new System.Drawing.Point(526, 173);
+            this.remoteserverIP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.remoteserverIP.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remoteserverIP.Location = new System.Drawing.Point(737, 173);
             this.remoteserverIP.Name = "remoteserverIP";
-            this.remoteserverIP.Size = new System.Drawing.Size(262, 22);
+            this.remoteserverIP.Size = new System.Drawing.Size(262, 27);
             this.remoteserverIP.TabIndex = 9;
             // 
             // localserverIP
             // 
+            this.localserverIP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.localserverIP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.localserverIP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.localserverIP.Location = new System.Drawing.Point(526, 235);
+            this.localserverIP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.localserverIP.Location = new System.Drawing.Point(737, 235);
             this.localserverIP.Name = "localserverIP";
-            this.localserverIP.Size = new System.Drawing.Size(262, 22);
+            this.localserverIP.Size = new System.Drawing.Size(262, 29);
             this.localserverIP.TabIndex = 10;
             // 
             // labelPiIP
             // 
+            this.labelPiIP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPiIP.AutoSize = true;
             this.labelPiIP.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPiIP.Location = new System.Drawing.Point(522, 88);
+            this.labelPiIP.Location = new System.Drawing.Point(733, 88);
             this.labelPiIP.Name = "labelPiIP";
             this.labelPiIP.Size = new System.Drawing.Size(39, 20);
             this.labelPiIP.TabIndex = 11;
@@ -130,9 +134,10 @@
             // 
             // labelRSIP
             // 
+            this.labelRSIP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRSIP.AutoSize = true;
             this.labelRSIP.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRSIP.Location = new System.Drawing.Point(522, 150);
+            this.labelRSIP.Location = new System.Drawing.Point(733, 150);
             this.labelRSIP.Name = "labelRSIP";
             this.labelRSIP.Size = new System.Drawing.Size(127, 20);
             this.labelRSIP.TabIndex = 12;
@@ -140,9 +145,10 @@
             // 
             // labelLSIP
             // 
+            this.labelLSIP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelLSIP.AutoSize = true;
             this.labelLSIP.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLSIP.Location = new System.Drawing.Point(522, 212);
+            this.labelLSIP.Location = new System.Drawing.Point(733, 212);
             this.labelLSIP.Name = "labelLSIP";
             this.labelLSIP.Size = new System.Drawing.Size(110, 20);
             this.labelLSIP.TabIndex = 13;
@@ -150,11 +156,12 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(526, 270);
+            this.button1.Location = new System.Drawing.Point(737, 282);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(262, 48);
+            this.button1.Size = new System.Drawing.Size(262, 64);
             this.button1.TabIndex = 14;
             this.button1.Text = "Confirm";
             this.button1.UseVisualStyleBackColor = true;
@@ -166,7 +173,7 @@
             this.buttonLightThm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLightThm.Location = new System.Drawing.Point(12, 88);
             this.buttonLightThm.Name = "buttonLightThm";
-            this.buttonLightThm.Size = new System.Drawing.Size(135, 60);
+            this.buttonLightThm.Size = new System.Drawing.Size(202, 97);
             this.buttonLightThm.TabIndex = 15;
             this.buttonLightThm.Text = "Light Theme (Default)";
             this.buttonLightThm.UseVisualStyleBackColor = true;
@@ -176,9 +183,9 @@
             // 
             this.buttonDrkThm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDrkThm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrkThm.Location = new System.Drawing.Point(153, 88);
+            this.buttonDrkThm.Location = new System.Drawing.Point(12, 191);
             this.buttonDrkThm.Name = "buttonDrkThm";
-            this.buttonDrkThm.Size = new System.Drawing.Size(135, 60);
+            this.buttonDrkThm.Size = new System.Drawing.Size(202, 100);
             this.buttonDrkThm.TabIndex = 16;
             this.buttonDrkThm.Text = "Dark Theme";
             this.buttonDrkThm.UseVisualStyleBackColor = true;
@@ -186,12 +193,12 @@
             // 
             // footerBar
             // 
-            this.footerBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.footerBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.footerBar.BackColor = System.Drawing.Color.Silver;
             this.footerBar.Location = new System.Drawing.Point(-1, 459);
             this.footerBar.Name = "footerBar";
-            this.footerBar.Size = new System.Drawing.Size(1023, 99);
+            this.footerBar.Size = new System.Drawing.Size(1023, 113);
             this.footerBar.TabIndex = 17;
             this.footerBar.TabStop = false;
             // 
@@ -220,6 +227,7 @@
             this.MinimumSize = new System.Drawing.Size(1027, 597);
             this.Name = "OptionsMenu";
             this.Text = "OptionsMenu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.headerBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.headerBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.footerBar)).EndInit();

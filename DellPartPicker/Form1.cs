@@ -14,6 +14,7 @@ namespace DellPartPicker
 {
     public partial class Form1 : Form
     {
+        
         Loader loader = new Loader();
         public static Boolean isDark = false;
         Parser parser = new Parser();
@@ -22,13 +23,17 @@ namespace DellPartPicker
         public Form1()
         {
             
+            
+            isDark = false;
 
             InitializeComponent();
-            
             disableFunctions();
-
-            initCollective();
             
+            initCollective();
+            OptionsMenu form = new OptionsMenu(this);
+            form.Show();
+            form.Hide();
+            form.makeColors(false);
         }
 
         private void initCollective()
