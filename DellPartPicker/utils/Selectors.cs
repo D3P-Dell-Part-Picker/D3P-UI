@@ -67,7 +67,7 @@ namespace DellPartPicker.utils
                     form1.dataGridList.Rows[Form1.selectedRow].Cells[0].Value.ToString(),
                     form1.dataGridList.Rows[Form1.selectedRow].Cells[1].Value.ToString()) - 1;
 
-                form1.maperrorLabel.Text = "Linenumber for this item is: " + linenum;
+                form1.maperrorLabel.Text = "Your Token Is: " + linenum;
 
                 if (last_line != 0) //make sure that it is not in the startup config
                 {
@@ -130,7 +130,7 @@ namespace DellPartPicker.utils
                     sel[0].Cells[0].Value.ToString(),
                     sel[0].Cells[1].Value.ToString()) - 1;
 
-                form1.maperrorLabel.Text = "Linenumber for this item is: " + linenum;
+                form1.maperrorLabel.Text = "Your Token Is: " + linenum;
                 form1.maperrorLabel.Visible = true;
 
                 if (last_line != 0) //make sure that it is not in the startup config

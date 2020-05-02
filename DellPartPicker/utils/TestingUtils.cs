@@ -140,6 +140,12 @@ namespace DellPartPicker.utils
             else if (shelf == Shelf.X)
             {
                 return form.shelfX;
+            }else if(shelf == Shelf.GL)
+            {
+                return form.shelfGL;
+            }else if(shelf == Shelf.FRONT)
+            {
+                return form.shelfFront;
             }
             else
             {
@@ -153,6 +159,14 @@ namespace DellPartPicker.utils
         {
             //get the location letter
             char locLetter = loc.ToCharArray()[0];
+            char locLetter2 = loc.ToCharArray()[1];
+            if (Char.IsLetter(locLetter2)){
+                if(locLetter2 == 'r')
+                {
+                    return Shelf.FRONT;
+                }
+                return Shelf.GL;
+            }
 
             //tests
             if (locLetter == (Shelf.A.ToString().ToCharArray()[0]))
