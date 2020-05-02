@@ -44,11 +44,10 @@ namespace DellPartPicker.utils
                     //return false, as it didn't work out
                     return false;
                 }
-                //turn the location into a shelf enum
-                Shelf en = TestingUtils.getShelf(loc);
+                
 
                 //get the picturebox that corresponds to that enum and set its color to white
-                TestingUtils.getBox(en, form1).BackColor = color2;
+                TestingUtils.getShelf(loc).BackColor = color2;
 
                 //go through all of the rows and deselect them
                 foreach (DataGridViewRow r in form1.dataGridList.Rows)
@@ -115,12 +114,11 @@ namespace DellPartPicker.utils
                     //return false because it failed
                     return false;
                 }
-                //get the enum for the location
-                Shelf en = TestingUtils.getShelf(loc);
+                
 
                 //enum -> picturebox; picturebox.color = white
                 //enum to picturebox then change the color to white
-                TestingUtils.getBox(en, form1).BackColor = color2;
+                TestingUtils.getShelf(loc).BackColor = color2;
 
                 //any error disappears
                 form1.maperrorLabel.Visible = false;

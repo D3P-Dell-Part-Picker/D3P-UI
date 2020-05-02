@@ -34,6 +34,7 @@ namespace DellPartPicker
             form.Show();
             form.Hide();
             form.makeColors(false);
+            new TestingUtils(this);
         }
 
         private void initCollective()
