@@ -22,7 +22,7 @@ namespace DellPartPicker
 
         public Form1()
         {
-            
+
             
             isDark = false;
 

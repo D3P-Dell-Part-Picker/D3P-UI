@@ -12,6 +12,48 @@ namespace DellPartPicker.utils
     public class TestingUtils
     {
         private static Color color1 = Color.Gray;
+
+        public static Dictionary<String, PictureBox> map;
+
+        public TestingUtils(Form1 form)
+        {
+            createDict(form);
+
+        }
+
+        private static void createDict(Form1 form)
+        {
+            map = new Dictionary<String, PictureBox>();
+
+            map.Add("A", form.shelfA);
+            map.Add("B", form.shelfB);
+            map.Add("C", form.shelfC);
+            map.Add("D", form.shelfD);
+            map.Add("E", form.shelfE);
+            map.Add("F", form.shelfF);
+            map.Add("G", form.shelfG);
+            map.Add("H", form.shelfH);
+            map.Add("I", form.shelfI);
+            map.Add("J", form.shelfJ);
+            map.Add("K", form.shelfK);
+            map.Add("L", form.shelfL);
+            map.Add("M", form.shelfM);
+            map.Add("N", form.shelfN);
+            map.Add("O", form.shelfO);
+            map.Add("P", form.shelfP);
+            map.Add("Q", form.shelfQ);
+            map.Add("R", form.shelfR);
+            map.Add("S", form.shelfS);
+            map.Add("T", form.shelfT);
+            map.Add("U", form.shelfU);
+            map.Add("V", form.shelfV);
+            map.Add("W", form.shelfW);
+            map.Add("X", form.shelfX);
+            map.Add("GL Cube", form.shelfGL);
+            map.Add("Front", form.shelfFront);
+
+
+        }
         //this resets the color of all the picture boxes
         public static void clearAll(Form1 form)
         {
